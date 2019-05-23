@@ -136,20 +136,26 @@ export class MapComponent implements OnInit {
 
     for (let feature of this.citiesInfo.features) {
       let cityCoordinates = [];
-      
+
       for (let coord of feature.geometry.coordinates) {
         cityCoordinates.push(transform(coord, 'EPSG:4326', 'EPSG:3857'))
       }
 
       const line = new LineString(cityCoordinates)
       const features = new Feature(line)
+      features.set('name', feature.properties.Name)
       vectorSource.addFeature(features)
     }
+
+    console.log(vectorSource);
 
     var vectorLayer = new VectorLayer({
       source: vectorSource,
       style: this.styleFunction
     })
+
+
+    console.log(vectorLayer);
 
     var map = new Map({
       layers: [
@@ -160,7 +166,7 @@ export class MapComponent implements OnInit {
       ],
       target: 'map',
       view: new View({
-        center: fromLonLat([-50, -30]),
+        center: fromLonLat([-53, -30]),
         zoom: 7
       })
     });
