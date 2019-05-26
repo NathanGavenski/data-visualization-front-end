@@ -11,12 +11,20 @@
     padding-left: 4.2rem;
   }
 
+  .centered_title {
+    text-align: center
+  }
+
+  .button_centered_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .info {
     padding-top: 1.5rem;
-
     display: flex;
-    justify-content: space-evenly;
-
+    //justify-content: space-evenly;
     .info-display {
       display: flex;
       flex-direction: row;
@@ -32,7 +40,8 @@
       }
     }
 
-    .info-left {}
+    .info-left {
+    }
   }
 
   .info:last-child {

@@ -1,134 +1,189 @@
 <div class="dashboard">
-    <h1>Rio Grande do Sul</h1>
+  <h1 (click)="clicked_rs()">Rio Grande do Sul</h1>
+  <button type="button" class="btn btn-primary" (click)="clicked_city()">Primary</button>
+  <div class="infos">
 
-    <div class="infos">
-        <div class="info">
-            <div class="info-left">
-                <h3>População:</h3>
-                <div class="info-display">
-                    <h4>População estimada:</h4>
-                    <p>11.329.605 pessoas</p>
-                </div>
-                <div class="info-display">
-                    <h4>População no último censo:</h4>
-                    <p>10.693.929 pessoas</p>
-                </div>
-                <div class="info-display">
-                    <h4>Densidade demográfica:</h4>
-                    <p>37,96 hab/km²</p>
-                </div>
-                <div class="info-display">
-                    <h4>Total de veículos:</h4>
-                    <p>6.650.259 veículos</p>
-                </div>
-            </div> <!-- info-left -->
-            <div class="info-right">
-                <h3>Educação:</h3>
-                <div class="info-display">
-                    <h4>Matrículas no ensino fundamental:</h4>
-                    <p>1.298.736 matrículas</p>
-                </div>
-                <div class="info-display">
-                    <h4>Matrículas no ensino médio:</h4>
-                    <p>338.065 matrículas</p>
-                </div>
-                <div class="info-display">
-                    <h4>Docentes no ensino fundamental:</h4>
-                    <p>73.770 docentes</p>
-                </div>
-                <div class="info-display">
-                    <h4>Docentes no ensino médio:</h4>
-                    <p>27.771 docentes</p>
-                </div>
-                <div class="info-display">
-                    <h4>Número de estabelecimentos de ensino fundamental:</h4>
-                    <p>5.926 escolas</p>
-                </div>
-                <div class="info-display">
-                    <h4>Número de estabelecimentos de ensino médio:</h4>
-                    <p>1.503 escolas</p>
-                </div>
-            </div> <!-- info-right -->
-        </div> <!-- info -->
-        <div class="info">
-                <div class="info-left">
-                    <h3>População:</h3>
+    <div id="accordion">
+
+      <div class="card">
+        <div class="card-header button_centered_title" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Informações populacionais {{local}}
+            </button>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            <!-- Populacao -->
+                <h3 class="centered_title">População:</h3>
+                <div class="info">
+                  <div class="info-left">
+                    <!-- info-left -->
                     <div class="info-display">
-                        <h4>População estimada:</h4>
-                        <p>11.329.605 pessoas</p>
+                      <h4>População estimada:</h4>
                     </div>
                     <div class="info-display">
-                        <h4>População no último censo:</h4>
-                        <p>10.693.929 pessoas</p>
+                      <h4>População no último censo:</h4>
                     </div>
                     <div class="info-display">
-                        <h4>Densidade demográfica:</h4>
-                        <p>37,96 hab/km²</p>
+                      <h4>Densidade demográfica:</h4>
                     </div>
                     <div class="info-display">
-                        <h4>Total de veículos:</h4>
-                        <p>6.650.259 veículos</p>
+                      <h4>Total de veículos:</h4>
                     </div>
-                </div> <!-- info-left -->
-            <div class="info-right">
-                <h3>Educação:</h3>
+                  </div> <!-- info-left -->
+                  <div class="info-right">
+                    <!-- info-right -->
+                    <div class="info-display">
+                      <p>{{estimated_population}} habitantes</p>
+                    </div>
+                    <div class="info-display">
+                      <p>{{census_population}} habitantes</p>
+                    </div>
+                    <div class="info-display">
+                      <p>{{demographic_density}} hab/km²</p>
+                    </div>
+                    <div class="info-display">
+                      <p>{{total_vehicles}} veículos</p>
+                    </div>
+                  </div> <!-- info-right -->
+                </div> <!-- info -->
+            <!-- Populacao -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header button_centered_title" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Informações educacionais {{local}}
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            <!-- Educação -->
+                <h3 class="centered_title">Educação:</h3>
+            <div class="info">
+              <div class="info-left"> <!-- info-left -->
                 <div class="info-display">
-                    <h4>Matrículas no ensino fundamental:</h4>
-                    <p>1.298.736 matrículas</p>
+                  <h4>Matrículas no ensino fundamental:</h4>
                 </div>
                 <div class="info-display">
-                    <h4>Matrículas no ensino médio:</h4>
-                    <p>338.065 matrículas</p>
+                  <h4>Matrículas no ensino médio:</h4>
                 </div>
                 <div class="info-display">
-                    <h4>Docentes no ensino fundamental:</h4>
-                    <p>73.770 docentes</p>
+                  <h4>Docentes no ensino fundamental:</h4>
                 </div>
                 <div class="info-display">
-                    <h4>Docentes no ensino médio:</h4>
-                    <p>27.771 docentes</p>
+                  <h4>Docentes no ensino médio:</h4>
                 </div>
                 <div class="info-display">
-                    <h4>Número de estabelecimentos de ensino fundamental:</h4>
-                    <p>5.926 escolas</p>
+                  <h4>Número de estabelecimentos de ensino fundamental:</h4>
                 </div>
                 <div class="info-display">
-                    <h4>Número de estabelecimentos de ensino médio:</h4>
-                    <p>1.503 escolas</p>
+                  <h4>Número de estabelecimentos de ensino médio:</h4>
                 </div>
-            </div> <!-- info-right -->
-        </div> <!-- info -->
-        <div class="info">
-            <div class="info-left">
-                <h3>Trabalho e rendimento:</h3>
+              </div> <!-- info-left -->
+              <div class="info-right">
+                <!-- info-right -->
                 <div class="info-display">
-                    <h4>Rendimento nominal mensal domiciliar per capita:</h4>
-                    <p>R$ 1.705,00</p>
+                  <p>{{elementary_enrollment}} matrículas</p>
                 </div>
                 <div class="info-display">
-                    <h4>Pessoas de 16 anos ou mais ocupadas na semana de referência:</h4>
-                    <p>5.842 pessoas (×1000) </p>
+                  <p>{{high_enrollment}} matrículas</p>
                 </div>
                 <div class="info-display">
-                    <h4>Proporção de pessoas de 16 anos ou mais em trabalho formal, considerando apenas as ocupadas na
-                        semana de referência:</h4>
-                    <p>67,6%</p>
+                  <p>{{elementary_teachers}} docentes</p>
                 </div>
                 <div class="info-display">
-                    <h4>Proporção de pessoas de 14 anos ou mais de idade, ocupadas na semana de referência em trabalhos
-                        formais:</h4>
-                    <p>70,2%</p>
+                  <p>{{high_teachers}} docentes </p>
                 </div>
                 <div class="info-display">
-                    <h4>Rendimento médio real habitual do trabalho principal das pessoas de 14 anos ou mais de idade,
-                        ocupadas na semana de referência em trabalhos formai:</h4>
-                    <p>R$ 2.524,00</p>
+                  <p>{{fundamental_schools}} escolas</p>
                 </div>
                 <div class="info-display">
-                    <h4>Pessoal ocupado na Administração pública, defesa e seguridade social:</h4>
-                    <p>334.636 pessoas</p>
+                  <p>{{high_schools}} escolas</p>
                 </div>
-            </div> <!-- info-left -->
-        </div> <!-- info -->
+              </div> <!-- info-right -->
+            </div>
+            <!-- Educação -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header button_centered_title" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Informações socioeconomicas {{local}}
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            <!-- Economia -->
+                <h3 class="centered_title">Trabalho e rendimento:</h3>
+            <div class="info">
+              <div class="info-left">
+                <div class="info-display">
+                  <h4>Rendimento nominal mensal domiciliar per capita:</h4>
+                </div>
+                <div class="info-display">
+                  <h4>Pessoas de 16 anos ou mais ocupadas na semana de referência:</h4>
+                </div>
+                <div class="info-display">
+                  <h4>
+                    Proporção de pessoas de 16 anos ou mais em trabalho formal, considerando apenas as ocupadas na
+                    semana de referência:
+                  </h4>
+                </div>
+                <div class="info-display">
+                  <h4>
+                    Proporção de pessoas de 14 anos ou mais de idade, ocupadas na semana de referência em trabalhos
+                    formais:
+                  </h4>
+                </div>
+                <div class="info-display">
+                  <h4>
+                    Rendimento médio real habitual do trabalho principal das pessoas de 14 anos ou mais de idade,
+                    ocupadas na semana de referência em trabalhos formai:
+                  </h4>
+                </div>
+                <div class="info-display">
+                  <h4>Pessoal ocupado na Administração pública, defesa e seguridade social:</h4>
+                </div>
+              </div> <!-- info-left -->
+              <div class="info-right">
+                <div class="info-display">
+                  <p>R$ {{per_capita_income}}</p>
+                </div>
+                <div class="info-display">
+                  <p>{{busy_people_16}} (×1000) </p>
+                </div>
+                <div class="info-display">
+                  <p>{{formal_people_16}}%</p>
+                </div>
+                <div class="info-display">
+                  <p>{{formal_people_14}}%</p>
+                </div>
+                <div class="info-display">
+                  <p>R$ {{average_yield_14}}</p>
+                </div>
+                <div class="info-display">
+                  <p>{{public_initiative_workers}} pessoas</p>
+                </div>
+              </div>
+            </div> <!-- info -->
+            <!-- Economia -->
+          </div>
+        </div>
+      </div>
+
     </div>
+
+  </div>
+
 </div>
