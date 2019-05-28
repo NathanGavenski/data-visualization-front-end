@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { MapComponent } from './components/map/map.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 
+import { NgxCurrencyModule } from "ngx-currency";
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +17,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxCurrencyModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -147,17 +147,12 @@ export class MapComponent implements OnInit {
       vectorSource.addFeature(features)
     }
 
-    console.log(vectorSource);
-
     var vectorLayer = new VectorLayer({
       source: vectorSource,
       style: this.styleFunction
     })
 
-
-    console.log(vectorLayer);
-
-    var map = new Map({
+    new Map({
       layers: [
         new TileLayer({
           source: new OSM()

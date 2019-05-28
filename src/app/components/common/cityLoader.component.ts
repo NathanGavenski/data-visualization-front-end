@@ -1,5 +1,4 @@
 import * as $ from 'jquery';
-// import Fs from 'fs';
 
 export class CityLoader {
 

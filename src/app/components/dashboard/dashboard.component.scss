@@ -2,6 +2,19 @@
   background-color: #6B88E8;
   height: 100%;
 
+  input {
+    border: none;
+    display: inline;
+    font-family: inherit;
+    font-size: inherit;
+    padding: none !important;
+    width: auto;
+    background-color: white;
+    text-align: left !important;
+    margin-left: -8px;
+    color: black;
+  }
+
   h1 {
     text-align: center;
   }
@@ -9,6 +22,10 @@
   h2 {
     padding-top: 1.5rem;
     padding-left: 4.2rem;
+  }
+
+  h5 {
+    font-size: 1.1rem;
   }
 
   .centered_title {
@@ -21,17 +38,27 @@
     align-items: center;
   }
 
+  .card {
+    border-radius: 0px !important;
+  }
+
   .info {
+
     padding-top: 1.5rem;
-    display: flex;
-    //justify-content: space-evenly;
     .info-display {
       display: flex;
       flex-direction: row;
       align-items: center;
 
+      border-bottom-style: solid;
+      border-width: 1px;
+      border-color: rgba(0,0,0,0.2);
+
       h4 {
-        margin: 5px 0;
+        margin: 8px 5px;
+        padding: 0;
+        font-size: 1rem;
+        font-weight: bold;
       }
 
       p {
@@ -45,10 +72,8 @@
   }
 
   .info:last-child {
-    .info-display {
-      h4 {
-        max-width: 50%;
-      }
+    .info-display:last-child {
+      border-bottom: 0px;
     }
   }
 }
