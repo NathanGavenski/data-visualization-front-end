@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { CrimeLoader } from '../common/crimeLoader.component';
-//import {Cidade} from './cidade.interface'
+import { CityComponent } from './city/city.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,9 +9,13 @@ import { CrimeLoader } from '../common/crimeLoader.component';
 })
 export class DashboardComponent implements OnInit {
 
+  @ViewChild(CityComponent)
+  private cityComponent: CityComponent;
+
   private crimeJson;
   public state = true;
-  public cityInfo; 
+  public cityInfo;
+  public cityNames;
 
   local: string;
   estimated_population: number
@@ -45,17 +49,28 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.cityNames = Object.keys(this.crimeJson);
+    this.cityNames = this.cityNames.map((word) => {
+      return this.capitalizeFirstLetter(word);
+    });
+  } 
 
+  capitalizeFirstLetter(string) {
+    let list = string.split(' ')
+    list = list.map((word) => {
+      return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    });
+    return list.join(' ');
   }
 
   clicked_city(city) {
     this.state = false;
-    this.local = "Porto Alegre";
+    this.local = city
 
     const crimeInfo = this.crimeJson[city.toUpperCase()]['2018'];
     let info = this.crimeJson[city.toUpperCase()]['IBGE'];
     this.cityInfo = JSON.stringify(info);
-
+    this.cityComponent.setCity(this.cityInfo);
   }
 
   clicked_rs() {

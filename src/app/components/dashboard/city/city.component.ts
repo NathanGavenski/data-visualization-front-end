@@ -45,7 +45,11 @@ export class CityComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.cityInfo = JSON.parse(this.cityInfo)
+    this.setCity(this.cityInfo);
+  }
+
+  setCity(city) {
+    this.cityInfo = JSON.parse(city);
     this.estimated_population = this.cityInfo.estimated_population;
     this.census_population = this.cityInfo.population_last_census;
     this.demographic_density = this.cityInfo.demographic_density;
@@ -78,6 +82,7 @@ export class CityComponent implements OnInit {
     this.occupied_population = this.cityInfo.occupied_population;
     this.average_salary = this.cityInfo.average_salary;
     this.percentual_rendimento = this.cityInfo['Half income'];
+
   }
 
 }

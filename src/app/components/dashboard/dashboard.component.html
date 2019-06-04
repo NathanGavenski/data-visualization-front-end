@@ -1,15 +1,24 @@
 <div class="dashboard">
   <h1 (click)="clicked_rs()">{{this.local}}</h1>
-  <button type="button" class="btn btn-primary" (click)="clicked_city('Porto Alegre')">Primary</button>
-  <div class="infos">
 
+  <div class="dropdown">
+    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false">
+      Escolher cidades
+    </button>
+    <div class="dropdown-menu pre-scrollable" aria-labelledby="dropdownMenuButton">
+      <a *ngFor="let name of cityNames" class="dropdown-item" (click)="clicked_city(name)">{{name}}</a>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="clicked_rs()">Voltar RS</button>
+  </div>
+
+  <div class="infos">
     <div *ngIf="state">
       <app-state></app-state>
     </div>
     <div *ngIf="!state">
-      <app-city cityInfo="{{cityInfo}}"></app-city>
+      <app-city [cityInfo]="cityInfo"></app-city>
     </div>
-
   </div>
 
 </div>
