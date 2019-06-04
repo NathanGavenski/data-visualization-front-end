@@ -1,0 +1,208 @@
+<div id="accordion">
+  <div class="card">
+    <div class="card-header button_centered_title btn btn-link collapsed" id="headingOne" data-toggle="collapse"
+      data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+      <h5 class="mb-0">
+        Informações populacionais e educacionais {{local}}
+      </h5>
+    </div>
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        <div id="populacao-educacao" class="info container row">
+          <div class="info-left col-6">
+            <h4 class="centered_title">População:</h4>
+            <div class="info-display">
+              <h4 class="col-5">População estimada:</h4>
+              <input class="col-7" currencyMask [(ngModel)]="estimated_population"
+                [options]="{ prefix:'', suffix: ' habitantes', thousands: '.', precision: '0' }" disabled>
+            </div>
+            <div class="info-display">
+              <h4 class="col-5">População no último censo:</h4>
+              <input class="col-7" currencyMask [(ngModel)]="census_population"
+                [options]="{ prefix:'', suffix: ' habitantes', thousands: '.', decimal: ',', precision: '0'  }"
+                disabled>
+            </div>
+            <div class="info-display">
+              <h4 class="col-5">Densidade demográfica:</h4>
+              <input class="col-7" currencyMask [(ngModel)]="demographic_density"
+                [options]="{ prefix:'', suffix: ' hab/km²', thousands: '.', decimal: ',', precision: '0'  }" disabled>
+            </div>
+            <h4 style="margin-top: 30px;" class="centered_title">Saúde:</h4>
+            <div class="info-display">
+              <h4 class="col-7">Mortalidade Infantil:</h4>
+              <input class="col-5" currencyMask [(ngModel)]="infant_death"
+                [options]="{ prefix:'', suffix: ' óbitos por mil nascidos vivos', thousands: '.', decimal: ',' }" disabled>
+            </div>
+            <div class="info-display">
+              <h4 class="col-7">Internações por diarreia:</h4>
+              <input class="col-5" currencyMask [(ngModel)]="diarreia"
+                [options]="{ prefix:'', suffix: ' %', thousands: '.', decimal: ',' }" disabled>
+            </div>
+            <div class="info-display">
+              <h4 class="col-7">Estabelecimentos do SUS:</h4>
+              <input class="col-5" currencyMask [(ngModel)]="sus"
+                [options]="{ prefix:'', suffix: '', thousands: '.', decimal: ',', precision: '0' }" disabled>
+            </div>
+          </div> <!-- info-left -->
+
+          <div class="info-right col-6">
+            <h4 class="centered_title">Educação:</h4>
+            <div class="info-display">
+              <h4 class="col-6">Taxa de escolarização de 6 a 14 anos de idade:</h4>
+              <input class="col-7" currencyMask [(ngModel)]="school_minor"
+                [options]="{ prefix:'', suffix: ' %', thousands: '.', decimal: ',' }"
+                disabled>
+            </div>
+            <div class="info-display">
+              <h4 class="col-6">IDEB – Anos iniciais do ensino fundamental:</h4>
+              <input class="col-7" currencyMask [(ngModel)]="IDEB"
+                [options]="{ prefix:'', suffix: '', thousands: '.', decimal: ','  }"
+                disabled>
+            </div>
+            <div class="info-display">
+              <h4 class="col-6">Matrículas no ensino fundamental:</h4>
+              <input class="col-7" currencyMask [(ngModel)]="elementary_enrollment"
+                [options]="{ prefix:'', suffix: ' matrículas', thousands: '.', decimal: ','  }" disabled>
+            </div>
+            <div class="info-display">
+              <h4 class="col-6">Matrículas no ensino médio:</h4>
+              <input class="col-7" currencyMask [(ngModel)]="high_enrollment"
+                [options]="{ prefix:'', suffix: ' matrículas', thousands: '.', decimal: ','  }" disabled>
+            </div>
+            <div class="info-display">
+              <h4 class="col-6">Docentes no ensino fundamental:</h4>
+              <input class="col-7" currencyMask [(ngModel)]="elementary_teachers"
+                [options]="{ prefix:'', suffix: ' docentes', thousands: '.', decimal: ','  }" disabled>
+            </div>
+            <div class="info-display">
+              <h4 class="col-6">Docentes no ensino médio:</h4>
+              <input class="col-7" currencyMask [(ngModel)]="high_teachers"
+                [options]="{ prefix:'', suffix: ' docentes', thousands: '.', decimal: ','  }" disabled>
+            </div>
+            <div class="info-display">
+              <h4 class="col-6">Número de estabelecimentos de ensino fundamental:</h4>
+              <input class="col-7" currencyMask [(ngModel)]="fundamental_schools"
+                [options]="{ prefix:'', suffix: ' escolas', thousands: '.', decimal: ','  }" disabled>
+            </div>
+            <div class="info-display">
+              <h4 class="col-6">Número de estabelecimentos de ensino médio:</h4>
+              <input class="col-7" currencyMask [(ngModel)]="high_schools"
+                [options]="{ prefix:'', suffix: ' escolas', thousands: '.', decimal: ','  }" disabled>
+            </div>
+          </div> <!-- info-right -->
+        </div> <!-- Populacao e Educacao -->
+      </div> <!-- Card-body -->
+    </div> <!-- CollapseOne-->
+  </div> <!-- card -->
+
+  <div class="card">
+    <div class="card-header button_centered_title btn btn-link collapsed" id="headingTwo" data-toggle="collapse"
+      data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      <h5 class="mb-0">
+        Informações educacionais {{local}}
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        <div class="card-body">
+          <div id="economia-ambiente" class="info container row">
+            <div id="economia" class="info-left col-6">
+              <h4 class="centered_title">Economia:</h4>
+              <div class="info-display">
+                <h4 class="col-6">PIB per capita:</h4>
+                <input class="col-7" currencyMask [(ngModel)]="PIB"
+                  [options]="{ prefix:'R$ ', suffix: '', thousands: '.', decimal: ','}"
+                  disabled>
+              </div>
+              <div class="info-display">
+                <h4 class="col-6">Percentual das receitas oriundas de fontes externas:</h4>
+                <input class="col-7" currencyMask [(ngModel)]="receitas_fontes_externas"
+                  [options]="{ prefix:'', suffix: ' %', thousands: '.', decimal: ','  }"
+                  disabled>
+              </div>
+              <div class="info-display">
+                <h4 class="col-6">Índice de Desenvolvimento Humano Municipal (IDHM):</h4>
+                <input class="col-6" currencyMask [(ngModel)]="idh"
+                  [options]="{ prefix: '', thousands: '.', decimal: ',' }" disabled>
+              </div>
+            </div> <!-- info-left -->
+
+            <div class="info-right col-6">
+              <h4 class="centered_title">Território e Ambiente:</h4>
+              <div class="info-display">
+                <h4 class="col-7">Área da unidade territorial:</h4>
+                <input class="col-5" currencyMask [(ngModel)]="area"
+                  [options]="{ prefix:'', suffix: ' km²', thousands: '.', decimal: ',' }" disabled>
+              </div>
+              <div class="info-display">
+                <h4 class="col-7">Esgotamento sanitário adequado:</h4>
+                <input class="col-5" currencyMask [(ngModel)]="sanitario"
+                  [options]="{ prefix:'', suffix: ' %', thousands: '.', decimal: ',' }" disabled>
+              </div>
+              <div class="info-display">
+                <h4 class="col-7">Arborização de vias públicas:</h4>
+                <input class="col-5" currencyMask [(ngModel)]="arborizacao"
+                  [options]="{ prefix:'', suffix: ' %', thousands: '.', decimal: ',' }" disabled>
+              </div>
+              <div class="info-display">
+                <h4 class="col-7">Urbanização de vias públicas:</h4>
+                <input class="col-5" currencyMask [(ngModel)]="urbanizacao"
+                  [options]="{ prefix:'', suffix: ' %', thousands: '.', decimal: ',' }" disabled>
+              </div>
+            </div>
+          </div> <!-- info-right -->
+        </div> <!-- Populacao -->
+      </div> <!-- Card-body -->
+    </div> <!-- Collapse two -->
+  </div>
+
+  <div class="card">
+    <div class="card-header button_centered_title btn btn-link collapsed" id="headingThree" data-toggle="collapse"
+      data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      <h5 class="mb-0">
+        Informações socioeconomicas {{local}}
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        <h3 class="centered_title">Trabalho e rendimento:</h3>
+        <div class="info container row">
+          <div class="info-left">
+            <div class="info-display">
+              <h4 class="col-8">Rendimento nominal mensal domiciliar per capita:</h4>
+              <div class="col-1"></div>
+              <input class="col-3" currencyMask [(ngModel)]="per_capita_income"
+                [options]="{ prefix: '', suffix: ' %', thousands: '.', decimal: ',' }" disabled>
+            </div>
+            <div class="info-display">
+              <h4 class="col-8">Salário médio mensal dos trabalhadores formais:</h4>
+              <div class="col-1"></div>
+              <input class="col-3" currencyMask [(ngModel)]="average_salary"
+                [options]="{ prefix:'', suffix: ' salários mínimos', thousands: '.', decimal: ',', precision: '0'  }" disabled>
+            </div>
+            <div class="info-display">
+              <h4 class="col-8"> Pessoal ocupado </h4>
+              <div class="col-1"></div>
+              <input class="col-3" currencyMask [(ngModel)]="occupied_people"
+                [options]="{ prefix:'', suffix: ' pessoas', thousands: '.', decimal: ',', precision: '0'  }" disabled>
+            </div>
+            <div class="info-display">
+              <h4 class="col-8"> População ocupada </h4>
+              <div class="col-1"></div>
+              <input class="col-3" currencyMask [(ngModel)]="occupied_population"
+                [options]="{ prefix:'', suffix: ' %', thousands: '.', decimal: ',', precision: '0'  }" disabled>
+            </div>
+            <div class="info-display">
+              <h4 class="col-8">
+                Percentual da população com rendimento nominal mensal per capita de até 1/2 salário mínimo
+              </h4>
+              <div class="col-1"></div>
+              <input class="col-3" currencyMask [(ngModel)]="percentual_rendimento"
+                [options]="{ prefix: '', suffix: ' %', thousands: '.', decimal: ',' }" disabled>
+            </div>
+          </div> <!-- info-left -->
+        </div> <!-- info -->
+      </div>
+    </div>
+  </div>
+</div>

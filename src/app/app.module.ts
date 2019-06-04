@@ -8,12 +8,16 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 import { NgxCurrencyModule } from "ngx-currency";
 import { FormsModule } from '@angular/forms';
+import { StateComponent } from './components/dashboard/state/state.component';
+import { CityComponent } from './components/dashboard/city/city.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MapComponent,
-    DashboardComponent
+    DashboardComponent,
+    StateComponent,
+    CityComponent
   ],
   imports: [
     BrowserModule,
