@@ -27,6 +27,59 @@ export class MapComponent implements OnInit {
   public citiesInfo = this.cities.getJson()
   public styles = this.commonStyle.styles;
 
+  var landmarks = new OpenLayers.Layer.Vector("NY Landmarks", {
+    strategies: [new OpenLayers.Strategy.BBOX()],
+    protocol: new OpenLayers.Protocol.WFS({
+        version: "1.1.0",
+        url: "/geoserver/wfs",
+        featureType: "poly_landmarks",
+        featureNS: "http://www.census.gov",
+        srsName: "EPSG:4326"
+    }),
+    styleMap: new OpenLayers.StyleMap({
+        "default": new OpenLayers.Style({
+            strokeColor: "white",
+            strokeWidth: 1
+        }, {
+            rules: [
+                new OpenLayers.Rule({
+                     filter: new OpenLayers.Filter.Logical({
+                        type: OpenLayers.Filter.Logical.OR,
+                        filters: [
+                            new OpenLayers.Filter.Comparison({
+                                type: OpenLayers.Filter.Comparison.EQUAL_TO,
+                                property: "CFCC", value: "D82"
+                            }),
+                            new OpenLayers.Filter.Comparison({
+                                type: OpenLayers.Filter.Comparison.EQUAL_TO,
+                                property: "CFCC", value: "D83"
+                            }),
+                            new OpenLayers.Filter.Comparison({
+                                type: OpenLayers.Filter.Comparison.EQUAL_TO,
+                                property: "CFCC", value: "D84"
+                            }),
+                            new OpenLayers.Filter.Comparison({
+                                type: OpenLayers.Filter.Comparison.EQUAL_TO,
+                                property: "CFCC", value: "D85"
+                            })
+                        ]
+                    }),
+                    symbolizer: {
+                        fillColor: "#B4DFB4",
+                        strokeColor: "#88B588",
+                        strokeWidth: 2
+                    }
+                }),
+                new OpenLayers.Rule({
+                    elseFilter: true,
+                    symbolizer: {
+                        fillColor: "navy"
+                    }
+                })
+            ]
+        })
+    })
+  }); 
 
   // select interaction working on "pointermove"
   public selectPointerMove = new Select({
@@ -34,25 +87,6 @@ export class MapComponent implements OnInit {
   });
 
   public map: Map;
-
-  // public landmaks : NUll;
-  // this.landmarks = new OpenLayers.Layer.Vector("NY Landmarks", {
-  //   strategies: [new OpenLayers.Strategy.BBOX()],
-  //   protocol: new OpenLayers.Protocol.WFS({
-  //       version: "1.1.0",
-  //       url: "/geoserver/wfs",
-  //       featureType: "poly_landmarks",
-  //       featureNS: "http://www.census.gov",
-  //       srsName: "EPSG:4326"
-  //   }),
-  //   filter: new OpenLayers.Filter.Comparison({
-  //               type: OpenLayers.Filter.Comparison.LIKE,
-  //               property: "CFCC",
-  //               value: "D*"
-  //           })
-  // });
-  // this.map.addLayer(this.landmarks);
-
   public geojsonObject = {
   "type": "FeatureCollection",
   "crs": {
@@ -205,12 +239,13 @@ private changeInteraction() {
   const select = this.selectPointerMove;
   this.map.addInteraction(select);
   select.on('select', function (e) {
+
     // document.getElementById('status').innerHTML = '&nbsp;' +
     //   e.target.getFeatures().getLength() +
     //   ' selected features (last operation selected ' + e.selected.length +
     //   ' and deselected ' + e.deselected.length + ' features)';
     // window.alert('Oi Andrey')
-    
+
     console.log(e.target.getFeatures());
     console.log(e.select.length);
   }
@@ -219,5 +254,12 @@ private changeInteraction() {
 
 
 
+private andrey(){
+
+  this.map.addLayer(this.landmarks);
+}
+
+
 
 }
+
