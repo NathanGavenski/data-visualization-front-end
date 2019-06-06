@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { MapComponent } from './components/map/map.component';
 
 
 @Component({
@@ -12,4 +13,7 @@ export class AppComponent {
  
   @ViewChild(DashboardComponent)
   private dashboard: DashboardComponent;
+
+  @ViewChild(MapComponent)
+  private map: MapComponent;
 }

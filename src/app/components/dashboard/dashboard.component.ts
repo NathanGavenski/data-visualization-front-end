@@ -1,6 +1,7 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, Input } from '@angular/core';
 import { CrimeLoader } from '../common/crimeLoader.component';
 import { CityComponent } from './city/city.component';
+import { MapComponent } from '../map/map.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -12,11 +13,14 @@ export class DashboardComponent implements OnInit {
   @ViewChild(CityComponent)
   private cityComponent: CityComponent;
 
+  @Input() map: MapComponent
+
   private crimeJson;
   public state = true;
   public cityInfo;
   public cityNames;
   public local: string;
+  public clustersType = ['Normal', 'IBGE', 'Crime', 'IBGE + Crime']
 
   constructor() {
     this.crimeJson = new CrimeLoader().getJson()
@@ -59,8 +63,11 @@ export class DashboardComponent implements OnInit {
     this.local = "Rio Grande do Sul"
   }
 
-  activate_clusters() {
-    window.alert('Oi')
+  activate_clusters(type) {
+    if (type === 'Normal') this.map.createNormalMap();
+    else if (type === 'IBGE') this.map.createIBGEMap();
+    else if (type === 'Crime') this.map.createCrimeMap();
+    else if (type === 'IBGE + Crime') this.map.createIBGECrimeMap();
   }
 
 }

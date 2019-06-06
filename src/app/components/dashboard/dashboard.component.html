@@ -1,16 +1,26 @@
 <div class="dashboard">
   <h1 (click)="clicked_rs()">{{this.local}}</h1>
 
-  <div class="dropdown">
-    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-      aria-haspopup="true" aria-expanded="false">
-      Escolher cidades
-    </button>
-    <div class="dropdown-menu pre-scrollable" aria-labelledby="dropdownMenuButton">
+  <div class="btn-group">
+    <div class="dropdown">
+      <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Escolher cidades
+      </button>
+      <div class="dropdown-menu pre-scrollable" aria-labelledby="dropdownMenuButton">
         <a *ngFor="let name of cityNames" href="#" class="dropdown-item" (click)="clicked_city(name)">{{name}}</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Mostrar clusters
+      </button>
+      <div class="dropdown-menu pre-scrollable" aria-labelledby="dropdownMenuButton">
+        <a *ngFor="let type of clustersType" href="#" class="dropdown-item" (click)="activate_clusters(type)">{{type}}</a>
+      </div>
     </div>
     <button type="button" class="btn btn-primary" (click)="clicked_rs()">Voltar RS</button>
-    <button type="button" class="btn btn-primary" (click)="activate_clusters()">Ver clusters</button>
   </div>
 
   <div class="infos">
