@@ -12,8 +12,8 @@ export class AppComponent {
   title = 'data-visualization-front-end';
  
   @ViewChild(DashboardComponent)
-  private dashboard: DashboardComponent;
+  public dashboard: DashboardComponent;
 
   @ViewChild(MapComponent)
-  private map: MapComponent;
+  public map: MapComponent;
 }
