@@ -9,7 +9,7 @@ import { Tile as TileLayer, Vector as VectorLayer } from 'ol/layer.js';
 import { OSM, Vector as VectorSource } from 'ol/source.js';
 import { fromLonLat, transform } from 'ol/proj';
 import { pointerMove } from 'ol/events/condition.js';
-import { Fill, Style } from 'ol/style';
+import { Fill, Style, Stroke } from 'ol/style';
 
 import { CommonStyle } from '../common/style.component';
 import { CityLoader } from '../common/cityLoader.component';
@@ -115,7 +115,10 @@ export class MapComponent implements OnInit {
         const line = new Polygon([cityCoordinates]);
         const features = new Feature(line);
         features.set('name', feature.properties.Name);
-        features.setStyle(new Style({ fill: new Fill({ color: color }) }));
+        features.setStyle(new Style({ 
+          stroke: new Stroke({ color: '#000000' }),
+          fill: new Fill({ color: color }) 
+        }));
         vectorSource.addFeature(features)
       } catch (TypeError) {
         console.log(feature.properties.Name)
@@ -154,7 +157,10 @@ export class MapComponent implements OnInit {
         const line = new Polygon([cityCoordinates]);
         const features = new Feature(line);
         features.set('name', feature.properties.Name);
-        features.setStyle(new Style({ fill: new Fill({ color: color }) }));
+        features.setStyle(new Style({ 
+          stroke: new Stroke({ color: '#000000' }),
+          fill: new Fill({ color: color }) 
+        }));
         vectorSource.addFeature(features)
       } catch (TypeError) {
         console.log(feature.properties.Name)
@@ -193,7 +199,10 @@ export class MapComponent implements OnInit {
         const line = new Polygon([cityCoordinates]);
         const features = new Feature(line);
         features.set('name', feature.properties.Name);
-        features.setStyle(new Style({ fill: new Fill({ color: color }) }));
+        features.setStyle(new Style({ 
+          stroke: new Stroke({ color: '#000000' }),
+          fill: new Fill({ color: color }) 
+        }));
         vectorSource.addFeature(features)
       } catch (TypeError) {
         console.log(feature.properties.Name)
