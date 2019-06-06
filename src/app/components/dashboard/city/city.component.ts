@@ -8,38 +8,38 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CityComponent implements OnInit {
   @Input('cityInfo') cityInfo;
 
-  public estimated_population: number
-  public census_population: number;
-  public demographic_density: number;
-  public total_vehicles: number;
+  public estimated_population: String
+  public census_population: String;
+  public demographic_density: String;
+  public total_vehicles: String;
 
-  public school_minor: number;
+  public school_minor: String;
   public IDEB
-  public elementary_enrollment: number;
-  public high_enrollment: number;
-  public elementary_teachers: number;
-  public high_teachers: number;
-  public fundamental_schools: number;
-  public high_schools: number;
+  public elementary_enrollment: String;
+  public high_enrollment: String;
+  public elementary_teachers: String;
+  public high_teachers: String;
+  public fundamental_schools: String;
+  public high_schools: String;
 
-  public per_capita_income: number;
-  public occupied_people: number;
-  public occupied_population: number;
-  public average_salary: number;
-  public percentual_rendimento: number;
+  public per_capita_income: String;
+  public occupied_people: String;
+  public occupied_population: String;
+  public average_salary: String;
+  public percentual_rendimento: String;
 
-  public infant_death: number;
-  public diarreia: number;
-  public sus: number;
+  public infant_death: String;
+  public diarreia: String;
+  public sus: String;
 
-  public PIB: number;
-  public receitas_fontes_externas: number;
-  public idh: number;
+  public PIB: String;
+  public receitas_fontes_externas: String;
+  public idh: String;
 
-  public area: number;
-  public sanitario: number;
-  public arborizacao: number;
-  public urbanizacao: number;
+  public area: String;
+  public sanitario: String;
+  public arborizacao: String;
+  public urbanizacao: String;
 
   constructor() {
   }
@@ -49,39 +49,41 @@ export class CityComponent implements OnInit {
   }
 
   setCity(city) {
-    this.cityInfo = JSON.parse(city);
-    this.estimated_population = this.cityInfo.estimated_population;
-    this.census_population = this.cityInfo.population_last_census;
-    this.demographic_density = this.cityInfo.demographic_density;
+    if (city) {
+      this.cityInfo = JSON.parse(city);
+    } else this.cityInfo = {};
+    
+    this.estimated_population = (this.cityInfo.estimated_population) ? this.cityInfo.estimated_population : 'NaN'; 
+    this.census_population = (this.cityInfo.population_last_census) ? this.cityInfo.population_last_census : 'NaN';
+    this.demographic_density = (this.cityInfo.demographic_density) ? this.cityInfo.demographic_density : 'NaN';
 
-    this.school_minor = this.cityInfo.school_minor;
-    this.IDEB = this.cityInfo.IDEB
-    this.elementary_enrollment = this.cityInfo['Matrículas no ensino fundamental'];
-    this.high_enrollment = this.cityInfo['Matrículas no ensino médio'];
-    this.elementary_teachers = this.cityInfo.fundamental_teachers;
-    this.high_teachers = this.cityInfo.medium_teachers;
-    this.fundamental_schools = this.cityInfo.fundamental_schools;
-    this.high_schools = this.cityInfo.medium_schools;
+    this.school_minor = (this.cityInfo.school_minor) ? this.cityInfo.school_minor : 'NaN';
+    this.IDEB = (this.cityInfo.IDE) ? this.cityInfo.IDE : 'NaN';
+    this.elementary_enrollment = (this.cityInfo['Matrículas no ensino fundamental']) ? this.cityInfo['Matrículas no ensino fundamental'] : 'NaN';
+    this.high_enrollment = (this.cityInfo['Matrículas no ensino médio']) ? this.cityInfo['Matrículas no ensino médio'] : 'NaN';
+    this.elementary_teachers = (this.cityInfo.fundamental_teachers) ? this.cityInfo.fundamental_teachers : 'NaN';
+    this.high_teachers = (this.cityInfo.medium_teachers) ? this.cityInfo.medium_teachers : 'NaN';
+    this.fundamental_schools = (this.cityInfo.fundamental_schools) ? this.cityInfo.fundamental_schools : 'NaN';
+    this.high_schools = (this.cityInfo.medium_schools) ? this.cityInfo.medium_schools : 'NaN';
 
-    this.PIB = this.cityInfo.PIB;
-    this.receitas_fontes_externas = this.cityInfo.receitas_fontes_externas;
-    this.idh = this.cityInfo.IDHM;
+    this.PIB = (this.cityInfo.PIB) ? this.cityInfo.PIB : 'NaN';
+    this.receitas_fontes_externas = (this.cityInfo.receitas_fontes_externas) ? this.cityInfo.receitas_fontes_externas : 'NaN';
+    this.idh = (this.cityInfo.IDHM) ? this.cityInfo.IDHM : 'NaN';
 
-    this.infant_death = this.cityInfo.infant_death;
-    this.diarreia = this.cityInfo.diarrhea_hospitalizations;
-    this.sus = this.cityInfo.estabelecimento_sus
+    this.infant_death = (this.cityInfo.infant_death) ? this.cityInfo.infant_death : 'NaN';
+    this.diarreia = (this.cityInfo.diarrhea_hospitalizations) ? this.cityInfo.diarrhea_hospitalizations : 'NaN';
+    this.sus = (this.cityInfo.estabelecimento_sus) ? this.cityInfo.estabelecimento_sus : 'NaN'
 
+    this.area = (this.cityInfo['Área da unidade territorial']) ? this.cityInfo['Área da unidade territorial'] : 'NaN';
+    this.sanitario = this.cityInfo["Esgotamento sanitário adequado"] ? this.cityInfo["Esgotamento sanitário adequado"] : 'NaN';
+    this.arborizacao = this.cityInfo["Arborização de vias públicas"] ? this.cityInfo["Arborização de vias públicas"] : 'NaN';
+    this.urbanizacao = this.cityInfo["Urbanização de vias públicas"] ? this.cityInfo["Urbanização de vias públicas"] : 'NaN';
 
-    this.area = this.cityInfo['Área da unidade territorial'];
-    this.sanitario = this.cityInfo["Esgotamento sanitário adequado"];
-    this.arborizacao = this.cityInfo["Arborização de vias públicas"];
-    this.urbanizacao = this.cityInfo["Urbanização de vias públicas"];
-
-    this.per_capita_income = this.cityInfo['Half income'];
-    this.occupied_people = this.cityInfo.occupied_people;
-    this.occupied_population = this.cityInfo.occupied_population;
-    this.average_salary = this.cityInfo.average_salary;
-    this.percentual_rendimento = this.cityInfo['Half income'];
+    this.per_capita_income = this.cityInfo['Half income'] ? this.cityInfo['Half income'] : 'NaN';
+    this.occupied_people = this.cityInfo.occupied_people ? this.cityInfo.occupied_people : 'NaN';
+    this.occupied_population = this.cityInfo.occupied_population ? this.cityInfo.occupied_population : 'NaN';
+    this.average_salary = this.cityInfo.average_salary ? this.cityInfo.average_salary : 'NaN';
+    this.percentual_rendimento = this.cityInfo['Half income'] ? this.cityInfo['Half income'] : 'NaN';
 
   }
 

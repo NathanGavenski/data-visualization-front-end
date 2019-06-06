@@ -1,1 +1,2492 @@
-{"ACEGUA":{"x":-5.047239,"y":2.2068138,"Label":0},"AGUA SANTA":{"x":3.5457804,"y":2.5522878,"Label":0},"AGUDO":{"x":-3.091524,"y":0.6806886,"Label":0},"AJURICABA":{"x":0.093436725,"y":1.9948428,"Label":0},"ALECRIM":{"x":-5.334885,"y":1.9452999,"Label":0},"ALEGRETE":{"x":-7.8944,"y":-1.9662504,"Label":4},"ALEGRIA":{"x":-4.6438956,"y":2.4415834,"Label":0},"ALMIRANTE TAMANDARE DO SUL":{"x":-10.08243,"y":-3.3353856,"Label":3},"ALPESTRE":{"x":-4.813872,"y":2.3546643,"Label":0},"ALTO ALEGRE":{"x":7.4261417,"y":0.9898095,"Label":0},"ALTO FELIZ":{"x":8.420842,"y":-4.93415,"Label":0},"ALVORADA":{"x":-5.9457655,"y":-2.6995642,"Label":2},"AMARAL FERRADOR":{"x":3.6951425,"y":2.6973965,"Label":0},"AMETISTA DO SUL":{"x":-2.2798505,"y":1.225626,"Label":0},"ANDRE DA ROCHA":{"x":-0.6126052,"y":2.5691297,"Label":0},"ANTA GORDA":{"x":6.0083447,"y":0.24505873,"Label":0},"ANTONIO PRADO":{"x":-2.652711,"y":0.84089255,"Label":0},"ARAMBARE":{"x":1.84138,"y":1.4025456,"Label":0},"ARARICA":{"x":1.290954,"y":1.5705694,"Label":0},"ARATIBA":{"x":3.4847386,"y":0.5538374,"Label":0},"ARROIO DO MEIO":{"x":-4.8860106,"y":-1.4091594,"Label":7},"ARROIO DO PADRE":{"x":7.3434224,"y":0.9977495,"Label":0},"ARROIO DO SAL":{"x":-9.753623,"y":-3.0850291,"Label":3},"ARROIO DO TIGRE":{"x":-2.4858162,"y":2.4967175,"Label":0},"ARROIO DOS RATOS":{"x":-9.902272,"y":-3.1581075,"Label":3},"ARROIO GRANDE":{"x":-9.675784,"y":-2.85004,"Label":3},"ARVOREZINHA":{"x":-5.1654797,"y":2.0208607,"Label":0},"AUGUSTO PESTANA":{"x":6.632848,"y":0.38156453,"Label":0},"AUREA":{"x":3.7658489,"y":-5.0035396,"Label":0},"BAGE":{"x":-7.85621,"y":-2.0480926,"Label":4},"BALNEARIO PINHAL":{"x":-3.5117192,"y":0.16387585,"Label":0},"BARAO":{"x":5.7376256,"y":-4.1172986,"Label":0},"BARAO DE COTEGIPE":{"x":-0.35367826,"y":2.370189,"Label":0},"BARAO DO TRIUNFO":{"x":1.5054103,"y":1.6935887,"Label":0},"BARRA DO GUARITA":{"x":-0.176,"y":1.983563,"Label":0},"BARRA DO QUARAI":{"x":-7.310189,"y":-0.10029583,"Label":6},"BARRA DO RIBEIRO":{"x":-9.897662,"y":-3.1526268,"Label":3},"BARRA DO RIO AZUL":{"x":3.667703,"y":2.7406487,"Label":0},"BARRA FUNDA":{"x":7.380809,"y":1.0496129,"Label":0},"BARRACAO":{"x":-4.1002316,"y":2.689171,"Label":0},"BARROS CASSAL":{"x":-5.6878257,"y":1.7238867,"Label":0},"BENJAMIN CONSTANT DO SUL":{"x":3.6718626,"y":0.40382838,"Label":0},"BENTO GONCALVES":{"x":-5.5083976,"y":-2.2234905,"Label":5},"BOA VISTA DAS MISSOES":{"x":3.9808779,"y":-4.8564625,"Label":0},"BOA VISTA DO BURICA":{"x":5.8924594,"y":0.084165424,"Label":0},"BOA VISTA DO CADEADO":{"x":1.3001227,"y":2.7813325,"Label":0},"BOA VISTA DO INCRA":{"x":4.013923,"y":-5.482458,"Label":0},"BOA VISTA DO SUL":{"x":8.110293,"y":-4.4262013,"Label":0},"BOM JESUS":{"x":-7.126545,"y":-0.2877088,"Label":6},"BOM PRINCIPIO":{"x":-2.9580956,"y":-0.42566752,"Label":0},"BOM PROGRESSO":{"x":6.0076566,"y":-4.1948767,"Label":0},"BOM RETIRO DO SUL":{"x":-4.0957437,"y":-0.082796,"Label":0},"BOQUEIRAO DO LEAO":{"x":3.1324177,"y":0.74903965,"Label":0},"BOSSOROCA":{"x":-7.2362676,"y":-0.0015856217,"Label":6},"BOZANO":{"x":-0.50552744,"y":2.522213,"Label":0},"BRAGA":{"x":1.3729769,"y":2.6335611,"Label":0},"BROCHIER":{"x":4.213099,"y":-4.9457684,"Label":0},"BUTIA":{"x":-6.725251,"y":-1.1714469,"Label":6},"CACAPAVA DO SUL":{"x":-9.049668,"y":-2.6117477,"Label":6},"CACEQUI":{"x":-9.1032505,"y":-2.4080412,"Label":6},"CACHOEIRA DO SUL":{"x":-6.0406947,"y":-1.5353451,"Label":7},"CACHOEIRINHA":{"x":-5.643668,"y":-2.298962,"Label":5},"CACIQUE DOBLE":{"x":4.0672665,"y":-4.7843504,"Label":0},"CAIBATE":{"x":7.4867716,"y":-4.364883,"Label":0},"CAICARA":{"x":-1.8818159,"y":1.8358887,"Label":0},"CAMAQUA":{"x":-6.36447,"y":-1.2078108,"Label":7},"CAMARGO":{"x":3.732777,"y":0.3417923,"Label":0},"CAMBARA DO SUL":{"x":-7.082956,"y":0.36792967,"Label":6},"CAMPESTRE DA SERRA":{"x":-0.53423744,"y":2.5094082,"Label":0},"CAMPINA DAS MISSOES":{"x":3.9936137,"y":-5.2768655,"Label":0},"CAMPINAS DO SUL":{"x":2.3131628,"y":1.1842382,"Label":0},"CAMPO BOM":{"x":-5.1276174,"y":-1.7942564,"Label":7},"CAMPO NOVO":{"x":1.282638,"y":1.4048694,"Label":0},"CAMPOS BORGES":{"x":6.378888,"y":0.54286784,"Label":0},"CANDELARIA":{"x":-7.1068726,"y":-0.70161754,"Label":6},"CANDIDO GODOI":{"x":8.012689,"y":-4.366691,"Label":0},"CANDIOTA":{"x":-6.9606276,"y":-0.10924913,"Label":6},"CANELA":{"x":-4.9746428,"y":-1.2812603,"Label":7},"CANGUCU":{"x":-7.160315,"y":-0.7711597,"Label":6},"CANOAS":{"x":-6.0342646,"y":-2.7559268,"Label":2},"CANUDOS DO VALE":{"x":8.391205,"y":-4.76249,"Label":0},"CAPAO BONITO DO SUL":{"x":-4.936408,"y":2.3034048,"Label":0},"CAPAO DA CANOA":{"x":-5.4490232,"y":-1.5160465,"Label":7},"CAPAO DO CIPO":{"x":-4.3605347,"y":2.5490217,"Label":0},"CAPAO DO LEAO":{"x":-9.959477,"y":-3.1603928,"Label":3},"CAPELA DE SANTANA":{"x":-5.4510875,"y":1.7081051,"Label":0},"CAPITAO":{"x":1.8570057,"y":1.3697556,"Label":0},"CAPIVARI DO SUL":{"x":-1.989106,"y":1.2795098,"Label":0},"CARAA":{"x":1.0664047,"y":1.7845604,"Label":0},"CARAZINHO":{"x":-9.476395,"y":-2.9561567,"Label":3},"CARLOS BARBOSA":{"x":-3.0031114,"y":-0.41172573,"Label":0},"CARLOS GOMES":{"x":8.399087,"y":-5.0367017,"Label":0},"CASCA":{"x":5.2717113,"y":-3.6892464,"Label":0},"CASEIROS":{"x":3.7150667,"y":2.7232857,"Label":0},"CATUIPE":{"x":-5.3795424,"y":1.965065,"Label":0},"CAXIAS DO SUL":{"x":-6.011715,"y":-2.6873398,"Label":2},"CENTENARIO":{"x":6.483092,"y":-4.3958993,"Label":0},"CERRITO":{"x":-0.40286732,"y":2.3924217,"Label":0},"CERRO BRANCO":{"x":8.24885,"y":-4.3606668,"Label":0},"CERRO GRANDE":{"x":6.328589,"y":-4.271898,"Label":0},"CERRO GRANDE DO SUL":{"x":-2.2370121,"y":1.6749358,"Label":0},"CERRO LARGO":{"x":1.2936459,"y":1.2632476,"Label":0},"CHAPADA":{"x":5.856471,"y":0.10270417,"Label":0},"CHARQUEADAS":{"x":-5.3229804,"y":-1.8679454,"Label":7},"CHARRUA":{"x":4.205659,"y":-4.778847,"Label":0},"CHIAPETTA":{"x":3.7422724,"y":-5.158223,"Label":0},"CHUI":{"x":-7.156396,"y":0.06528595,"Label":6},"CHUVISCA":{"x":-1.790329,"y":2.1024418,"Label":0},"CIDREIRA":{"x":-4.6056633,"y":-0.37645355,"Label":0},"CIRIACO":{"x":-5.657554,"y":1.8362876,"Label":0},"COLINAS":{"x":3.7325242,"y":-5.1537466,"Label":0},"COLORADO":{"x":3.4820158,"y":2.6136067,"Label":0},"CONDOR":{"x":7.1775446,"y":0.6841889,"Label":0},"CONSTANTINA":{"x":-2.2978556,"y":1.0907277,"Label":0},"COQUEIRO BAIXO":{"x":8.519044,"y":-4.904299,"Label":0},"COQUEIROS DO SUL":{"x":1.3370383,"y":2.7319486,"Label":0},"CORONEL BARROS":{"x":3.6941497,"y":-5.441629,"Label":0},"CORONEL BICACO":{"x":-1.8693523,"y":1.3511608,"Label":0},"CORONEL PILAR":{"x":3.982166,"y":-5.535866,"Label":0},"COTIPORA":{"x":3.4806046,"y":0.4879146,"Label":0},"COXILHA":{"x":6.129491,"y":0.33158118,"Label":0},"CRISSIUMAL":{"x":2.7514622,"y":0.8667356,"Label":0},"CRISTAL":{"x":-1.9688718,"y":1.5388196,"Label":0},"CRISTAL DO SUL":{"x":6.43555,"y":-4.4006624,"Label":0},"CRUZ ALTA":{"x":-9.237478,"y":-2.795687,"Label":3},"CRUZALTENSE":{"x":3.778521,"y":-5.5701857,"Label":0},"CRUZEIRO DO SUL":{"x":-1.5487113,"y":1.3433746,"Label":0},"DAVID CANABARRO":{"x":7.5363917,"y":-4.341579,"Label":0},"DERRUBADAS":{"x":-1.5380145,"y":2.8090773,"Label":0},"DEZESSEIS DE NOVEMBRO":{"x":-0.7377635,"y":1.8583039,"Label":0},"DILERMANDO DE AGUIAR":{"x":-7.192024,"y":0.3113046,"Label":6},"DOIS IRMAOS":{"x":-4.084235,"y":-0.8586163,"Label":0},"DOIS IRMAOS DAS MISSOES":{"x":8.459898,"y":-4.9437184,"Label":0},"DOIS LAJEADOS":{"x":6.744912,"y":0.6460929,"Label":0},"DOM FELICIANO":{"x":-5.3889046,"y":1.8423605,"Label":0},"DOM PEDRITO":{"x":-8.054535,"y":-1.6438146,"Label":6},"DOM PEDRO DE ALCANTARA":{"x":7.4723005,"y":1.0432457,"Label":0},"DONA FRANCISCA":{"x":6.7675,"y":0.6075859,"Label":0},"DOUTOR RICARDO":{"x":8.135672,"y":-4.334446,"Label":0},"DR MAURICIO CARDOSO":{"x":3.589775,"y":2.6225002,"Label":0},"ELDORADO DO SUL":{"x":-5.009322,"y":-1.0550821,"Label":7},"ENCANTADO":{"x":-3.9298894,"y":-0.7789157,"Label":0},"ENCRUZILHADA DO SUL":{"x":-8.088601,"y":-1.639444,"Label":6},"ENGENHO VELHO":{"x":3.9370985,"y":-5.6102896,"Label":0},"ENTRE IJUIS":{"x":-2.4014497,"y":1.2833291,"Label":0},"ENTRE RIOS DO SUL":{"x":6.6583767,"y":0.4448429,"Label":0},"EREBANGO":{"x":3.092247,"y":0.9845789,"Label":0},"ERECHIM":{"x":-5.405034,"y":-2.0608637,"Label":5},"ERNESTINA":{"x":-2.0976403,"y":1.7072196,"Label":0},"ERVAL GRANDE":{"x":3.403765,"y":2.519779,"Label":0},"ERVAL SECO":{"x":-4.4747167,"y":2.4861624,"Label":0},"ESMERALDA":{"x":3.1326604,"y":2.4799654,"Label":0},"ESPERANCA DO SUL":{"x":-9.95517,"y":-3.4127696,"Label":3},"ESPUMOSO":{"x":-5.472168,"y":1.5024947,"Label":0},"ESTACAO":{"x":-2.2860727,"y":1.229352,"Label":0},"ESTANCIA VELHA":{"x":-4.11564,"y":-0.60063154,"Label":0},"ESTEIO":{"x":-5.231434,"y":-1.8262223,"Label":7},"ESTRELA":{"x":-9.553155,"y":-3.04595,"Label":3},"ESTRELA VELHA":{"x":8.170856,"y":-4.3477592,"Label":0},"EUGENIO DE CASTRO":{"x":1.3984437,"y":2.6493375,"Label":0},"FAGUNDES VARELA":{"x":7.3466144,"y":1.0497328,"Label":0},"FARROUPILHA":{"x":-5.2072,"y":-1.455213,"Label":7},"FAXINAL DO SOTURNO":{"x":5.0653315,"y":-3.515101,"Label":0},"FAXINALZINHO":{"x":-3.1487553,"y":2.6628404,"Label":0},"FAZENDA VILA NOVA":{"x":-5.3734207,"y":1.8731239,"Label":0},"FELIZ":{"x":-2.9257133,"y":-0.44145975,"Label":0},"FLORES DA CUNHA":{"x":-9.860327,"y":-3.4695592,"Label":3},"FLORIANO PEIXOTO":{"x":8.522037,"y":-4.6760945,"Label":0},"FONTOURA XAVIER":{"x":-5.665039,"y":1.7214787,"Label":0},"FORMIGUEIRO":{"x":-7.340845,"y":-0.12563795,"Label":6},"FORQUETINHA":{"x":3.6954308,"y":2.7429364,"Label":0},"FORTALEZA DOS VALOS":{"x":3.3801234,"y":2.509515,"Label":0},"FREDERICO WESTPHALEN":{"x":-5.0381436,"y":-1.1185409,"Label":7},"GARIBALDI":{"x":-3.2073529,"y":-0.119250715,"Label":0},"GARRUCHOS":{"x":-7.41907,"y":-0.49230742,"Label":6},"GAURAMA":{"x":6.5895853,"y":0.381209,"Label":0},"GENERAL CAMARA":{"x":-5.0632153,"y":2.1831925,"Label":0},"GENTIL":{"x":3.649339,"y":0.39464718,"Label":0},"GETULIO VARGAS":{"x":-4.3411236,"y":-0.50143796,"Label":0},"GIRUA":{"x":-3.417721,"y":0.41752616,"Label":0},"GLORINHA":{"x":-9.226448,"y":-2.512543,"Label":6},"GRAMADO":{"x":-4.999287,"y":-1.2995564,"Label":7},"GRAMADO DOS LOUREIROS":{"x":8.303615,"y":-4.662596,"Label":0},"GRAMADO XAVIER":{"x":7.383556,"y":0.89484656,"Label":0},"GRAVATAI":{"x":-6.103076,"y":-2.6951826,"Label":2},"GUABIJU":{"x":1.2286526,"y":2.802462,"Label":0},"GUAIBA":{"x":-5.4116554,"y":-1.9927377,"Label":5},"GUAPORE":{"x":-4.342312,"y":-0.6035135,"Label":0},"GUARANI DAS MISSOES":{"x":-0.15359813,"y":2.2785196,"Label":0},"HARMONIA":{"x":6.237259,"y":-4.267319,"Label":0},"HERVAL":{"x":-7.8917036,"y":-1.2400379,"Label":6},"HERVEIRAS":{"x":8.388685,"y":-4.8578377,"Label":0},"HORIZONTINA":{"x":-4.276617,"y":-1.0121515,"Label":0},"HULHA NEGRA":{"x":-2.162218,"y":1.5446026,"Label":0},"HUMAITA":{"x":5.102962,"y":-4.10028,"Label":0},"IBARAMA":{"x":-3.37587,"y":2.690436,"Label":0},"IBIACA":{"x":3.7208004,"y":-5.133149,"Label":0},"IBIRAIARAS":{"x":-9.896819,"y":-3.4599662,"Label":3},"IBIRAPUITA":{"x":-10.174731,"y":-3.3444946,"Label":3},"IBIRUBA":{"x":-2.9460316,"y":-0.30407733,"Label":0},"IGREJINHA":{"x":-4.568655,"y":-0.96778,"Label":0},"IJUI":{"x":-5.285828,"y":-1.3470161,"Label":7},"ILOPOLIS":{"x":5.719141,"y":-4.090423,"Label":0},"IMBE":{"x":-4.242283,"y":-0.5247291,"Label":0},"IMIGRANTE":{"x":8.106621,"y":-4.37282,"Label":0},"INDEPENDENCIA":{"x":-1.8486682,"y":1.1283056,"Label":0},"INHACORA":{"x":6.388486,"y":0.51204115,"Label":0},"IPE":{"x":-4.1341486,"y":2.6782074,"Label":0},"IPIRANGA DO SUL":{"x":7.3373494,"y":0.9344065,"Label":0},"IRAI":{"x":-4.0691276,"y":0.14035395,"Label":0},"ITAARA":{"x":-10.117952,"y":-3.2491806,"Label":3},"ITACURUBI":{"x":-5.763819,"y":1.6941414,"Label":0},"ITAPUCA":{"x":1.311806,"y":2.7670565,"Label":0},"ITAQUI":{"x":-6.230127,"y":-0.6741979,"Label":6},"ITATI":{"x":-1.2911946,"y":1.9529498,"Label":0},"ITATIBA DO SUL":{"x":3.6216674,"y":1.0399922,"Label":0},"IVORA":{"x":0.27856708,"y":2.5132074,"Label":0},"IVOTI":{"x":5.2548413,"y":-3.5376573,"Label":0},"JABOTICABA":{"x":-1.9562763,"y":1.7449316,"Label":0},"JACUIZINHO":{"x":7.3235984,"y":0.84207875,"Label":0},"JACUTINGA":{"x":3.5591443,"y":0.99367356,"Label":0},"JAGUARAO":{"x":-9.261129,"y":-2.562789,"Label":6},"JAGUARI":{"x":-1.8020197,"y":2.0894032,"Label":0},"JAQUIRANA":{"x":-4.1180487,"y":2.6642349,"Label":0},"JARI":{"x":-1.3119577,"y":2.0966387,"Label":0},"JOIA":{"x":-1.743382,"y":2.0320723,"Label":0},"JULIO DE CASTILHOS":{"x":-5.8997025,"y":-0.97813696,"Label":6},"LAGOA BONITA DO SUL":{"x":3.7155895,"y":-5.2750506,"Label":0},"LAGOA DOS TRES CANTOS":{"x":6.432953,"y":-4.389659,"Label":0},"LAGOA VERMELHA":{"x":-6.8590107,"y":-1.0917492,"Label":6},"LAGOAO":{"x":-3.6440442,"y":2.7134702,"Label":0},"LAJEADO":{"x":-5.713165,"y":-2.2480335,"Label":7},"LAJEADO DO BUGRE":{"x":3.3642664,"y":1.0483427,"Label":0},"LAVRAS DO SUL":{"x":-7.185738,"y":-0.14846025,"Label":6},"LIBERATO SALZANO":{"x":0.33203107,"y":2.533306,"Label":0},"LINDOLFO COLLOR":{"x":3.4339662,"y":0.31178808,"Label":0},"LINHA NOVA":{"x":8.353336,"y":-5.0107737,"Label":0},"MACAMBARA":{"x":-3.7212825,"y":2.771689,"Label":0},"MACHADINHO":{"x":-0.87742996,"y":2.0322814,"Label":0},"MAMPITUBA":{"x":3.7263367,"y":2.6618986,"Label":0},"MANOEL VIANA":{"x":-4.287184,"y":2.583729,"Label":0},"MAQUINE":{"x":-4.354737,"y":2.5300233,"Label":0},"MARATA":{"x":8.26102,"y":-4.6638064,"Label":0},"MARAU":{"x":-9.587006,"y":-2.9411948,"Label":3},"MARCELINO RAMOS":{"x":5.4680195,"y":-3.9356933,"Label":0},"MARIANA PIMENTEL":{"x":-10.060947,"y":-3.184948,"Label":3},"MARIANO MORO":{"x":3.4685872,"y":0.23311515,"Label":0},"MARQUES DE SOUZA":{"x":3.6656144,"y":0.9496132,"Label":0},"MATA":{"x":-7.194172,"y":0.03766567,"Label":6},"MATO CASTELHANO":{"x":-0.9229201,"y":2.0126462,"Label":0},"MATO LEITAO":{"x":1.8479058,"y":1.4388696,"Label":0},"MATO QUEIMADO":{"x":7.6385336,"y":-4.752946,"Label":0},"MAXIMILIANO DE ALMEIDA":{"x":4.385678,"y":-4.656095,"Label":0},"MINAS DO LEAO":{"x":-1.9246923,"y":1.4368664,"Label":0},"MIRAGUAI":{"x":-2.0666447,"y":2.6288686,"Label":0},"MONTAURI":{"x":8.429145,"y":-4.891981,"Label":0},"MONTE ALEGRE DOS CAMPOS":{"x":-1.0069379,"y":1.8440262,"Label":0},"MONTE BELO DO SUL":{"x":6.241118,"y":-4.2859917,"Label":0},"MONTENEGRO":{"x":-5.4547887,"y":-1.8415145,"Label":7},"MORMACO":{"x":3.49377,"y":2.6086557,"Label":0},"MORRINHOS DO SUL":{"x":8.33465,"y":-4.7946353,"Label":0},"MORRO REDONDO":{"x":1.3799493,"y":2.536658,"Label":0},"MORRO REUTER":{"x":5.569591,"y":-3.9767942,"Label":0},"MOSTARDAS":{"x":-7.976109,"y":-1.39784,"Label":6},"MUCUM":{"x":3.5435448,"y":0.454945,"Label":0},"MUITOS CAPOES":{"x":-3.6361358,"y":2.7337782,"Label":0},"MULITERNO":{"x":6.730477,"y":0.713949,"Label":0},"NAO-ME-TOQUE":{"x":-2.932229,"y":-0.27462372,"Label":0},"NICOLAU VERGUEIRO":{"x":7.4450965,"y":0.8905968,"Label":0},"NONOAI":{"x":-2.5704012,"y":0.8582975,"Label":0},"NOVA ALVORADA":{"x":-1.5277231,"y":2.8366535,"Label":0},"NOVA ARACA":{"x":4.973397,"y":-4.131918,"Label":0},"NOVA BASSANO":{"x":6.1345196,"y":0.12992235,"Label":0},"NOVA BOA VISTA":{"x":0.39353457,"y":2.5740695,"Label":0},"NOVA BRESCIA":{"x":3.5962617,"y":0.15221387,"Label":0},"NOVA CANDELARIA":{"x":4.187226,"y":-5.357154,"Label":0},"NOVA ESPERANCA DO SUL":{"x":3.4522038,"y":2.6399314,"Label":0},"NOVA HARTZ":{"x":-3.007806,"y":-0.3653784,"Label":0},"NOVA PADUA":{"x":4.247383,"y":-5.354886,"Label":0},"NOVA PALMA":{"x":-7.157864,"y":0.3267719,"Label":6},"NOVA PETROPOLIS":{"x":-3.9953332,"y":-0.83898956,"Label":0},"NOVA PRATA":{"x":-4.461328,"y":-0.3447637,"Label":0},"NOVA RAMADA":{"x":7.3221345,"y":0.7544437,"Label":0},"NOVA ROMA DO SUL":{"x":6.340559,"y":-4.328951,"Label":0},"NOVA SANTA RITA":{"x":-6.215691,"y":-0.8150167,"Label":6},"NOVO BARREIRO":{"x":3.5519648,"y":2.5296326,"Label":0},"NOVO CABRAIS":{"x":1.900725,"y":1.4417332,"Label":0},"NOVO HAMBURGO":{"x":-5.896008,"y":-2.578225,"Label":5},"NOVO MACHADO":{"x":3.5144424,"y":2.5233483,"Label":0},"NOVO TIRADENTES":{"x":3.2740796,"y":1.4349296,"Label":0},"NOVO XINGU":{"x":7.581126,"y":-4.7220583,"Label":0},"N\u00c3O INFORMADO":{"x":-3.6828606,"y":-0.18097953,"Label":0},"OSORIO":{"x":-6.185847,"y":-1.411344,"Label":7},"PAIM FILHO":{"x":0.49386865,"y":2.1847436,"Label":0},"PALMARES DO SUL":{"x":-7.863128,"y":-1.2897803,"Label":6},"PALMEIRA DAS MISSOES":{"x":-9.333775,"y":-2.6112907,"Label":3},"PALMITINHO":{"x":1.582646,"y":1.5062166,"Label":0},"PANAMBI":{"x":-3.8181481,"y":0.20518304,"Label":0},"PANTANO GRANDE":{"x":-7.3485365,"y":-0.26996562,"Label":6},"PARAI":{"x":1.6801795,"y":1.929267,"Label":0},"PARAISO DO SUL":{"x":3.272533,"y":0.99569005,"Label":0},"PARECI NOVO":{"x":7.43246,"y":-4.5268145,"Label":0},"PAROBE":{"x":-9.817859,"y":-3.3848097,"Label":3},"PASSA SETE":{"x":-1.3000526,"y":2.047276,"Label":0},"PASSO DO SOBRADO":{"x":-5.0351486,"y":2.2339108,"Label":0},"PASSO FUNDO":{"x":-5.7966256,"y":-2.4372501,"Label":5},"PAULO BENTO":{"x":4.135514,"y":-4.9674635,"Label":0},"PAVERAMA":{"x":-1.6905365,"y":2.4028149,"Label":0},"PEDRAS ALTAS":{"x":-5.7011733,"y":1.7458545,"Label":0},"PEDRO OSORIO":{"x":-7.1202526,"y":0.27851933,"Label":6},"PEJUCARA":{"x":-1.5203493,"y":2.62007,"Label":0},"PELOTAS":{"x":-6.0674176,"y":-2.6847878,"Label":2},"PICADA CAFE":{"x":4.3140635,"y":-4.703651,"Label":0},"PINHAL":{"x":6.299596,"y":0.35826948,"Label":0},"PINHAL DA SERRA":{"x":3.4182448,"y":1.4066101,"Label":0},"PINHAL GRANDE":{"x":-3.6150968,"y":2.7506046,"Label":0},"PINHEIRINHO DO VALE":{"x":4.222435,"y":-5.4086657,"Label":0},"PINHEIRO MACHADO":{"x":-7.105089,"y":-0.29913187,"Label":6},"PINTO BANDEIRA":{"x":6.7488046,"y":0.6769,"Label":0},"PIRAPO":{"x":-1.478374,"y":2.8537624,"Label":0},"PIRATINI":{"x":-7.148919,"y":-0.2846386,"Label":6},"PLANALTO":{"x":-1.4786187,"y":1.9340569,"Label":0},"POCO DAS ANTAS":{"x":7.4820046,"y":-4.6075196,"Label":0},"PONTAO":{"x":3.6353855,"y":0.98713565,"Label":0},"PONTE PRETA":{"x":8.373155,"y":-4.8583107,"Label":0},"PORTAO":{"x":-4.1749086,"y":0.19775315,"Label":0},"PORTO ALEGRE":{"x":-5.9370112,"y":-2.750856,"Label":1},"PORTO LUCENA":{"x":4.2120337,"y":-4.612987,"Label":0},"PORTO MAUA":{"x":3.5334387,"y":2.6106873,"Label":0},"PORTO VERA CRUZ":{"x":6.7743845,"y":0.674845,"Label":0},"PORTO XAVIER":{"x":-4.51722,"y":2.431418,"Label":0},"POUSO NOVO":{"x":1.2822839,"y":2.6175795,"Label":0},"PRESIDENTE LUCENA":{"x":6.4756837,"y":-4.3288746,"Label":0},"PROGRESSO":{"x":1.7928141,"y":1.3237948,"Label":0},"PROTASIO ALVES":{"x":3.8133724,"y":-5.547921,"Label":0},"PUTINGA":{"x":6.6182985,"y":0.5268684,"Label":0},"QUARAI":{"x":-8.0717325,"y":-1.6107707,"Label":6},"QUATRO IRMAOS":{"x":8.203338,"y":-4.465311,"Label":0},"QUEVEDOS":{"x":-1.5453815,"y":2.7739522,"Label":0},"QUINZE DE NOVEMBRO":{"x":0.30399323,"y":2.4316602,"Label":0},"REDENTORA":{"x":-10.177519,"y":-3.2874026,"Label":3},"RELVADO":{"x":7.46692,"y":0.96268314,"Label":0},"RESTINGA SECA":{"x":-7.126449,"y":-0.6321001,"Label":6},"RIO DOS INDIOS":{"x":-3.3995557,"y":2.7162683,"Label":0},"RIO GRANDE":{"x":-6.298487,"y":-2.6233141,"Label":2},"RIO PARDO":{"x":-6.7700996,"y":-0.97147995,"Label":6},"RIOZINHO":{"x":1.451159,"y":1.8113863,"Label":0},"ROCA SALES":{"x":-1.5198251,"y":1.3860605,"Label":0},"RODEIO BONITO":{"x":-2.2024076,"y":1.1587535,"Label":0},"ROLADOR":{"x":6.4442782,"y":0.5359854,"Label":0},"ROLANTE":{"x":-4.343061,"y":-0.8968159,"Label":0},"RONDA ALTA":{"x":0.46924374,"y":2.194344,"Label":0},"RONDINHA":{"x":-1.9011506,"y":2.6902366,"Label":0},"ROQUE GONZALES":{"x":-2.1420412,"y":1.4423488,"Label":0},"ROSARIO DO SUL":{"x":-7.9805293,"y":-1.901224,"Label":4},"SAGRADA FAMILIA":{"x":3.6274364,"y":0.42939752,"Label":0},"SALDANHA MARINHO":{"x":7.427889,"y":0.895753,"Label":0},"SALTO DO JACUI":{"x":2.7335424,"y":0.77113664,"Label":0},"SALVADOR DAS MISSOES":{"x":3.68917,"y":2.639964,"Label":0},"SALVADOR DO SUL":{"x":4.362264,"y":-4.67977,"Label":0},"SANANDUVA":{"x":-2.483436,"y":0.35358423,"Label":0},"SANTA BARBARA DO SUL":{"x":-2.0631309,"y":1.2069082,"Label":0},"SANTA CECILIA DO SUL":{"x":8.498031,"y":-4.7119875,"Label":0},"SANTA CLARA DO SUL":{"x":3.2287562,"y":0.58782566,"Label":0},"SANTA CRUZ DO SUL":{"x":-5.745545,"y":-2.3402867,"Label":5},"SANTA MARGARIDA DO SUL":{"x":-1.526888,"y":2.8084738,"Label":0},"SANTA MARIA":{"x":-6.3425355,"y":-2.5491507,"Label":2},"SANTA MARIA DO HERVAL":{"x":7.435624,"y":-4.4074345,"Label":0},"SANTA ROSA":{"x":-5.3183775,"y":-1.9024942,"Label":7},"SANTA TEREZA":{"x":7.630133,"y":-4.732042,"Label":0},"SANTA VITORIA DO PALMAR":{"x":-8.731719,"y":-2.23362,"Label":4},"SANTANA DA BOA VISTA":{"x":-2.2916436,"y":1.1142422,"Label":0},"SANTANA DO LIVRAMENTO":{"x":-7.834853,"y":-2.0450213,"Label":4},"SANTIAGO":{"x":-5.581729,"y":-1.7656778,"Label":7},"SANTO ANGELO":{"x":-5.6764536,"y":-1.7759842,"Label":7},"SANTO ANTONIO DA PATRULHA":{"x":-6.2552366,"y":-0.8787944,"Label":6},"SANTO ANTONIO DAS MISSOES":{"x":-7.923889,"y":-1.314912,"Label":6},"SANTO ANTONIO DO PALMA":{"x":4.121586,"y":-5.4530535,"Label":0},"SANTO ANTONIO DO PLANALTO":{"x":8.153689,"y":-4.4049544,"Label":0},"SANTO AUGUSTO":{"x":-1.8263662,"y":1.421628,"Label":0},"SANTO CRISTO":{"x":5.4423327,"y":-3.86524,"Label":0},"SANTO EXPEDITO DO SUL":{"x":7.328497,"y":0.9752033,"Label":0},"SAO BORJA":{"x":-8.01189,"y":-1.6423575,"Label":6},"SAO DOMINGOS DO SUL":{"x":-0.57791156,"y":2.4736283,"Label":0},"SAO FRANCISCO DE ASSIS":{"x":-7.841761,"y":-1.424312,"Label":6},"SAO FRANCISCO DE PAULA":{"x":-9.100562,"y":-2.453661,"Label":3},"SAO GABRIEL":{"x":-7.878304,"y":-1.9605256,"Label":4},"SAO JERONIMO":{"x":-4.506633,"y":-0.62477964,"Label":0},"SAO JOAO DA URTIGA":{"x":0.3158643,"y":2.519983,"Label":0},"SAO JOAO DO POLESINE":{"x":-0.52903,"y":2.4990644,"Label":0},"SAO JORGE":{"x":7.388803,"y":1.047553,"Label":0},"SAO JOSE DAS MISSOES":{"x":-1.5906183,"y":2.7432876,"Label":0},"SAO JOSE DO HERVAL":{"x":-1.5556138,"y":2.6237652,"Label":0},"SAO JOSE DO HORTENCIO":{"x":6.4416904,"y":0.49943775,"Label":0},"SAO JOSE DO INHACORA":{"x":3.7417305,"y":-5.6755958,"Label":0},"SAO JOSE DO NORTE":{"x":-6.7519712,"y":-0.9250247,"Label":6},"SAO JOSE DO OURO":{"x":-2.542636,"y":2.357727,"Label":0},"SAO JOSE DO SUL":{"x":6.3436594,"y":-4.2503853,"Label":0},"SAO JOSE DOS AUSENTES":{"x":-1.5915897,"y":2.7543402,"Label":0},"SAO LEOPOLDO":{"x":-5.8092566,"y":-2.4836495,"Label":5},"SAO LOURENCO DO SUL":{"x":-4.9398656,"y":-0.9999685,"Label":7},"SAO LUIZ GONZAGA":{"x":-6.779564,"y":-1.1680843,"Label":6},"SAO MARCOS":{"x":-4.893993,"y":-1.1204027,"Label":7},"SAO MARTINHO":{"x":5.0030355,"y":-4.058392,"Label":0},"SAO MARTINHO DA SERRA":{"x":-7.1160283,"y":0.3453029,"Label":6},"SAO MIGUEL DAS MISSOES":{"x":-5.4696355,"y":1.9226743,"Label":0},"SAO NICOLAU":{"x":-7.9032984,"y":-1.3026572,"Label":6},"SAO PAULO DAS MISSOES":{"x":3.581917,"y":0.989103,"Label":0},"SAO PEDRO DA SERRA":{"x":5.0912275,"y":-4.145977,"Label":0},"SAO PEDRO DAS MISSOES":{"x":3.5504682,"y":0.20000707,"Label":0},"SAO PEDRO DO BUTIA":{"x":3.6716857,"y":2.6747441,"Label":0},"SAO PEDRO DO SUL":{"x":-8.005501,"y":-1.6160717,"Label":6},"SAO SEBASTIAO DO CAI":{"x":-4.8519626,"y":-1.2782365,"Label":7},"SAO SEPE":{"x":-7.913244,"y":-1.5592899,"Label":6},"SAO VALENTIM":{"x":3.4520514,"y":1.0176345,"Label":0},"SAO VALENTIM DO SUL":{"x":3.922001,"y":-5.5411644,"Label":0},"SAO VALERIO DO SUL":{"x":8.29689,"y":-4.6784844,"Label":0},"SAO VENDELINO":{"x":3.6559877,"y":0.2026711,"Label":0},"SAO VICENTE DO SUL":{"x":-9.120566,"y":-2.442134,"Label":6},"SAPIRANGA":{"x":-5.210058,"y":-1.8035468,"Label":7},"SAPUCAIA DO SUL":{"x":-5.7370315,"y":-2.3106184,"Label":5},"SARANDI":{"x":-4.244421,"y":-0.2934345,"Label":0},"SEBERI":{"x":-2.1330788,"y":1.4725593,"Label":0},"SEDE NOVA":{"x":4.0797734,"y":-4.952412,"Label":0},"SEGREDO":{"x":-1.6019204,"y":2.7301097,"Label":0},"SELBACH":{"x":0.31832722,"y":2.4437933,"Label":0},"SENADOR SALGADO FILHO":{"x":1.2898313,"y":2.7627995,"Label":0},"SENTINELA DO SUL":{"x":3.1675782,"y":1.6788912,"Label":0},"SERAFINA CORREA":{"x":-4.063751,"y":-0.871265,"Label":0},"SERIO":{"x":6.392758,"y":-4.341194,"Label":0},"SERTAO":{"x":-2.1338441,"y":2.2808464,"Label":0},"SERTAO SANTANA":{"x":0.24855122,"y":2.436487,"Label":0},"SETE DE SETEMBRO":{"x":-1.4775666,"y":2.8318074,"Label":0},"SEVERIANO DE ALMEIDA":{"x":6.29568,"y":0.31702167,"Label":0},"SILVEIRA MARTINS":{"x":1.3787459,"y":2.6456437,"Label":0},"SINIMBU":{"x":3.5602274,"y":0.45489278,"Label":0},"SOBRADINHO":{"x":-6.816399,"y":0.0011763527,"Label":6},"SOLEDADE":{"x":-7.9706974,"y":-1.9222124,"Label":4},"TABAI":{"x":-3.36804,"y":2.6851103,"Label":0},"TAPEJARA":{"x":-3.0297909,"y":-0.35608786,"Label":0},"TAPERA":{"x":-2.8899393,"y":0.017409943,"Label":0},"TAPES":{"x":-9.481041,"y":-2.7297988,"Label":3},"TAQUARA":{"x":-9.267985,"y":-2.7848353,"Label":3},"TAQUARI":{"x":-4.15352,"y":0.17069328,"Label":0},"TAQUARUCU DO SUL":{"x":8.34425,"y":-4.5472317,"Label":0},"TAVARES":{"x":-5.528383,"y":1.6382197,"Label":0},"TENENTE PORTELA":{"x":-5.535475,"y":1.7985156,"Label":0},"TERRA DE AREIA":{"x":-5.486457,"y":1.798567,"Label":0},"TEUTONIA":{"x":-4.3319016,"y":-0.72405607,"Label":0},"TIO HUGO":{"x":1.3015596,"y":2.4649894,"Label":0},"TIRADENTES DO SUL":{"x":-0.9157355,"y":1.9852648,"Label":0},"TOROPI":{"x":-1.6119677,"y":2.7007437,"Label":0},"TORRES":{"x":-5.277499,"y":-1.3574193,"Label":7},"TRAMANDAI":{"x":-5.5999737,"y":-1.7133826,"Label":7},"TRAVESSEIRO":{"x":6.364503,"y":-4.332069,"Label":0},"TRES ARROIOS":{"x":6.2266107,"y":-4.2622013,"Label":0},"TRES CACHOEIRAS":{"x":1.5233253,"y":2.0909388,"Label":0},"TRES COROAS":{"x":-4.079946,"y":-0.7053768,"Label":0},"TRES DE MAIO":{"x":-4.693473,"y":-0.9327075,"Label":0},"TRES FORQUILHAS":{"x":-1.3710386,"y":2.0583293,"Label":0},"TRES PALMEIRAS":{"x":3.474545,"y":2.5763423,"Label":0},"TRES PASSOS":{"x":-4.3033357,"y":0.26399755,"Label":0},"TRINDADE DO SUL":{"x":-10.129235,"y":-3.3060608,"Label":3},"TRIUNFO":{"x":-4.601524,"y":-0.11876279,"Label":0},"TUCUNDUVA":{"x":1.2608899,"y":2.3315992,"Label":0},"TUNAS":{"x":1.2839096,"y":2.7347364,"Label":0},"TUPANCI DO SUL":{"x":3.7740026,"y":-5.618969,"Label":0},"TUPANCIRETA":{"x":-6.8779,"y":-0.78680295,"Label":6},"TUPANDI":{"x":4.5901356,"y":-4.433832,"Label":0},"TUPARENDI":{"x":1.4054611,"y":1.8748775,"Label":0},"TURUCU":{"x":8.233543,"y":-4.435692,"Label":0},"UBIRETAMA":{"x":3.9907928,"y":-5.531254,"Label":0},"UNIAO DA SERRA":{"x":8.486802,"y":-4.955629,"Label":0},"UNISTALDA":{"x":-0.90581214,"y":2.0409033,"Label":0},"URUGUAIANA":{"x":-7.7955546,"y":-1.9902976,"Label":4},"VACARIA":{"x":-9.001185,"y":-2.7016485,"Label":7},"VALE DO SOL":{"x":0.5239026,"y":2.1424313,"Label":0},"VALE REAL":{"x":6.8004827,"y":-4.3473263,"Label":0},"VALE VERDE":{"x":-3.405554,"y":2.716544,"Label":0},"VANINI":{"x":8.066593,"y":-4.5809693,"Label":0},"VENANCIO AIRES":{"x":-9.254322,"y":-2.7547596,"Label":3},"VERA CRUZ":{"x":-10.114807,"y":-3.2490535,"Label":3},"VERANOPOLIS":{"x":-4.42416,"y":-0.55165535,"Label":0},"VESPASIANO CORREA":{"x":3.7680528,"y":-5.5683537,"Label":0},"VIADUTOS":{"x":4.2540364,"y":-4.824391,"Label":0},"VIAMAO":{"x":-6.1010256,"y":-2.7087095,"Label":2},"VICENTE DUTRA":{"x":2.7642045,"y":1.0444648,"Label":0},"VICTOR GRAEFF":{"x":7.269878,"y":0.7953663,"Label":0},"VILA FLORES":{"x":3.601066,"y":1.0214221,"Label":0},"VILA LANGARO":{"x":7.456489,"y":0.88811934,"Label":0},"VILA MARIA":{"x":4.3895493,"y":-4.6721716,"Label":0},"VILA NOVA DO SUL":{"x":-7.487008,"y":-0.37565678,"Label":6},"VISTA ALEGRE":{"x":7.227661,"y":0.9401116,"Label":0},"VISTA ALEGRE DO PRATA":{"x":3.8072655,"y":-5.633875,"Label":0},"VISTA GAUCHA":{"x":7.300874,"y":0.9923066,"Label":0},"VITORIA DAS MISSOES":{"x":-3.417912,"y":2.7832725,"Label":0},"WESTFALIA":{"x":3.8047295,"y":-5.2002115,"Label":0},"XANGRI-LA":{"x":-9.829788,"y":-3.152479,"Label":3}}
+{
+  "ACEGUA": {
+    "x": -5.047239,
+    "y": 2.2068138,
+    "Label": 0
+  },
+  "AGUA SANTA": {
+    "x": 3.5457804,
+    "y": 2.5522878,
+    "Label": 0
+  },
+  "AGUDO": {
+    "x": -3.091524,
+    "y": 0.6806886,
+    "Label": 0
+  },
+  "AJURICABA": {
+    "x": 0.093436725,
+    "y": 1.9948428,
+    "Label": 0
+  },
+  "ALECRIM": {
+    "x": -5.334885,
+    "y": 1.9452999,
+    "Label": 0
+  },
+  "ALEGRETE": {
+    "x": -7.8944,
+    "y": -1.9662504,
+    "Label": 4
+  },
+  "ALEGRIA": {
+    "x": -4.6438956,
+    "y": 2.4415834,
+    "Label": 0
+  },
+  "ALMIRANTE TAMANDARE DO SUL": {
+    "x": -10.08243,
+    "y": -3.3353856,
+    "Label": 3
+  },
+  "ALPESTRE": {
+    "x": -4.813872,
+    "y": 2.3546643,
+    "Label": 0
+  },
+  "ALTO ALEGRE": {
+    "x": 7.4261417,
+    "y": 0.9898095,
+    "Label": 0
+  },
+  "ALTO FELIZ": {
+    "x": 8.420842,
+    "y": -4.93415,
+    "Label": 0
+  },
+  "ALVORADA": {
+    "x": -5.9457655,
+    "y": -2.6995642,
+    "Label": 2
+  },
+  "AMARAL FERRADOR": {
+    "x": 3.6951425,
+    "y": 2.6973965,
+    "Label": 0
+  },
+  "AMETISTA DO SUL": {
+    "x": -2.2798505,
+    "y": 1.225626,
+    "Label": 0
+  },
+  "ANDRE DA ROCHA": {
+    "x": -0.6126052,
+    "y": 2.5691297,
+    "Label": 0
+  },
+  "ANTA GORDA": {
+    "x": 6.0083447,
+    "y": 0.24505873,
+    "Label": 0
+  },
+  "ANTONIO PRADO": {
+    "x": -2.652711,
+    "y": 0.84089255,
+    "Label": 0
+  },
+  "ARAMBARE": {
+    "x": 1.84138,
+    "y": 1.4025456,
+    "Label": 0
+  },
+  "ARARICA": {
+    "x": 1.290954,
+    "y": 1.5705694,
+    "Label": 0
+  },
+  "ARATIBA": {
+    "x": 3.4847386,
+    "y": 0.5538374,
+    "Label": 0
+  },
+  "ARROIO DO MEIO": {
+    "x": -4.8860106,
+    "y": -1.4091594,
+    "Label": 7
+  },
+  "ARROIO DO PADRE": {
+    "x": 7.3434224,
+    "y": 0.9977495,
+    "Label": 0
+  },
+  "ARROIO DO SAL": {
+    "x": -9.753623,
+    "y": -3.0850291,
+    "Label": 3
+  },
+  "ARROIO DO TIGRE": {
+    "x": -2.4858162,
+    "y": 2.4967175,
+    "Label": 0
+  },
+  "ARROIO DOS RATOS": {
+    "x": -9.902272,
+    "y": -3.1581075,
+    "Label": 3
+  },
+  "ARROIO GRANDE": {
+    "x": -9.675784,
+    "y": -2.85004,
+    "Label": 3
+  },
+  "ARVOREZINHA": {
+    "x": -5.1654797,
+    "y": 2.0208607,
+    "Label": 0
+  },
+  "AUGUSTO PESTANA": {
+    "x": 6.632848,
+    "y": 0.38156453,
+    "Label": 0
+  },
+  "AUREA": {
+    "x": 3.7658489,
+    "y": -5.0035396,
+    "Label": 0
+  },
+  "BAGE": {
+    "x": -7.85621,
+    "y": -2.0480926,
+    "Label": 4
+  },
+  "BALNEARIO PINHAL": {
+    "x": -3.5117192,
+    "y": 0.16387585,
+    "Label": 0
+  },
+  "BARAO": {
+    "x": 5.7376256,
+    "y": -4.1172986,
+    "Label": 0
+  },
+  "BARAO DE COTEGIPE": {
+    "x": -0.35367826,
+    "y": 2.370189,
+    "Label": 0
+  },
+  "BARAO DO TRIUNFO": {
+    "x": 1.5054103,
+    "y": 1.6935887,
+    "Label": 0
+  },
+  "BARRA DO GUARITA": {
+    "x": -0.176,
+    "y": 1.983563,
+    "Label": 0
+  },
+  "BARRA DO QUARAI": {
+    "x": -7.310189,
+    "y": -0.10029583,
+    "Label": 6
+  },
+  "BARRA DO RIBEIRO": {
+    "x": -9.897662,
+    "y": -3.1526268,
+    "Label": 3
+  },
+  "BARRA DO RIO AZUL": {
+    "x": 3.667703,
+    "y": 2.7406487,
+    "Label": 0
+  },
+  "BARRA FUNDA": {
+    "x": 7.380809,
+    "y": 1.0496129,
+    "Label": 0
+  },
+  "BARRACAO": {
+    "x": -4.1002316,
+    "y": 2.689171,
+    "Label": 0
+  },
+  "BARROS CASSAL": {
+    "x": -5.6878257,
+    "y": 1.7238867,
+    "Label": 0
+  },
+  "BENJAMIN CONSTANT DO SUL": {
+    "x": 3.6718626,
+    "y": 0.40382838,
+    "Label": 0
+  },
+  "BENTO GONCALVES": {
+    "x": -5.5083976,
+    "y": -2.2234905,
+    "Label": 5
+  },
+  "BOA VISTA DAS MISSOES": {
+    "x": 3.9808779,
+    "y": -4.8564625,
+    "Label": 0
+  },
+  "BOA VISTA DO BURICA": {
+    "x": 5.8924594,
+    "y": 0.084165424,
+    "Label": 0
+  },
+  "BOA VISTA DO CADEADO": {
+    "x": 1.3001227,
+    "y": 2.7813325,
+    "Label": 0
+  },
+  "BOA VISTA DO INCRA": {
+    "x": 4.013923,
+    "y": -5.482458,
+    "Label": 0
+  },
+  "BOA VISTA DO SUL": {
+    "x": 8.110293,
+    "y": -4.4262013,
+    "Label": 0
+  },
+  "BOM JESUS": {
+    "x": -7.126545,
+    "y": -0.2877088,
+    "Label": 6
+  },
+  "BOM PRINCIPIO": {
+    "x": -2.9580956,
+    "y": -0.42566752,
+    "Label": 0
+  },
+  "BOM PROGRESSO": {
+    "x": 6.0076566,
+    "y": -4.1948767,
+    "Label": 0
+  },
+  "BOM RETIRO DO SUL": {
+    "x": -4.0957437,
+    "y": -0.082796,
+    "Label": 0
+  },
+  "BOQUEIRAO DO LEAO": {
+    "x": 3.1324177,
+    "y": 0.74903965,
+    "Label": 0
+  },
+  "BOSSOROCA": {
+    "x": -7.2362676,
+    "y": -0.0015856217,
+    "Label": 6
+  },
+  "BOZANO": {
+    "x": -0.50552744,
+    "y": 2.522213,
+    "Label": 0
+  },
+  "BRAGA": {
+    "x": 1.3729769,
+    "y": 2.6335611,
+    "Label": 0
+  },
+  "BROCHIER": {
+    "x": 4.213099,
+    "y": -4.9457684,
+    "Label": 0
+  },
+  "BUTIA": {
+    "x": -6.725251,
+    "y": -1.1714469,
+    "Label": 6
+  },
+  "CACAPAVA DO SUL": {
+    "x": -9.049668,
+    "y": -2.6117477,
+    "Label": 6
+  },
+  "CACEQUI": {
+    "x": -9.1032505,
+    "y": -2.4080412,
+    "Label": 6
+  },
+  "CACHOEIRA DO SUL": {
+    "x": -6.0406947,
+    "y": -1.5353451,
+    "Label": 7
+  },
+  "CACHOEIRINHA": {
+    "x": -5.643668,
+    "y": -2.298962,
+    "Label": 5
+  },
+  "CACIQUE DOBLE": {
+    "x": 4.0672665,
+    "y": -4.7843504,
+    "Label": 0
+  },
+  "CAIBATE": {
+    "x": 7.4867716,
+    "y": -4.364883,
+    "Label": 0
+  },
+  "CAICARA": {
+    "x": -1.8818159,
+    "y": 1.8358887,
+    "Label": 0
+  },
+  "CAMAQUA": {
+    "x": -6.36447,
+    "y": -1.2078108,
+    "Label": 7
+  },
+  "CAMARGO": {
+    "x": 3.732777,
+    "y": 0.3417923,
+    "Label": 0
+  },
+  "CAMBARA DO SUL": {
+    "x": -7.082956,
+    "y": 0.36792967,
+    "Label": 6
+  },
+  "CAMPESTRE DA SERRA": {
+    "x": -0.53423744,
+    "y": 2.5094082,
+    "Label": 0
+  },
+  "CAMPINA DAS MISSOES": {
+    "x": 3.9936137,
+    "y": -5.2768655,
+    "Label": 0
+  },
+  "CAMPINAS DO SUL": {
+    "x": 2.3131628,
+    "y": 1.1842382,
+    "Label": 0
+  },
+  "CAMPO BOM": {
+    "x": -5.1276174,
+    "y": -1.7942564,
+    "Label": 7
+  },
+  "CAMPO NOVO": {
+    "x": 1.282638,
+    "y": 1.4048694,
+    "Label": 0
+  },
+  "CAMPOS BORGES": {
+    "x": 6.378888,
+    "y": 0.54286784,
+    "Label": 0
+  },
+  "CANDELARIA": {
+    "x": -7.1068726,
+    "y": -0.70161754,
+    "Label": 6
+  },
+  "CANDIDO GODOI": {
+    "x": 8.012689,
+    "y": -4.366691,
+    "Label": 0
+  },
+  "CANDIOTA": {
+    "x": -6.9606276,
+    "y": -0.10924913,
+    "Label": 6
+  },
+  "CANELA": {
+    "x": -4.9746428,
+    "y": -1.2812603,
+    "Label": 7
+  },
+  "CANGUCU": {
+    "x": -7.160315,
+    "y": -0.7711597,
+    "Label": 6
+  },
+  "CANOAS": {
+    "x": -6.0342646,
+    "y": -2.7559268,
+    "Label": 2
+  },
+  "CANUDOS DO VALE": {
+    "x": 8.391205,
+    "y": -4.76249,
+    "Label": 0
+  },
+  "CAPAO BONITO DO SUL": {
+    "x": -4.936408,
+    "y": 2.3034048,
+    "Label": 0
+  },
+  "CAPAO DA CANOA": {
+    "x": -5.4490232,
+    "y": -1.5160465,
+    "Label": 7
+  },
+  "CAPAO DO CIPO": {
+    "x": -4.3605347,
+    "y": 2.5490217,
+    "Label": 0
+  },
+  "CAPAO DO LEAO": {
+    "x": -9.959477,
+    "y": -3.1603928,
+    "Label": 3
+  },
+  "CAPELA DE SANTANA": {
+    "x": -5.4510875,
+    "y": 1.7081051,
+    "Label": 0
+  },
+  "CAPITAO": {
+    "x": 1.8570057,
+    "y": 1.3697556,
+    "Label": 0
+  },
+  "CAPIVARI DO SUL": {
+    "x": -1.989106,
+    "y": 1.2795098,
+    "Label": 0
+  },
+  "CARAA": {
+    "x": 1.0664047,
+    "y": 1.7845604,
+    "Label": 0
+  },
+  "CARAZINHO": {
+    "x": -9.476395,
+    "y": -2.9561567,
+    "Label": 3
+  },
+  "CARLOS BARBOSA": {
+    "x": -3.0031114,
+    "y": -0.41172573,
+    "Label": 0
+  },
+  "CARLOS GOMES": {
+    "x": 8.399087,
+    "y": -5.0367017,
+    "Label": 0
+  },
+  "CASCA": {
+    "x": 5.2717113,
+    "y": -3.6892464,
+    "Label": 0
+  },
+  "CASEIROS": {
+    "x": 3.7150667,
+    "y": 2.7232857,
+    "Label": 0
+  },
+  "CATUIPE": {
+    "x": -5.3795424,
+    "y": 1.965065,
+    "Label": 0
+  },
+  "CAXIAS DO SUL": {
+    "x": -6.011715,
+    "y": -2.6873398,
+    "Label": 2
+  },
+  "CENTENARIO": {
+    "x": 6.483092,
+    "y": -4.3958993,
+    "Label": 0
+  },
+  "CERRITO": {
+    "x": -0.40286732,
+    "y": 2.3924217,
+    "Label": 0
+  },
+  "CERRO BRANCO": {
+    "x": 8.24885,
+    "y": -4.3606668,
+    "Label": 0
+  },
+  "CERRO GRANDE": {
+    "x": 6.328589,
+    "y": -4.271898,
+    "Label": 0
+  },
+  "CERRO GRANDE DO SUL": {
+    "x": -2.2370121,
+    "y": 1.6749358,
+    "Label": 0
+  },
+  "CERRO LARGO": {
+    "x": 1.2936459,
+    "y": 1.2632476,
+    "Label": 0
+  },
+  "CHAPADA": {
+    "x": 5.856471,
+    "y": 0.10270417,
+    "Label": 0
+  },
+  "CHARQUEADAS": {
+    "x": -5.3229804,
+    "y": -1.8679454,
+    "Label": 7
+  },
+  "CHARRUA": {
+    "x": 4.205659,
+    "y": -4.778847,
+    "Label": 0
+  },
+  "CHIAPETTA": {
+    "x": 3.7422724,
+    "y": -5.158223,
+    "Label": 0
+  },
+  "CHUI": {
+    "x": -7.156396,
+    "y": 0.06528595,
+    "Label": 6
+  },
+  "CHUVISCA": {
+    "x": -1.790329,
+    "y": 2.1024418,
+    "Label": 0
+  },
+  "CIDREIRA": {
+    "x": -4.6056633,
+    "y": -0.37645355,
+    "Label": 0
+  },
+  "CIRIACO": {
+    "x": -5.657554,
+    "y": 1.8362876,
+    "Label": 0
+  },
+  "COLINAS": {
+    "x": 3.7325242,
+    "y": -5.1537466,
+    "Label": 0
+  },
+  "COLORADO": {
+    "x": 3.4820158,
+    "y": 2.6136067,
+    "Label": 0
+  },
+  "CONDOR": {
+    "x": 7.1775446,
+    "y": 0.6841889,
+    "Label": 0
+  },
+  "CONSTANTINA": {
+    "x": -2.2978556,
+    "y": 1.0907277,
+    "Label": 0
+  },
+  "COQUEIRO BAIXO": {
+    "x": 8.519044,
+    "y": -4.904299,
+    "Label": 0
+  },
+  "COQUEIROS DO SUL": {
+    "x": 1.3370383,
+    "y": 2.7319486,
+    "Label": 0
+  },
+  "CORONEL BARROS": {
+    "x": 3.6941497,
+    "y": -5.441629,
+    "Label": 0
+  },
+  "CORONEL BICACO": {
+    "x": -1.8693523,
+    "y": 1.3511608,
+    "Label": 0
+  },
+  "CORONEL PILAR": {
+    "x": 3.982166,
+    "y": -5.535866,
+    "Label": 0
+  },
+  "COTIPORA": {
+    "x": 3.4806046,
+    "y": 0.4879146,
+    "Label": 0
+  },
+  "COXILHA": {
+    "x": 6.129491,
+    "y": 0.33158118,
+    "Label": 0
+  },
+  "CRISSIUMAL": {
+    "x": 2.7514622,
+    "y": 0.8667356,
+    "Label": 0
+  },
+  "CRISTAL": {
+    "x": -1.9688718,
+    "y": 1.5388196,
+    "Label": 0
+  },
+  "CRISTAL DO SUL": {
+    "x": 6.43555,
+    "y": -4.4006624,
+    "Label": 0
+  },
+  "CRUZ ALTA": {
+    "x": -9.237478,
+    "y": -2.795687,
+    "Label": 3
+  },
+  "CRUZALTENSE": {
+    "x": 3.778521,
+    "y": -5.5701857,
+    "Label": 0
+  },
+  "CRUZEIRO DO SUL": {
+    "x": -1.5487113,
+    "y": 1.3433746,
+    "Label": 0
+  },
+  "DAVID CANABARRO": {
+    "x": 7.5363917,
+    "y": -4.341579,
+    "Label": 0
+  },
+  "DERRUBADAS": {
+    "x": -1.5380145,
+    "y": 2.8090773,
+    "Label": 0
+  },
+  "DEZESSEIS DE NOVEMBRO": {
+    "x": -0.7377635,
+    "y": 1.8583039,
+    "Label": 0
+  },
+  "DILERMANDO DE AGUIAR": {
+    "x": -7.192024,
+    "y": 0.3113046,
+    "Label": 6
+  },
+  "DOIS IRMAOS": {
+    "x": -4.084235,
+    "y": -0.8586163,
+    "Label": 0
+  },
+  "DOIS IRMAOS DAS MISSOES": {
+    "x": 8.459898,
+    "y": -4.9437184,
+    "Label": 0
+  },
+  "DOIS LAJEADOS": {
+    "x": 6.744912,
+    "y": 0.6460929,
+    "Label": 0
+  },
+  "DOM FELICIANO": {
+    "x": -5.3889046,
+    "y": 1.8423605,
+    "Label": 0
+  },
+  "DOM PEDRITO": {
+    "x": -8.054535,
+    "y": -1.6438146,
+    "Label": 6
+  },
+  "DOM PEDRO DE ALCANTARA": {
+    "x": 7.4723005,
+    "y": 1.0432457,
+    "Label": 0
+  },
+  "DONA FRANCISCA": {
+    "x": 6.7675,
+    "y": 0.6075859,
+    "Label": 0
+  },
+  "DOUTOR RICARDO": {
+    "x": 8.135672,
+    "y": -4.334446,
+    "Label": 0
+  },
+  "DR MAURICIO CARDOSO": {
+    "x": 3.589775,
+    "y": 2.6225002,
+    "Label": 0
+  },
+  "ELDORADO DO SUL": {
+    "x": -5.009322,
+    "y": -1.0550821,
+    "Label": 7
+  },
+  "ENCANTADO": {
+    "x": -3.9298894,
+    "y": -0.7789157,
+    "Label": 0
+  },
+  "ENCRUZILHADA DO SUL": {
+    "x": -8.088601,
+    "y": -1.639444,
+    "Label": 6
+  },
+  "ENGENHO VELHO": {
+    "x": 3.9370985,
+    "y": -5.6102896,
+    "Label": 0
+  },
+  "ENTRE IJUIS": {
+    "x": -2.4014497,
+    "y": 1.2833291,
+    "Label": 0
+  },
+  "ENTRE RIOS DO SUL": {
+    "x": 6.6583767,
+    "y": 0.4448429,
+    "Label": 0
+  },
+  "EREBANGO": {
+    "x": 3.092247,
+    "y": 0.9845789,
+    "Label": 0
+  },
+  "ERECHIM": {
+    "x": -5.405034,
+    "y": -2.0608637,
+    "Label": 5
+  },
+  "ERNESTINA": {
+    "x": -2.0976403,
+    "y": 1.7072196,
+    "Label": 0
+  },
+  "ERVAL GRANDE": {
+    "x": 3.403765,
+    "y": 2.519779,
+    "Label": 0
+  },
+  "ERVAL SECO": {
+    "x": -4.4747167,
+    "y": 2.4861624,
+    "Label": 0
+  },
+  "ESMERALDA": {
+    "x": 3.1326604,
+    "y": 2.4799654,
+    "Label": 0
+  },
+  "ESPERANCA DO SUL": {
+    "x": -9.95517,
+    "y": -3.4127696,
+    "Label": 3
+  },
+  "ESPUMOSO": {
+    "x": -5.472168,
+    "y": 1.5024947,
+    "Label": 0
+  },
+  "ESTACAO": {
+    "x": -2.2860727,
+    "y": 1.229352,
+    "Label": 0
+  },
+  "ESTANCIA VELHA": {
+    "x": -4.11564,
+    "y": -0.60063154,
+    "Label": 0
+  },
+  "ESTEIO": {
+    "x": -5.231434,
+    "y": -1.8262223,
+    "Label": 7
+  },
+  "ESTRELA": {
+    "x": -9.553155,
+    "y": -3.04595,
+    "Label": 3
+  },
+  "ESTRELA VELHA": {
+    "x": 8.170856,
+    "y": -4.3477592,
+    "Label": 0
+  },
+  "EUGENIO DE CASTRO": {
+    "x": 1.3984437,
+    "y": 2.6493375,
+    "Label": 0
+  },
+  "FAGUNDES VARELA": {
+    "x": 7.3466144,
+    "y": 1.0497328,
+    "Label": 0
+  },
+  "FARROUPILHA": {
+    "x": -5.2072,
+    "y": -1.455213,
+    "Label": 7
+  },
+  "FAXINAL DO SOTURNO": {
+    "x": 5.0653315,
+    "y": -3.515101,
+    "Label": 0
+  },
+  "FAXINALZINHO": {
+    "x": -3.1487553,
+    "y": 2.6628404,
+    "Label": 0
+  },
+  "FAZENDA VILA NOVA": {
+    "x": -5.3734207,
+    "y": 1.8731239,
+    "Label": 0
+  },
+  "FELIZ": {
+    "x": -2.9257133,
+    "y": -0.44145975,
+    "Label": 0
+  },
+  "FLORES DA CUNHA": {
+    "x": -9.860327,
+    "y": -3.4695592,
+    "Label": 3
+  },
+  "FLORIANO PEIXOTO": {
+    "x": 8.522037,
+    "y": -4.6760945,
+    "Label": 0
+  },
+  "FONTOURA XAVIER": {
+    "x": -5.665039,
+    "y": 1.7214787,
+    "Label": 0
+  },
+  "FORMIGUEIRO": {
+    "x": -7.340845,
+    "y": -0.12563795,
+    "Label": 6
+  },
+  "FORQUETINHA": {
+    "x": 3.6954308,
+    "y": 2.7429364,
+    "Label": 0
+  },
+  "FORTALEZA DOS VALOS": {
+    "x": 3.3801234,
+    "y": 2.509515,
+    "Label": 0
+  },
+  "FREDERICO WESTPHALEN": {
+    "x": -5.0381436,
+    "y": -1.1185409,
+    "Label": 7
+  },
+  "GARIBALDI": {
+    "x": -3.2073529,
+    "y": -0.119250715,
+    "Label": 0
+  },
+  "GARRUCHOS": {
+    "x": -7.41907,
+    "y": -0.49230742,
+    "Label": 6
+  },
+  "GAURAMA": {
+    "x": 6.5895853,
+    "y": 0.381209,
+    "Label": 0
+  },
+  "GENERAL CAMARA": {
+    "x": -5.0632153,
+    "y": 2.1831925,
+    "Label": 0
+  },
+  "GENTIL": {
+    "x": 3.649339,
+    "y": 0.39464718,
+    "Label": 0
+  },
+  "GETULIO VARGAS": {
+    "x": -4.3411236,
+    "y": -0.50143796,
+    "Label": 0
+  },
+  "GIRUA": {
+    "x": -3.417721,
+    "y": 0.41752616,
+    "Label": 0
+  },
+  "GLORINHA": {
+    "x": -9.226448,
+    "y": -2.512543,
+    "Label": 6
+  },
+  "GRAMADO": {
+    "x": -4.999287,
+    "y": -1.2995564,
+    "Label": 7
+  },
+  "GRAMADO DOS LOUREIROS": {
+    "x": 8.303615,
+    "y": -4.662596,
+    "Label": 0
+  },
+  "GRAMADO XAVIER": {
+    "x": 7.383556,
+    "y": 0.89484656,
+    "Label": 0
+  },
+  "GRAVATAI": {
+    "x": -6.103076,
+    "y": -2.6951826,
+    "Label": 2
+  },
+  "GUABIJU": {
+    "x": 1.2286526,
+    "y": 2.802462,
+    "Label": 0
+  },
+  "GUAIBA": {
+    "x": -5.4116554,
+    "y": -1.9927377,
+    "Label": 5
+  },
+  "GUAPORE": {
+    "x": -4.342312,
+    "y": -0.6035135,
+    "Label": 0
+  },
+  "GUARANI DAS MISSOES": {
+    "x": -0.15359813,
+    "y": 2.2785196,
+    "Label": 0
+  },
+  "HARMONIA": {
+    "x": 6.237259,
+    "y": -4.267319,
+    "Label": 0
+  },
+  "HERVAL": {
+    "x": -7.8917036,
+    "y": -1.2400379,
+    "Label": 6
+  },
+  "HERVEIRAS": {
+    "x": 8.388685,
+    "y": -4.8578377,
+    "Label": 0
+  },
+  "HORIZONTINA": {
+    "x": -4.276617,
+    "y": -1.0121515,
+    "Label": 0
+  },
+  "HULHA NEGRA": {
+    "x": -2.162218,
+    "y": 1.5446026,
+    "Label": 0
+  },
+  "HUMAITA": {
+    "x": 5.102962,
+    "y": -4.10028,
+    "Label": 0
+  },
+  "IBARAMA": {
+    "x": -3.37587,
+    "y": 2.690436,
+    "Label": 0
+  },
+  "IBIACA": {
+    "x": 3.7208004,
+    "y": -5.133149,
+    "Label": 0
+  },
+  "IBIRAIARAS": {
+    "x": -9.896819,
+    "y": -3.4599662,
+    "Label": 3
+  },
+  "IBIRAPUITA": {
+    "x": -10.174731,
+    "y": -3.3444946,
+    "Label": 3
+  },
+  "IBIRUBA": {
+    "x": -2.9460316,
+    "y": -0.30407733,
+    "Label": 0
+  },
+  "IGREJINHA": {
+    "x": -4.568655,
+    "y": -0.96778,
+    "Label": 0
+  },
+  "IJUI": {
+    "x": -5.285828,
+    "y": -1.3470161,
+    "Label": 7
+  },
+  "ILOPOLIS": {
+    "x": 5.719141,
+    "y": -4.090423,
+    "Label": 0
+  },
+  "IMBE": {
+    "x": -4.242283,
+    "y": -0.5247291,
+    "Label": 0
+  },
+  "IMIGRANTE": {
+    "x": 8.106621,
+    "y": -4.37282,
+    "Label": 0
+  },
+  "INDEPENDENCIA": {
+    "x": -1.8486682,
+    "y": 1.1283056,
+    "Label": 0
+  },
+  "INHACORA": {
+    "x": 6.388486,
+    "y": 0.51204115,
+    "Label": 0
+  },
+  "IPE": {
+    "x": -4.1341486,
+    "y": 2.6782074,
+    "Label": 0
+  },
+  "IPIRANGA DO SUL": {
+    "x": 7.3373494,
+    "y": 0.9344065,
+    "Label": 0
+  },
+  "IRAI": {
+    "x": -4.0691276,
+    "y": 0.14035395,
+    "Label": 0
+  },
+  "ITAARA": {
+    "x": -10.117952,
+    "y": -3.2491806,
+    "Label": 3
+  },
+  "ITACURUBI": {
+    "x": -5.763819,
+    "y": 1.6941414,
+    "Label": 0
+  },
+  "ITAPUCA": {
+    "x": 1.311806,
+    "y": 2.7670565,
+    "Label": 0
+  },
+  "ITAQUI": {
+    "x": -6.230127,
+    "y": -0.6741979,
+    "Label": 6
+  },
+  "ITATI": {
+    "x": -1.2911946,
+    "y": 1.9529498,
+    "Label": 0
+  },
+  "ITATIBA DO SUL": {
+    "x": 3.6216674,
+    "y": 1.0399922,
+    "Label": 0
+  },
+  "IVORA": {
+    "x": 0.27856708,
+    "y": 2.5132074,
+    "Label": 0
+  },
+  "IVOTI": {
+    "x": 5.2548413,
+    "y": -3.5376573,
+    "Label": 0
+  },
+  "JABOTICABA": {
+    "x": -1.9562763,
+    "y": 1.7449316,
+    "Label": 0
+  },
+  "JACUIZINHO": {
+    "x": 7.3235984,
+    "y": 0.84207875,
+    "Label": 0
+  },
+  "JACUTINGA": {
+    "x": 3.5591443,
+    "y": 0.99367356,
+    "Label": 0
+  },
+  "JAGUARAO": {
+    "x": -9.261129,
+    "y": -2.562789,
+    "Label": 6
+  },
+  "JAGUARI": {
+    "x": -1.8020197,
+    "y": 2.0894032,
+    "Label": 0
+  },
+  "JAQUIRANA": {
+    "x": -4.1180487,
+    "y": 2.6642349,
+    "Label": 0
+  },
+  "JARI": {
+    "x": -1.3119577,
+    "y": 2.0966387,
+    "Label": 0
+  },
+  "JOIA": {
+    "x": -1.743382,
+    "y": 2.0320723,
+    "Label": 0
+  },
+  "JULIO DE CASTILHOS": {
+    "x": -5.8997025,
+    "y": -0.97813696,
+    "Label": 6
+  },
+  "LAGOA BONITA DO SUL": {
+    "x": 3.7155895,
+    "y": -5.2750506,
+    "Label": 0
+  },
+  "LAGOA DOS TRES CANTOS": {
+    "x": 6.432953,
+    "y": -4.389659,
+    "Label": 0
+  },
+  "LAGOA VERMELHA": {
+    "x": -6.8590107,
+    "y": -1.0917492,
+    "Label": 6
+  },
+  "LAGOAO": {
+    "x": -3.6440442,
+    "y": 2.7134702,
+    "Label": 0
+  },
+  "LAJEADO": {
+    "x": -5.713165,
+    "y": -2.2480335,
+    "Label": 7
+  },
+  "LAJEADO DO BUGRE": {
+    "x": 3.3642664,
+    "y": 1.0483427,
+    "Label": 0
+  },
+  "LAVRAS DO SUL": {
+    "x": -7.185738,
+    "y": -0.14846025,
+    "Label": 6
+  },
+  "LIBERATO SALZANO": {
+    "x": 0.33203107,
+    "y": 2.533306,
+    "Label": 0
+  },
+  "LINDOLFO COLLOR": {
+    "x": 3.4339662,
+    "y": 0.31178808,
+    "Label": 0
+  },
+  "LINHA NOVA": {
+    "x": 8.353336,
+    "y": -5.0107737,
+    "Label": 0
+  },
+  "MACAMBARA": {
+    "x": -3.7212825,
+    "y": 2.771689,
+    "Label": 0
+  },
+  "MACHADINHO": {
+    "x": -0.87742996,
+    "y": 2.0322814,
+    "Label": 0
+  },
+  "MAMPITUBA": {
+    "x": 3.7263367,
+    "y": 2.6618986,
+    "Label": 0
+  },
+  "MANOEL VIANA": {
+    "x": -4.287184,
+    "y": 2.583729,
+    "Label": 0
+  },
+  "MAQUINE": {
+    "x": -4.354737,
+    "y": 2.5300233,
+    "Label": 0
+  },
+  "MARATA": {
+    "x": 8.26102,
+    "y": -4.6638064,
+    "Label": 0
+  },
+  "MARAU": {
+    "x": -9.587006,
+    "y": -2.9411948,
+    "Label": 3
+  },
+  "MARCELINO RAMOS": {
+    "x": 5.4680195,
+    "y": -3.9356933,
+    "Label": 0
+  },
+  "MARIANA PIMENTEL": {
+    "x": -10.060947,
+    "y": -3.184948,
+    "Label": 3
+  },
+  "MARIANO MORO": {
+    "x": 3.4685872,
+    "y": 0.23311515,
+    "Label": 0
+  },
+  "MARQUES DE SOUZA": {
+    "x": 3.6656144,
+    "y": 0.9496132,
+    "Label": 0
+  },
+  "MATA": {
+    "x": -7.194172,
+    "y": 0.03766567,
+    "Label": 6
+  },
+  "MATO CASTELHANO": {
+    "x": -0.9229201,
+    "y": 2.0126462,
+    "Label": 0
+  },
+  "MATO LEITAO": {
+    "x": 1.8479058,
+    "y": 1.4388696,
+    "Label": 0
+  },
+  "MATO QUEIMADO": {
+    "x": 7.6385336,
+    "y": -4.752946,
+    "Label": 0
+  },
+  "MAXIMILIANO DE ALMEIDA": {
+    "x": 4.385678,
+    "y": -4.656095,
+    "Label": 0
+  },
+  "MINAS DO LEAO": {
+    "x": -1.9246923,
+    "y": 1.4368664,
+    "Label": 0
+  },
+  "MIRAGUAI": {
+    "x": -2.0666447,
+    "y": 2.6288686,
+    "Label": 0
+  },
+  "MONTAURI": {
+    "x": 8.429145,
+    "y": -4.891981,
+    "Label": 0
+  },
+  "MONTE ALEGRE DOS CAMPOS": {
+    "x": -1.0069379,
+    "y": 1.8440262,
+    "Label": 0
+  },
+  "MONTE BELO DO SUL": {
+    "x": 6.241118,
+    "y": -4.2859917,
+    "Label": 0
+  },
+  "MONTENEGRO": {
+    "x": -5.4547887,
+    "y": -1.8415145,
+    "Label": 7
+  },
+  "MORMACO": {
+    "x": 3.49377,
+    "y": 2.6086557,
+    "Label": 0
+  },
+  "MORRINHOS DO SUL": {
+    "x": 8.33465,
+    "y": -4.7946353,
+    "Label": 0
+  },
+  "MORRO REDONDO": {
+    "x": 1.3799493,
+    "y": 2.536658,
+    "Label": 0
+  },
+  "MORRO REUTER": {
+    "x": 5.569591,
+    "y": -3.9767942,
+    "Label": 0
+  },
+  "MOSTARDAS": {
+    "x": -7.976109,
+    "y": -1.39784,
+    "Label": 6
+  },
+  "MUCUM": {
+    "x": 3.5435448,
+    "y": 0.454945,
+    "Label": 0
+  },
+  "MUITOS CAPOES": {
+    "x": -3.6361358,
+    "y": 2.7337782,
+    "Label": 0
+  },
+  "MULITERNO": {
+    "x": 6.730477,
+    "y": 0.713949,
+    "Label": 0
+  },
+  "NAO-ME-TOQUE": {
+    "x": -2.932229,
+    "y": -0.27462372,
+    "Label": 0
+  },
+  "NICOLAU VERGUEIRO": {
+    "x": 7.4450965,
+    "y": 0.8905968,
+    "Label": 0
+  },
+  "NONOAI": {
+    "x": -2.5704012,
+    "y": 0.8582975,
+    "Label": 0
+  },
+  "NOVA ALVORADA": {
+    "x": -1.5277231,
+    "y": 2.8366535,
+    "Label": 0
+  },
+  "NOVA ARACA": {
+    "x": 4.973397,
+    "y": -4.131918,
+    "Label": 0
+  },
+  "NOVA BASSANO": {
+    "x": 6.1345196,
+    "y": 0.12992235,
+    "Label": 0
+  },
+  "NOVA BOA VISTA": {
+    "x": 0.39353457,
+    "y": 2.5740695,
+    "Label": 0
+  },
+  "NOVA BRESCIA": {
+    "x": 3.5962617,
+    "y": 0.15221387,
+    "Label": 0
+  },
+  "NOVA CANDELARIA": {
+    "x": 4.187226,
+    "y": -5.357154,
+    "Label": 0
+  },
+  "NOVA ESPERANCA DO SUL": {
+    "x": 3.4522038,
+    "y": 2.6399314,
+    "Label": 0
+  },
+  "NOVA HARTZ": {
+    "x": -3.007806,
+    "y": -0.3653784,
+    "Label": 0
+  },
+  "NOVA PADUA": {
+    "x": 4.247383,
+    "y": -5.354886,
+    "Label": 0
+  },
+  "NOVA PALMA": {
+    "x": -7.157864,
+    "y": 0.3267719,
+    "Label": 6
+  },
+  "NOVA PETROPOLIS": {
+    "x": -3.9953332,
+    "y": -0.83898956,
+    "Label": 0
+  },
+  "NOVA PRATA": {
+    "x": -4.461328,
+    "y": -0.3447637,
+    "Label": 0
+  },
+  "NOVA RAMADA": {
+    "x": 7.3221345,
+    "y": 0.7544437,
+    "Label": 0
+  },
+  "NOVA ROMA DO SUL": {
+    "x": 6.340559,
+    "y": -4.328951,
+    "Label": 0
+  },
+  "NOVA SANTA RITA": {
+    "x": -6.215691,
+    "y": -0.8150167,
+    "Label": 6
+  },
+  "NOVO BARREIRO": {
+    "x": 3.5519648,
+    "y": 2.5296326,
+    "Label": 0
+  },
+  "NOVO CABRAIS": {
+    "x": 1.900725,
+    "y": 1.4417332,
+    "Label": 0
+  },
+  "NOVO HAMBURGO": {
+    "x": -5.896008,
+    "y": -2.578225,
+    "Label": 5
+  },
+  "NOVO MACHADO": {
+    "x": 3.5144424,
+    "y": 2.5233483,
+    "Label": 0
+  },
+  "NOVO TIRADENTES": {
+    "x": 3.2740796,
+    "y": 1.4349296,
+    "Label": 0
+  },
+  "NOVO XINGU": {
+    "x": 7.581126,
+    "y": -4.7220583,
+    "Label": 0
+  },
+  "N\u00c3O INFORMADO": {
+    "x": -3.6828606,
+    "y": -0.18097953,
+    "Label": 0
+  },
+  "OSORIO": {
+    "x": -6.185847,
+    "y": -1.411344,
+    "Label": 7
+  },
+  "PAIM FILHO": {
+    "x": 0.49386865,
+    "y": 2.1847436,
+    "Label": 0
+  },
+  "PALMARES DO SUL": {
+    "x": -7.863128,
+    "y": -1.2897803,
+    "Label": 6
+  },
+  "PALMEIRA DAS MISSOES": {
+    "x": -9.333775,
+    "y": -2.6112907,
+    "Label": 3
+  },
+  "PALMITINHO": {
+    "x": 1.582646,
+    "y": 1.5062166,
+    "Label": 0
+  },
+  "PANAMBI": {
+    "x": -3.8181481,
+    "y": 0.20518304,
+    "Label": 0
+  },
+  "PANTANO GRANDE": {
+    "x": -7.3485365,
+    "y": -0.26996562,
+    "Label": 6
+  },
+  "PARAI": {
+    "x": 1.6801795,
+    "y": 1.929267,
+    "Label": 0
+  },
+  "PARAISO DO SUL": {
+    "x": 3.272533,
+    "y": 0.99569005,
+    "Label": 0
+  },
+  "PARECI NOVO": {
+    "x": 7.43246,
+    "y": -4.5268145,
+    "Label": 0
+  },
+  "PAROBE": {
+    "x": -9.817859,
+    "y": -3.3848097,
+    "Label": 3
+  },
+  "PASSA SETE": {
+    "x": -1.3000526,
+    "y": 2.047276,
+    "Label": 0
+  },
+  "PASSO DO SOBRADO": {
+    "x": -5.0351486,
+    "y": 2.2339108,
+    "Label": 0
+  },
+  "PASSO FUNDO": {
+    "x": -5.7966256,
+    "y": -2.4372501,
+    "Label": 5
+  },
+  "PAULO BENTO": {
+    "x": 4.135514,
+    "y": -4.9674635,
+    "Label": 0
+  },
+  "PAVERAMA": {
+    "x": -1.6905365,
+    "y": 2.4028149,
+    "Label": 0
+  },
+  "PEDRAS ALTAS": {
+    "x": -5.7011733,
+    "y": 1.7458545,
+    "Label": 0
+  },
+  "PEDRO OSORIO": {
+    "x": -7.1202526,
+    "y": 0.27851933,
+    "Label": 6
+  },
+  "PEJUCARA": {
+    "x": -1.5203493,
+    "y": 2.62007,
+    "Label": 0
+  },
+  "PELOTAS": {
+    "x": -6.0674176,
+    "y": -2.6847878,
+    "Label": 2
+  },
+  "PICADA CAFE": {
+    "x": 4.3140635,
+    "y": -4.703651,
+    "Label": 0
+  },
+  "PINHAL": {
+    "x": 6.299596,
+    "y": 0.35826948,
+    "Label": 0
+  },
+  "PINHAL DA SERRA": {
+    "x": 3.4182448,
+    "y": 1.4066101,
+    "Label": 0
+  },
+  "PINHAL GRANDE": {
+    "x": -3.6150968,
+    "y": 2.7506046,
+    "Label": 0
+  },
+  "PINHEIRINHO DO VALE": {
+    "x": 4.222435,
+    "y": -5.4086657,
+    "Label": 0
+  },
+  "PINHEIRO MACHADO": {
+    "x": -7.105089,
+    "y": -0.29913187,
+    "Label": 6
+  },
+  "PINTO BANDEIRA": {
+    "x": 6.7488046,
+    "y": 0.6769,
+    "Label": 0
+  },
+  "PIRAPO": {
+    "x": -1.478374,
+    "y": 2.8537624,
+    "Label": 0
+  },
+  "PIRATINI": {
+    "x": -7.148919,
+    "y": -0.2846386,
+    "Label": 6
+  },
+  "PLANALTO": {
+    "x": -1.4786187,
+    "y": 1.9340569,
+    "Label": 0
+  },
+  "POCO DAS ANTAS": {
+    "x": 7.4820046,
+    "y": -4.6075196,
+    "Label": 0
+  },
+  "PONTAO": {
+    "x": 3.6353855,
+    "y": 0.98713565,
+    "Label": 0
+  },
+  "PONTE PRETA": {
+    "x": 8.373155,
+    "y": -4.8583107,
+    "Label": 0
+  },
+  "PORTAO": {
+    "x": -4.1749086,
+    "y": 0.19775315,
+    "Label": 0
+  },
+  "PORTO ALEGRE": {
+    "x": -5.9370112,
+    "y": -2.750856,
+    "Label": 1
+  },
+  "PORTO LUCENA": {
+    "x": 4.2120337,
+    "y": -4.612987,
+    "Label": 0
+  },
+  "PORTO MAUA": {
+    "x": 3.5334387,
+    "y": 2.6106873,
+    "Label": 0
+  },
+  "PORTO VERA CRUZ": {
+    "x": 6.7743845,
+    "y": 0.674845,
+    "Label": 0
+  },
+  "PORTO XAVIER": {
+    "x": -4.51722,
+    "y": 2.431418,
+    "Label": 0
+  },
+  "POUSO NOVO": {
+    "x": 1.2822839,
+    "y": 2.6175795,
+    "Label": 0
+  },
+  "PRESIDENTE LUCENA": {
+    "x": 6.4756837,
+    "y": -4.3288746,
+    "Label": 0
+  },
+  "PROGRESSO": {
+    "x": 1.7928141,
+    "y": 1.3237948,
+    "Label": 0
+  },
+  "PROTASIO ALVES": {
+    "x": 3.8133724,
+    "y": -5.547921,
+    "Label": 0
+  },
+  "PUTINGA": {
+    "x": 6.6182985,
+    "y": 0.5268684,
+    "Label": 0
+  },
+  "QUARAI": {
+    "x": -8.0717325,
+    "y": -1.6107707,
+    "Label": 6
+  },
+  "QUATRO IRMAOS": {
+    "x": 8.203338,
+    "y": -4.465311,
+    "Label": 0
+  },
+  "QUEVEDOS": {
+    "x": -1.5453815,
+    "y": 2.7739522,
+    "Label": 0
+  },
+  "QUINZE DE NOVEMBRO": {
+    "x": 0.30399323,
+    "y": 2.4316602,
+    "Label": 0
+  },
+  "REDENTORA": {
+    "x": -10.177519,
+    "y": -3.2874026,
+    "Label": 3
+  },
+  "RELVADO": {
+    "x": 7.46692,
+    "y": 0.96268314,
+    "Label": 0
+  },
+  "RESTINGA SECA": {
+    "x": -7.126449,
+    "y": -0.6321001,
+    "Label": 6
+  },
+  "RIO DOS INDIOS": {
+    "x": -3.3995557,
+    "y": 2.7162683,
+    "Label": 0
+  },
+  "RIO GRANDE": {
+    "x": -6.298487,
+    "y": -2.6233141,
+    "Label": 2
+  },
+  "RIO PARDO": {
+    "x": -6.7700996,
+    "y": -0.97147995,
+    "Label": 6
+  },
+  "RIOZINHO": {
+    "x": 1.451159,
+    "y": 1.8113863,
+    "Label": 0
+  },
+  "ROCA SALES": {
+    "x": -1.5198251,
+    "y": 1.3860605,
+    "Label": 0
+  },
+  "RODEIO BONITO": {
+    "x": -2.2024076,
+    "y": 1.1587535,
+    "Label": 0
+  },
+  "ROLADOR": {
+    "x": 6.4442782,
+    "y": 0.5359854,
+    "Label": 0
+  },
+  "ROLANTE": {
+    "x": -4.343061,
+    "y": -0.8968159,
+    "Label": 0
+  },
+  "RONDA ALTA": {
+    "x": 0.46924374,
+    "y": 2.194344,
+    "Label": 0
+  },
+  "RONDINHA": {
+    "x": -1.9011506,
+    "y": 2.6902366,
+    "Label": 0
+  },
+  "ROQUE GONZALES": {
+    "x": -2.1420412,
+    "y": 1.4423488,
+    "Label": 0
+  },
+  "ROSARIO DO SUL": {
+    "x": -7.9805293,
+    "y": -1.901224,
+    "Label": 4
+  },
+  "SAGRADA FAMILIA": {
+    "x": 3.6274364,
+    "y": 0.42939752,
+    "Label": 0
+  },
+  "SALDANHA MARINHO": {
+    "x": 7.427889,
+    "y": 0.895753,
+    "Label": 0
+  },
+  "SALTO DO JACUI": {
+    "x": 2.7335424,
+    "y": 0.77113664,
+    "Label": 0
+  },
+  "SALVADOR DAS MISSOES": {
+    "x": 3.68917,
+    "y": 2.639964,
+    "Label": 0
+  },
+  "SALVADOR DO SUL": {
+    "x": 4.362264,
+    "y": -4.67977,
+    "Label": 0
+  },
+  "SANANDUVA": {
+    "x": -2.483436,
+    "y": 0.35358423,
+    "Label": 0
+  },
+  "SANTA BARBARA DO SUL": {
+    "x": -2.0631309,
+    "y": 1.2069082,
+    "Label": 0
+  },
+  "SANTA CECILIA DO SUL": {
+    "x": 8.498031,
+    "y": -4.7119875,
+    "Label": 0
+  },
+  "SANTA CLARA DO SUL": {
+    "x": 3.2287562,
+    "y": 0.58782566,
+    "Label": 0
+  },
+  "SANTA CRUZ DO SUL": {
+    "x": -5.745545,
+    "y": -2.3402867,
+    "Label": 5
+  },
+  "SANTA MARGARIDA DO SUL": {
+    "x": -1.526888,
+    "y": 2.8084738,
+    "Label": 0
+  },
+  "SANTA MARIA": {
+    "x": -6.3425355,
+    "y": -2.5491507,
+    "Label": 2
+  },
+  "SANTA MARIA DO HERVAL": {
+    "x": 7.435624,
+    "y": -4.4074345,
+    "Label": 0
+  },
+  "SANTA ROSA": {
+    "x": -5.3183775,
+    "y": -1.9024942,
+    "Label": 7
+  },
+  "SANTA TEREZA": {
+    "x": 7.630133,
+    "y": -4.732042,
+    "Label": 0
+  },
+  "SANTA VITORIA DO PALMAR": {
+    "x": -8.731719,
+    "y": -2.23362,
+    "Label": 4
+  },
+  "SANTANA DA BOA VISTA": {
+    "x": -2.2916436,
+    "y": 1.1142422,
+    "Label": 0
+  },
+  "SANTANA DO LIVRAMENTO": {
+    "x": -7.834853,
+    "y": -2.0450213,
+    "Label": 4
+  },
+  "SANTIAGO": {
+    "x": -5.581729,
+    "y": -1.7656778,
+    "Label": 7
+  },
+  "SANTO ANGELO": {
+    "x": -5.6764536,
+    "y": -1.7759842,
+    "Label": 7
+  },
+  "SANTO ANTONIO DA PATRULHA": {
+    "x": -6.2552366,
+    "y": -0.8787944,
+    "Label": 6
+  },
+  "SANTO ANTONIO DAS MISSOES": {
+    "x": -7.923889,
+    "y": -1.314912,
+    "Label": 6
+  },
+  "SANTO ANTONIO DO PALMA": {
+    "x": 4.121586,
+    "y": -5.4530535,
+    "Label": 0
+  },
+  "SANTO ANTONIO DO PLANALTO": {
+    "x": 8.153689,
+    "y": -4.4049544,
+    "Label": 0
+  },
+  "SANTO AUGUSTO": {
+    "x": -1.8263662,
+    "y": 1.421628,
+    "Label": 0
+  },
+  "SANTO CRISTO": {
+    "x": 5.4423327,
+    "y": -3.86524,
+    "Label": 0
+  },
+  "SANTO EXPEDITO DO SUL": {
+    "x": 7.328497,
+    "y": 0.9752033,
+    "Label": 0
+  },
+  "SAO BORJA": {
+    "x": -8.01189,
+    "y": -1.6423575,
+    "Label": 6
+  },
+  "SAO DOMINGOS DO SUL": {
+    "x": -0.57791156,
+    "y": 2.4736283,
+    "Label": 0
+  },
+  "SAO FRANCISCO DE ASSIS": {
+    "x": -7.841761,
+    "y": -1.424312,
+    "Label": 6
+  },
+  "SAO FRANCISCO DE PAULA": {
+    "x": -9.100562,
+    "y": -2.453661,
+    "Label": 3
+  },
+  "SAO GABRIEL": {
+    "x": -7.878304,
+    "y": -1.9605256,
+    "Label": 4
+  },
+  "SAO JERONIMO": {
+    "x": -4.506633,
+    "y": -0.62477964,
+    "Label": 0
+  },
+  "SAO JOAO DA URTIGA": {
+    "x": 0.3158643,
+    "y": 2.519983,
+    "Label": 0
+  },
+  "SAO JOAO DO POLESINE": {
+    "x": -0.52903,
+    "y": 2.4990644,
+    "Label": 0
+  },
+  "SAO JORGE": {
+    "x": 7.388803,
+    "y": 1.047553,
+    "Label": 0
+  },
+  "SAO JOSE DAS MISSOES": {
+    "x": -1.5906183,
+    "y": 2.7432876,
+    "Label": 0
+  },
+  "SAO JOSE DO HERVAL": {
+    "x": -1.5556138,
+    "y": 2.6237652,
+    "Label": 0
+  },
+  "SAO JOSE DO HORTENCIO": {
+    "x": 6.4416904,
+    "y": 0.49943775,
+    "Label": 0
+  },
+  "SAO JOSE DO INHACORA": {
+    "x": 3.7417305,
+    "y": -5.6755958,
+    "Label": 0
+  },
+  "SAO JOSE DO NORTE": {
+    "x": -6.7519712,
+    "y": -0.9250247,
+    "Label": 6
+  },
+  "SAO JOSE DO OURO": {
+    "x": -2.542636,
+    "y": 2.357727,
+    "Label": 0
+  },
+  "SAO JOSE DO SUL": {
+    "x": 6.3436594,
+    "y": -4.2503853,
+    "Label": 0
+  },
+  "SAO JOSE DOS AUSENTES": {
+    "x": -1.5915897,
+    "y": 2.7543402,
+    "Label": 0
+  },
+  "SAO LEOPOLDO": {
+    "x": -5.8092566,
+    "y": -2.4836495,
+    "Label": 5
+  },
+  "SAO LOURENCO DO SUL": {
+    "x": -4.9398656,
+    "y": -0.9999685,
+    "Label": 7
+  },
+  "SAO LUIZ GONZAGA": {
+    "x": -6.779564,
+    "y": -1.1680843,
+    "Label": 6
+  },
+  "SAO MARCOS": {
+    "x": -4.893993,
+    "y": -1.1204027,
+    "Label": 7
+  },
+  "SAO MARTINHO": {
+    "x": 5.0030355,
+    "y": -4.058392,
+    "Label": 0
+  },
+  "SAO MARTINHO DA SERRA": {
+    "x": -7.1160283,
+    "y": 0.3453029,
+    "Label": 6
+  },
+  "SAO MIGUEL DAS MISSOES": {
+    "x": -5.4696355,
+    "y": 1.9226743,
+    "Label": 0
+  },
+  "SAO NICOLAU": {
+    "x": -7.9032984,
+    "y": -1.3026572,
+    "Label": 6
+  },
+  "SAO PAULO DAS MISSOES": {
+    "x": 3.581917,
+    "y": 0.989103,
+    "Label": 0
+  },
+  "SAO PEDRO DA SERRA": {
+    "x": 5.0912275,
+    "y": -4.145977,
+    "Label": 0
+  },
+  "SAO PEDRO DAS MISSOES": {
+    "x": 3.5504682,
+    "y": 0.20000707,
+    "Label": 0
+  },
+  "SAO PEDRO DO BUTIA": {
+    "x": 3.6716857,
+    "y": 2.6747441,
+    "Label": 0
+  },
+  "SAO PEDRO DO SUL": {
+    "x": -8.005501,
+    "y": -1.6160717,
+    "Label": 6
+  },
+  "SAO SEBASTIAO DO CAI": {
+    "x": -4.8519626,
+    "y": -1.2782365,
+    "Label": 7
+  },
+  "SAO SEPE": {
+    "x": -7.913244,
+    "y": -1.5592899,
+    "Label": 6
+  },
+  "SAO VALENTIM": {
+    "x": 3.4520514,
+    "y": 1.0176345,
+    "Label": 0
+  },
+  "SAO VALENTIM DO SUL": {
+    "x": 3.922001,
+    "y": -5.5411644,
+    "Label": 0
+  },
+  "SAO VALERIO DO SUL": {
+    "x": 8.29689,
+    "y": -4.6784844,
+    "Label": 0
+  },
+  "SAO VENDELINO": {
+    "x": 3.6559877,
+    "y": 0.2026711,
+    "Label": 0
+  },
+  "SAO VICENTE DO SUL": {
+    "x": -9.120566,
+    "y": -2.442134,
+    "Label": 6
+  },
+  "SAPIRANGA": {
+    "x": -5.210058,
+    "y": -1.8035468,
+    "Label": 7
+  },
+  "SAPUCAIA DO SUL": {
+    "x": -5.7370315,
+    "y": -2.3106184,
+    "Label": 5
+  },
+  "SARANDI": {
+    "x": -4.244421,
+    "y": -0.2934345,
+    "Label": 0
+  },
+  "SEBERI": {
+    "x": -2.1330788,
+    "y": 1.4725593,
+    "Label": 0
+  },
+  "SEDE NOVA": {
+    "x": 4.0797734,
+    "y": -4.952412,
+    "Label": 0
+  },
+  "SEGREDO": {
+    "x": -1.6019204,
+    "y": 2.7301097,
+    "Label": 0
+  },
+  "SELBACH": {
+    "x": 0.31832722,
+    "y": 2.4437933,
+    "Label": 0
+  },
+  "SENADOR SALGADO FILHO": {
+    "x": 1.2898313,
+    "y": 2.7627995,
+    "Label": 0
+  },
+  "SENTINELA DO SUL": {
+    "x": 3.1675782,
+    "y": 1.6788912,
+    "Label": 0
+  },
+  "SERAFINA CORREA": {
+    "x": -4.063751,
+    "y": -0.871265,
+    "Label": 0
+  },
+  "SERIO": {
+    "x": 6.392758,
+    "y": -4.341194,
+    "Label": 0
+  },
+  "SERTAO": {
+    "x": -2.1338441,
+    "y": 2.2808464,
+    "Label": 0
+  },
+  "SERTAO SANTANA": {
+    "x": 0.24855122,
+    "y": 2.436487,
+    "Label": 0
+  },
+  "SETE DE SETEMBRO": {
+    "x": -1.4775666,
+    "y": 2.8318074,
+    "Label": 0
+  },
+  "SEVERIANO DE ALMEIDA": {
+    "x": 6.29568,
+    "y": 0.31702167,
+    "Label": 0
+  },
+  "SILVEIRA MARTINS": {
+    "x": 1.3787459,
+    "y": 2.6456437,
+    "Label": 0
+  },
+  "SINIMBU": {
+    "x": 3.5602274,
+    "y": 0.45489278,
+    "Label": 0
+  },
+  "SOBRADINHO": {
+    "x": -6.816399,
+    "y": 0.0011763527,
+    "Label": 6
+  },
+  "SOLEDADE": {
+    "x": -7.9706974,
+    "y": -1.9222124,
+    "Label": 4
+  },
+  "TABAI": {
+    "x": -3.36804,
+    "y": 2.6851103,
+    "Label": 0
+  },
+  "TAPEJARA": {
+    "x": -3.0297909,
+    "y": -0.35608786,
+    "Label": 0
+  },
+  "TAPERA": {
+    "x": -2.8899393,
+    "y": 0.017409943,
+    "Label": 0
+  },
+  "TAPES": {
+    "x": -9.481041,
+    "y": -2.7297988,
+    "Label": 3
+  },
+  "TAQUARA": {
+    "x": -9.267985,
+    "y": -2.7848353,
+    "Label": 3
+  },
+  "TAQUARI": {
+    "x": -4.15352,
+    "y": 0.17069328,
+    "Label": 0
+  },
+  "TAQUARUCU DO SUL": {
+    "x": 8.34425,
+    "y": -4.5472317,
+    "Label": 0
+  },
+  "TAVARES": {
+    "x": -5.528383,
+    "y": 1.6382197,
+    "Label": 0
+  },
+  "TENENTE PORTELA": {
+    "x": -5.535475,
+    "y": 1.7985156,
+    "Label": 0
+  },
+  "TERRA DE AREIA": {
+    "x": -5.486457,
+    "y": 1.798567,
+    "Label": 0
+  },
+  "TEUTONIA": {
+    "x": -4.3319016,
+    "y": -0.72405607,
+    "Label": 0
+  },
+  "TIO HUGO": {
+    "x": 1.3015596,
+    "y": 2.4649894,
+    "Label": 0
+  },
+  "TIRADENTES DO SUL": {
+    "x": -0.9157355,
+    "y": 1.9852648,
+    "Label": 0
+  },
+  "TOROPI": {
+    "x": -1.6119677,
+    "y": 2.7007437,
+    "Label": 0
+  },
+  "TORRES": {
+    "x": -5.277499,
+    "y": -1.3574193,
+    "Label": 7
+  },
+  "TRAMANDAI": {
+    "x": -5.5999737,
+    "y": -1.7133826,
+    "Label": 7
+  },
+  "TRAVESSEIRO": {
+    "x": 6.364503,
+    "y": -4.332069,
+    "Label": 0
+  },
+  "TRES ARROIOS": {
+    "x": 6.2266107,
+    "y": -4.2622013,
+    "Label": 0
+  },
+  "TRES CACHOEIRAS": {
+    "x": 1.5233253,
+    "y": 2.0909388,
+    "Label": 0
+  },
+  "TRES COROAS": {
+    "x": -4.079946,
+    "y": -0.7053768,
+    "Label": 0
+  },
+  "TRES DE MAIO": {
+    "x": -4.693473,
+    "y": -0.9327075,
+    "Label": 0
+  },
+  "TRES FORQUILHAS": {
+    "x": -1.3710386,
+    "y": 2.0583293,
+    "Label": 0
+  },
+  "TRES PALMEIRAS": {
+    "x": 3.474545,
+    "y": 2.5763423,
+    "Label": 0
+  },
+  "TRES PASSOS": {
+    "x": -4.3033357,
+    "y": 0.26399755,
+    "Label": 0
+  },
+  "TRINDADE DO SUL": {
+    "x": -10.129235,
+    "y": -3.3060608,
+    "Label": 3
+  },
+  "TRIUNFO": {
+    "x": -4.601524,
+    "y": -0.11876279,
+    "Label": 0
+  },
+  "TUCUNDUVA": {
+    "x": 1.2608899,
+    "y": 2.3315992,
+    "Label": 0
+  },
+  "TUNAS": {
+    "x": 1.2839096,
+    "y": 2.7347364,
+    "Label": 0
+  },
+  "TUPANCI DO SUL": {
+    "x": 3.7740026,
+    "y": -5.618969,
+    "Label": 0
+  },
+  "TUPANCIRETA": {
+    "x": -6.8779,
+    "y": -0.78680295,
+    "Label": 6
+  },
+  "TUPANDI": {
+    "x": 4.5901356,
+    "y": -4.433832,
+    "Label": 0
+  },
+  "TUPARENDI": {
+    "x": 1.4054611,
+    "y": 1.8748775,
+    "Label": 0
+  },
+  "TURUCU": {
+    "x": 8.233543,
+    "y": -4.435692,
+    "Label": 0
+  },
+  "UBIRETAMA": {
+    "x": 3.9907928,
+    "y": -5.531254,
+    "Label": 0
+  },
+  "UNIAO DA SERRA": {
+    "x": 8.486802,
+    "y": -4.955629,
+    "Label": 0
+  },
+  "UNISTALDA": {
+    "x": -0.90581214,
+    "y": 2.0409033,
+    "Label": 0
+  },
+  "URUGUAIANA": {
+    "x": -7.7955546,
+    "y": -1.9902976,
+    "Label": 4
+  },
+  "VACARIA": {
+    "x": -9.001185,
+    "y": -2.7016485,
+    "Label": 7
+  },
+  "VALE DO SOL": {
+    "x": 0.5239026,
+    "y": 2.1424313,
+    "Label": 0
+  },
+  "VALE REAL": {
+    "x": 6.8004827,
+    "y": -4.3473263,
+    "Label": 0
+  },
+  "VALE VERDE": {
+    "x": -3.405554,
+    "y": 2.716544,
+    "Label": 0
+  },
+  "VANINI": {
+    "x": 8.066593,
+    "y": -4.5809693,
+    "Label": 0
+  },
+  "VENANCIO AIRES": {
+    "x": -9.254322,
+    "y": -2.7547596,
+    "Label": 3
+  },
+  "VERA CRUZ": {
+    "x": -10.114807,
+    "y": -3.2490535,
+    "Label": 3
+  },
+  "VERANOPOLIS": {
+    "x": -4.42416,
+    "y": -0.55165535,
+    "Label": 0
+  },
+  "VESPASIANO CORREA": {
+    "x": 3.7680528,
+    "y": -5.5683537,
+    "Label": 0
+  },
+  "VIADUTOS": {
+    "x": 4.2540364,
+    "y": -4.824391,
+    "Label": 0
+  },
+  "VIAMAO": {
+    "x": -6.1010256,
+    "y": -2.7087095,
+    "Label": 2
+  },
+  "VICENTE DUTRA": {
+    "x": 2.7642045,
+    "y": 1.0444648,
+    "Label": 0
+  },
+  "VICTOR GRAEFF": {
+    "x": 7.269878,
+    "y": 0.7953663,
+    "Label": 0
+  },
+  "VILA FLORES": {
+    "x": 3.601066,
+    "y": 1.0214221,
+    "Label": 0
+  },
+  "VILA LANGARO": {
+    "x": 7.456489,
+    "y": 0.88811934,
+    "Label": 0
+  },
+  "VILA MARIA": {
+    "x": 4.3895493,
+    "y": -4.6721716,
+    "Label": 0
+  },
+  "VILA NOVA DO SUL": {
+    "x": -7.487008,
+    "y": -0.37565678,
+    "Label": 6
+  },
+  "VISTA ALEGRE": {
+    "x": 7.227661,
+    "y": 0.9401116,
+    "Label": 0
+  },
+  "VISTA ALEGRE DO PRATA": {
+    "x": 3.8072655,
+    "y": -5.633875,
+    "Label": 0
+  },
+  "VISTA GAUCHA": {
+    "x": 7.300874,
+    "y": 0.9923066,
+    "Label": 0
+  },
+  "VITORIA DAS MISSOES": {
+    "x": -3.417912,
+    "y": 2.7832725,
+    "Label": 0
+  },
+  "WESTFALIA": {
+    "x": 3.8047295,
+    "y": -5.2002115,
+    "Label": 0
+  },
+  "XANGRI-LA": {
+    "x": -9.829788,
+    "y": -3.152479,
+    "Label": 3
+  }
+}

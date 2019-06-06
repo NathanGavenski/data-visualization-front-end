@@ -7,9 +7,10 @@
       Escolher cidades
     </button>
     <div class="dropdown-menu pre-scrollable" aria-labelledby="dropdownMenuButton">
-      <a *ngFor="let name of cityNames" class="dropdown-item" (click)="clicked_city(name)">{{name}}</a>
+        <a *ngFor="let name of cityNames" href="#" class="dropdown-item" (click)="clicked_city(name)">{{name}}</a>
     </div>
     <button type="button" class="btn btn-primary" (click)="clicked_rs()">Voltar RS</button>
+    <button type="button" class="btn btn-primary" (click)="activate_clusters()">Ver clusters</button>
   </div>
 
   <div class="infos">

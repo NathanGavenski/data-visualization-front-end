@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 
 @Component({
@@ -9,4 +10,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'data-visualization-front-end';
  
+  @ViewChild(DashboardComponent)
+  private dashboard: DashboardComponent;
 }
