@@ -8,11 +8,12 @@ import { Polygon } from 'ol/geom';
 import { Tile as TileLayer, Vector as VectorLayer } from 'ol/layer.js';
 import { OSM, Vector as VectorSource } from 'ol/source.js';
 import { fromLonLat, transform } from 'ol/proj';
+import { pointerMove } from 'ol/events/condition.js';
+import { Fill, Style } from 'ol/style';
+
 import { CommonStyle } from '../common/style.component';
 import { CityLoader } from '../common/cityLoader.component';
-import { pointerMove } from 'ol/events/condition.js';
 import { DashboardComponent } from '../dashboard/dashboard.component';
-import { Fill, Style } from 'ol/style';
 import { CrimeClusterLoader } from '../common/crimeClusterLoader.component';
 import { IBGEClusterLoader } from '../common/ibgeClusterLoader.component';
 import { IBGECrimeClusterLoader } from '../common/ibgeCrimeClusterLoader.components';
@@ -32,7 +33,9 @@ export class MapComponent implements OnInit {
 
   private citiesInfo = this.cities.getJson()
   private styles = this.commonStyle.styles;
-  
+  private box;
+  private mousePosition = { x: 0, y: 0 };
+
   private colorArray = [
     '#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
     '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
@@ -54,6 +57,11 @@ export class MapComponent implements OnInit {
 
   ngOnInit() {
     this.createNormalMap();
+
+    this.box = document.getElementById("map");
+    this.box.addEventListener("mousemove", this.updateDisplay, false);
+    this.box.addEventListener("mouseenter", this.updateDisplay, false);
+    this.box.addEventListener("mouseleave", this.removeDisplay, false);
   }
 
   private hooverInteraction() {
@@ -62,10 +70,13 @@ export class MapComponent implements OnInit {
     });
 
     this.map.addInteraction(select);
-    select.on('select', function (e) {
+    select.on('select', (e) => {
       if (e.selected.length > 0) {
-        // console.log(e.selected[0].values_.name)
-        // TODO: Create modal with city name while hoovering.
+        this.removeModal();
+        const modal = document.createElement('div');
+        modal.id = 'name-modal-div'
+        modal.innerHTML = this.modalHTML(e.selected[0].values_.name);
+        document.body.appendChild(modal);
       }
     }
     );
@@ -236,7 +247,8 @@ export class MapComponent implements OnInit {
       target: 'map',
       view: new View({
         center: fromLonLat([-53, -30]),
-        zoom: 7
+        zoom: 7,
+        minZoom: 7
       })
     });
   }
@@ -256,5 +268,39 @@ export class MapComponent implements OnInit {
       }));
     }
   })();
+
+  private modalHTML = (name) => {
+    return `
+    <div id="name-modal">
+      <h5 style=" background-color: white;
+                  position: absolute;
+                  top: ${this.mousePosition.y}px;
+                  left: ${this.mousePosition.x}px;
+                  min-width: 100px;
+                  max-width: 150px;
+                  text-align: center;
+                  font-size: 1rem;">
+        ${name}
+      </h5>
+    </div>
+    `
+  }
+
+  private updateDisplay = (event) => {
+    this.mousePosition.x = event.pageX;
+    this.mousePosition.y = event.pageY;
+  }
+
+  private removeDisplay = (event) => {
+    this.updateDisplay(event);
+    this.removeModal();
+  }
+
+  private removeModal = () => {
+    let modal = document.getElementById('name-modal-div');
+    if (modal) {
+      document.body.removeChild(modal);
+    }
+  }
 }
 

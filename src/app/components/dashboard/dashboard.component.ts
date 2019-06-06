@@ -21,6 +21,7 @@ export class DashboardComponent implements OnInit {
   public cityNames;
   public local: string;
   public clustersType = ['Normal', 'IBGE', 'Crime', 'IBGE + Crime']
+  public test = false;
 
   constructor() {
     this.crimeJson = new CrimeLoader().getJson()
@@ -68,6 +69,11 @@ export class DashboardComponent implements OnInit {
     else if (type === 'IBGE') this.map.createIBGEMap();
     else if (type === 'Crime') this.map.createCrimeMap();
     else if (type === 'IBGE + Crime') this.map.createIBGECrimeMap();
+  }
+
+  teste() {
+    console.log(this.test)
+    this.test = !this.test;
   }
 
 }

@@ -10,6 +10,7 @@ import { NgxCurrencyModule } from "ngx-currency";
 import { FormsModule } from '@angular/forms';
 import { StateComponent } from './components/dashboard/state/state.component';
 import { CityComponent } from './components/dashboard/city/city.component';
+import { NameModalComponent } from './components/common/name-modal/name-modal.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CityComponent } from './components/dashboard/city/city.component';
     MapComponent,
     DashboardComponent,
     StateComponent,
-    CityComponent
+    CityComponent,
+    NameModalComponent
   ],
   imports: [
     BrowserModule,
