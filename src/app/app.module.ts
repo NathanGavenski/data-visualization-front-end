@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { StateComponent } from './components/dashboard/state/state.component';
 import { CityComponent } from './components/dashboard/city/city.component';
 import { NameModalComponent } from './components/common/name-modal/name-modal.component';
+import { CrimeGraphComponent } from './components/dashboard/graphs/crime-graph/crime-graph.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NameModalComponent } from './components/common/name-modal/name-modal.co
     DashboardComponent,
     StateComponent,
     CityComponent,
-    NameModalComponent
+    NameModalComponent,
+    CrimeGraphComponent
   ],
   imports: [
     BrowserModule,
