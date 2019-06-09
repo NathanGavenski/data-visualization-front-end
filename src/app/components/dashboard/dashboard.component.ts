@@ -15,6 +15,8 @@ export class DashboardComponent implements OnInit {
 
   @Input() map: MapComponent
 
+  public selectedType;
+
   private crimeJson;
   public state = true;
   public cityInfo;
@@ -69,6 +71,7 @@ export class DashboardComponent implements OnInit {
     else if (type === 'IBGE') this.map.createIBGEMap();
     else if (type === 'Crime') this.map.createCrimeMap();
     else if (type === 'IBGE + Crime') this.map.createIBGECrimeMap();
+    this.selectedType = type;
   }
 
   teste() {

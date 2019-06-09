@@ -215,12 +215,10 @@
     </div>
     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
       <div class="card-body">
-        <div class="card-body">
-          <div id="distribuição-dados" class="info container row">
-            <app-crime-graph></app-crime-graph>
-          </div> <!-- info-right -->
-        </div> <!-- Populacao -->
-      </div> <!-- Card-body -->
+        <div id="distribuição-dados" class="info container row">
+          <app-crime-graph [selectedType]="selectedType"></app-crime-graph>
+        </div> <!-- info-right -->
+      </div> <!-- Populacao -->
     </div> <!-- Collapse two -->
   </div>
 </div>
