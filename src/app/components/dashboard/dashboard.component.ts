@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, Input } from '@angular/core';
+import { Component, OnInit, ViewChild, Input, Output, EventEmitter } from '@angular/core';
 import { CrimeLoader } from '../common/crimeLoader.component';
 import { CityComponent } from './city/city.component';
 import { MapComponent } from '../map/map.component';
@@ -10,22 +10,29 @@ import { MapComponent } from '../map/map.component';
 })
 export class DashboardComponent implements OnInit {
 
+  private crimeJson;
+
+  public clusterLabel = 'Mostrar clusters'
+  public clustersType = ['Nenhum', 'IBGE', 'Crime', 'IBGE + Crime']
+
+  public cityInfo;
+  public cityNames;
+  public cityLabel = 'Escolher cidades';
+
+  public currentCluster = this.clustersType[0];
+  public state = true;
+  public local: string;
+  public test = false;
+
   @ViewChild(CityComponent)
   private cityComponent: CityComponent;
 
-  @Input() map: MapComponent
-
-  private crimeJson;
-  public state = true;
-  public cityInfo;
-  public cityNames;
-  public local: string;
-  public clustersType = ['Normal', 'IBGE', 'Crime', 'IBGE + Crime']
-  public test = false;
+  @Input() city: String;
+  @Output() createMap = new EventEmitter();
+  @Output() showDistance = new EventEmitter();
 
   constructor() {
     this.crimeJson = new CrimeLoader().getJson()
-    this.clicked_rs()
   }
 
   ngOnInit() {
@@ -33,6 +40,9 @@ export class DashboardComponent implements OnInit {
     this.cityNames = this.cityNames.map((word) => {
       return this.capitalizeFirstLetter(word);
     });
+    
+    if (this.city) this.clicked_city(this.city);
+    else this.clicked_rs();
   }
 
   capitalizeFirstLetter(string) {
@@ -46,6 +56,7 @@ export class DashboardComponent implements OnInit {
   clicked_city(city) {
     this.state = false;
     this.local = this.capitalizeFirstLetter(city)
+    this.cityLabel = this.local;
 
     const crimeInfo = this.crimeJson[city.toUpperCase()]['2018'];
     let info = this.crimeJson[city.toUpperCase()]['IBGE'];
@@ -62,18 +73,22 @@ export class DashboardComponent implements OnInit {
   clicked_rs() {
     this.state = true;
     this.local = "Rio Grande do Sul"
+    this.cityLabel = 'Escolher cidades';
   }
 
   activate_clusters(type) {
-    if (type === 'Normal') this.map.createNormalMap();
-    else if (type === 'IBGE') this.map.createIBGEMap();
-    else if (type === 'Crime') this.map.createCrimeMap();
-    else if (type === 'IBGE + Crime') this.map.createIBGECrimeMap();
-  }
+    if (type === 'Nenhum') this.clusterLabel = 'Mostrar clusters';
+    else this.clusterLabel = type;
 
-  teste() {
-    console.log(this.test)
-    this.test = !this.test;
+    this.currentCluster = type;
+    this.createMap.emit({ kind: type })
+  }
+  
+  distance() {
+    this.showDistance.emit({
+      kind: this.currentCluster,
+      city: this.local
+    });
   }
 
 }

@@ -5,7 +5,7 @@
     <div class="dropdown">
       <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
-        Escolher cidades
+        {{cityLabel}}
       </button>
       <div class="dropdown-menu pre-scrollable" aria-labelledby="dropdownMenuButton">
         <a *ngFor="let name of cityNames" href="#" class="dropdown-item" (click)="clicked_city(name)">{{name}}</a>
@@ -14,14 +14,14 @@
     <div class="dropdown">
       <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
-        Mostrar clusters
+        {{clusterLabel}}
       </button>
       <div class="dropdown-menu pre-scrollable" aria-labelledby="dropdownMenuButton">
         <a *ngFor="let type of clustersType" href="#" class="dropdown-item" (click)="activate_clusters(type)">{{type}}</a>
       </div>
     </div>
     <button type="button" class="btn btn-primary" (click)="clicked_rs()">Voltar RS</button>
-    <button type="button" class="btn btn-primary" (click)="teste()" data-toggle="modal" data-target="#modal">Teste</button>
+    <button type="button" class="btn btn-primary" (click)="distance()">Testar distância</button>
   </div>
 
   <div class="infos">

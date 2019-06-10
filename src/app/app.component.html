@@ -1,3 +1,13 @@
-<app-map [dashboard]="dashboard"></app-map>
-<app-dashboard [map]='map'></app-dashboard>
+<app-map id="app-map" (citySelected)="cityClicked($event)"></app-map>
+<app-dashboard *ngIf="dashboardController" 
+                id="app-dashboard" 
+                [city]="city" 
+                (createMap)="activate_clusters($event)"
+                (showDistance)="showDistance($event)"></app-dashboard>
+<div id="arrow" class="minimize">
+    <button class="btn btn-primary" (click)="minimize()"> {{arrow}} </button>
+</div>
+<div *ngIf="loading" class="background">
+    <div class="lds-dual-ring"></div>
+</div>
 <router-outlet></router-outlet>

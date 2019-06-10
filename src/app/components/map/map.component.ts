@@ -1,11 +1,13 @@
-import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 import Feature from 'ol/Feature.js';
 import Map from 'ol/Map.js';
 import View from 'ol/View.js';
 import Select from 'ol/interaction/Select.js';
+import Stamen from 'ol/source/Stamen.js';
+import KML from 'ol/format/KML.js';
 import { Polygon } from 'ol/geom';
-import { Tile as TileLayer, Vector as VectorLayer } from 'ol/layer.js';
+import { Heatmap as HeatmapLayer, Tile as TileLayer, Vector as VectorLayer } from 'ol/layer.js';
 import { OSM, Vector as VectorSource } from 'ol/source.js';
 import { fromLonLat, transform } from 'ol/proj';
 import { pointerMove } from 'ol/events/condition.js';
@@ -13,7 +15,6 @@ import { Fill, Style, Stroke } from 'ol/style';
 
 import { CommonStyle } from '../common/style.component';
 import { CityLoader } from '../common/cityLoader.component';
-import { DashboardComponent } from '../dashboard/dashboard.component';
 import { CrimeClusterLoader } from '../common/crimeClusterLoader.component';
 import { IBGEClusterLoader } from '../common/ibgeClusterLoader.component';
 import { IBGECrimeClusterLoader } from '../common/ibgeCrimeClusterLoader.components';
@@ -26,7 +27,10 @@ import { IBGECrimeClusterLoader } from '../common/ibgeCrimeClusterLoader.compone
 export class MapComponent implements OnInit {
 
   @Output() citySelected = new EventEmitter;
-  @Input() dashboard: DashboardComponent;
+
+  private crimeCluster: CrimeClusterLoader;
+  private ibgeCluster: IBGEClusterLoader;
+  private ibgeCrimeCluster: IBGECrimeClusterLoader;
 
   private commonStyle = new CommonStyle();
   private cities = new CityLoader();
@@ -64,39 +68,11 @@ export class MapComponent implements OnInit {
     this.box.addEventListener("mouseleave", this.removeDisplay, false);
   }
 
-  private hooverInteraction() {
-    const select = new Select({
-      condition: pointerMove
-    });
-
-    this.map.addInteraction(select);
-    select.on('select', (e) => {
-      if (e.selected.length > 0) {
-        this.removeModal();
-        const modal = document.createElement('div');
-        modal.id = 'name-modal-div'
-        modal.innerHTML = this.modalHTML(e.selected[0].values_.name);
-        document.body.appendChild(modal);
-      }
-    }
-    );
-  }
-
-  private clickInteraction() {
-    const select = new Select();
-    this.map.addInteraction(select);
-    select.on('select', (e) => {
-      if (e.selected.length > 0) {
-        this.dashboard.clicked_city(e.selected[0].values_.name)
-      }
-    });
-  }
-
   createCrimeMap() {
     document.getElementById('map').innerHTML = null;
     let vectorSource = new VectorSource();
-    const clusterLoader = new CrimeClusterLoader();
-    const crimeCluster = clusterLoader.getJson();
+    this.crimeCluster = (!this.crimeCluster) ? new CrimeClusterLoader() : this.crimeCluster;
+    const crimeCluster = this.crimeCluster.getJson();
 
     for (let feature of this.citiesInfo.features) {
       let cityCoordinates = [];
@@ -110,7 +86,9 @@ export class MapComponent implements OnInit {
         if (name === 'FAZENDA VILANOVA') name = 'FAZENDA VILA NOVA'
         if (name === 'ENTRE-IJUIS') name = 'ENTRE IJUIS'
         let cluster = crimeCluster[name].Label;
-        let color = this.colorArray[cluster];
+        const hexColor = this.colorArray[cluster];
+        const rgbColor = this.hexToRgb(hexColor);
+        let color = `rgba(${rgbColor.r}, ${rgbColor.g}, ${rgbColor.b}, 0.5)`;
 
         const line = new Polygon([cityCoordinates]);
         const features = new Feature(line);
@@ -137,8 +115,8 @@ export class MapComponent implements OnInit {
   createIBGEMap() {
     document.getElementById('map').innerHTML = null;
     let vectorSource = new VectorSource();
-    const clusterLoader = new IBGEClusterLoader();
-    const ibgeCluster = clusterLoader.getJson();
+    this.ibgeCluster = (!this.ibgeCluster) ? new IBGEClusterLoader() : this.ibgeCluster;
+    const ibgeCluster = this.ibgeCluster.getJson();
 
     for (let feature of this.citiesInfo.features) {
       let cityCoordinates = [];
@@ -152,7 +130,9 @@ export class MapComponent implements OnInit {
         if (name === 'FAZENDA VILANOVA') name = 'FAZENDA VILA NOVA'
         if (name === 'ENTRE-IJUIS') name = 'ENTRE IJUIS'
         let cluster = ibgeCluster[name].Label;
-        let color = this.colorArray[cluster];
+        const hexColor = this.colorArray[cluster];
+        const rgbColor = this.hexToRgb(hexColor);
+        let color = `rgba(${rgbColor.r}, ${rgbColor.g}, ${rgbColor.b}, 0.5)`;
 
         const line = new Polygon([cityCoordinates]);
         const features = new Feature(line);
@@ -179,8 +159,8 @@ export class MapComponent implements OnInit {
   createIBGECrimeMap() {
     document.getElementById('map').innerHTML = null;
     let vectorSource = new VectorSource();
-    const clusterLoader = new IBGECrimeClusterLoader();
-    const ibgeCrimeCluster = clusterLoader.getJson();
+    this.ibgeCrimeCluster = (!this.ibgeCrimeCluster) ? new IBGECrimeClusterLoader() : this.ibgeCrimeCluster;
+    const ibgeCrimeCluster = this.ibgeCrimeCluster.getJson();
 
     for (let feature of this.citiesInfo.features) {
       let cityCoordinates = [];
@@ -194,7 +174,9 @@ export class MapComponent implements OnInit {
         if (name === 'FAZENDA VILANOVA') name = 'FAZENDA VILA NOVA'
         if (name === 'ENTRE-IJUIS') name = 'ENTRE IJUIS'
         let cluster = ibgeCrimeCluster[name].Label;
-        let color = this.colorArray[cluster];
+        const hexColor = this.colorArray[cluster];
+        const rgbColor = this.hexToRgb(hexColor);
+        let color = `rgba(${rgbColor.r}, ${rgbColor.g}, ${rgbColor.b}, 0.5)`;
 
         const line = new Polygon([cityCoordinates]);
         const features = new Feature(line);
@@ -212,6 +194,131 @@ export class MapComponent implements OnInit {
     const vectorLayer = new VectorLayer({
       source: vectorSource
     })
+
+    this.createMap(vectorLayer);
+    this.hooverInteraction();
+    this.clickInteraction();
+  }
+
+  createCrimeHeatMap(city) {
+    this.crimeCluster = (!this.crimeCluster) ? new CrimeClusterLoader() : this.crimeCluster;
+    const distances = this.crimeCluster.getDistanceFrom(city);
+
+    document.getElementById('map').innerHTML = null;
+    let vectorSource = new VectorSource();
+
+    for (let feature of this.citiesInfo.features) {
+      let cityCoordinates = [];
+
+      for (let coord of feature.geometry.coordinates) {
+        cityCoordinates.push(transform(coord, 'EPSG:4326', 'EPSG:3857'))
+      }
+
+      try {
+        let name = this.makeSortString(feature.properties.Name)
+        if (name === 'FAZENDA VILANOVA') name = 'FAZENDA VILA NOVA'
+        if (name === 'ENTRE-IJUIS') name = 'ENTRE IJUIS'
+        const hslColor = this.heatMapColorforValue(distances[name].distance);
+
+        const line = new Polygon([cityCoordinates]);
+        let features = new Feature(line);
+        features.set('name', feature.properties.Name);
+        features.setStyle(new Style({ 
+          stroke: new Stroke({ color: '#000000' }),
+          fill: new Fill({ color: `hsl(${hslColor.h}, 100%, 50%)` }) 
+        }));
+        vectorSource.addFeature(features);
+      } catch (e) {
+        console.log(feature.properties.Name)
+      }
+    }
+
+    const vectorLayer = new VectorLayer({
+      source: vectorSource
+    });
+
+    this.createMap(vectorLayer);
+    this.hooverInteraction();
+    this.clickInteraction();
+  }
+
+  createIbgeHeatMap(city) {
+    this.ibgeCluster = (!this.ibgeCluster) ? new IBGEClusterLoader() : this.ibgeCluster;
+    const distances = this.ibgeCluster.getDistanceFrom(city);
+    document.getElementById('map').innerHTML = null;
+    let vectorSource = new VectorSource();
+
+    for (let feature of this.citiesInfo.features) {
+      let cityCoordinates = [];
+
+      for (let coord of feature.geometry.coordinates) {
+        cityCoordinates.push(transform(coord, 'EPSG:4326', 'EPSG:3857'))
+      }
+
+      try {
+        let name = this.makeSortString(feature.properties.Name)
+        if (name === 'FAZENDA VILANOVA') name = 'FAZENDA VILA NOVA'
+        if (name === 'ENTRE-IJUIS') name = 'ENTRE IJUIS'
+        const hslColor = this.heatMapColorforValue(distances[name].distance);
+
+        const line = new Polygon([cityCoordinates]);
+        let features = new Feature(line);
+        features.set('name', feature.properties.Name);
+        features.setStyle(new Style({ 
+          stroke: new Stroke({ color: '#000000' }),
+          fill: new Fill({ color: `hsl(${hslColor.h}, 100%, 50%)` }) 
+        }));
+        vectorSource.addFeature(features);
+      } catch (e) {
+        console.log(feature.properties.Name)
+      }
+    }
+
+    const vectorLayer = new VectorLayer({
+      source: vectorSource
+    });
+
+    this.createMap(vectorLayer);
+    this.hooverInteraction();
+    this.clickInteraction();
+  }
+
+  createIbgeCrimeHeatMap(city) {
+    this.ibgeCrimeCluster = (!this.ibgeCrimeCluster) ? new IBGECrimeClusterLoader() : this.ibgeCrimeCluster;
+    const distances = this.ibgeCrimeCluster.getDistanceFrom(city);
+
+    document.getElementById('map').innerHTML = null;
+    let vectorSource = new VectorSource();
+
+    for (let feature of this.citiesInfo.features) {
+      let cityCoordinates = [];
+
+      for (let coord of feature.geometry.coordinates) {
+        cityCoordinates.push(transform(coord, 'EPSG:4326', 'EPSG:3857'))
+      }
+
+      try {
+        let name = this.makeSortString(feature.properties.Name)
+        if (name === 'FAZENDA VILANOVA') name = 'FAZENDA VILA NOVA'
+        if (name === 'ENTRE-IJUIS') name = 'ENTRE IJUIS'
+        const hslColor = this.heatMapColorforValue(distances[name].distance);
+
+        const line = new Polygon([cityCoordinates]);
+        let features = new Feature(line);
+        features.set('name', feature.properties.Name);
+        features.setStyle(new Style({ 
+          stroke: new Stroke({ color: '#000000' }),
+          fill: new Fill({ color: `hsl(${hslColor.h}, 100%, 50%)` }) 
+        }));
+        vectorSource.addFeature(features);
+      } catch (e) {
+        console.log(feature.properties.Name)
+      }
+    }
+
+    const vectorLayer = new VectorLayer({
+      source: vectorSource
+    });
 
     this.createMap(vectorLayer);
     this.hooverInteraction();
@@ -245,7 +352,36 @@ export class MapComponent implements OnInit {
     this.clickInteraction();
   }
 
+  private clickInteraction() {
+    const select = new Select();
+    this.map.addInteraction(select);
+    select.on('select', (e) => {
+      if (e.selected.length > 0) {
+        this.citySelected.emit({city: e.selected[0].values_.name})
+      }
+    });
+  }
+
+  private hooverInteraction() {
+    const select = new Select({
+      condition: pointerMove
+    });
+
+    this.map.addInteraction(select);
+    select.on('select', (e) => {
+      if (e.selected.length > 0) {
+        this.removeModal();
+        const modal = document.createElement('div');
+        modal.id = 'name-modal-div'
+        modal.innerHTML = this.modalHTML(e.selected[0].values_.name);
+        document.body.appendChild(modal);
+      }
+    }
+    );
+  }
+
   private createMap(vectorLayer) {
+    this.map = null;
     this.map = new Map({
       layers: [
         new TileLayer({
@@ -260,6 +396,27 @@ export class MapComponent implements OnInit {
         minZoom: 7
       })
     });
+    setTimeout(() => {this.map.render() }, 200)
+  }
+
+  private createMap2(vectorLayer, vectorHoover) {
+    this.map = null;
+    this.map = new Map({
+      layers: [
+        new TileLayer({
+          source: new OSM()
+        }),
+        vectorLayer,
+        vectorHoover
+      ],
+      target: 'map',
+      view: new View({
+        center: fromLonLat([-53, -30]),
+        zoom: 7,
+        minZoom: 7
+      })
+    });
+    setTimeout(() => {this.map.render() }, 200)
   }
 
   private makeSortString = (function () {
@@ -310,6 +467,22 @@ export class MapComponent implements OnInit {
     if (modal) {
       document.body.removeChild(modal);
     }
+  }
+
+  private hexToRgb = (hex) => {
+    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result ? {
+      r: parseInt(result[1], 16),
+      g: parseInt(result[2], 16),
+      b: parseInt(result[3], 16)
+    } : null;
+  }
+
+  private heatMapColorforValue(value){
+    const h = (1.0 - value) * 100;
+    const s = 100;
+    const l = value * 50
+    return { h: h,  s: s, l: l };
   }
 }
 
