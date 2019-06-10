@@ -1,22 +1,20 @@
-// The plotly example were obtained from https://plot.ly/javascript/line-and-scatter/
-
 import { Component, OnInit } from '@angular/core';
 
-import { CrimeClusterLoader } from '../../../common/crimeClusterLoader.component';
 import Plotly from 'plotly.js-dist';
+
+import { IBGECrimeClusterLoader } from 'src/app/components/common/ibgeCrimeClusterLoader.components';
 import { DashboardUpdateService } from 'src/app/services/dashboard-update.service';
 
-
 @Component({
-  selector: 'app-crime-graph',
-  templateUrl: './crime-graph.component.html',
-  styleUrls: ['./crime-graph.component.scss']
+  selector: 'app-ibge-crime-graph',
+  templateUrl: './ibge-crime-graph.component.html',
+  styleUrls: ['./ibge-crime-graph.component.scss']
 })
-export class CrimeGraphComponent implements OnInit {
-  
-  private colorArray = [];
-  private traces = [];
+export class IbgeCrimeGraphComponent implements OnInit {
+
   private layout;
+  private traces = [];
+  private colorArray = [];
 
   constructor (service: DashboardUpdateService) {
     this.colorArray = service.colorArray;
@@ -24,13 +22,13 @@ export class CrimeGraphComponent implements OnInit {
 
   ngOnInit() {
     if (this.traces.length > 0) {
-      Plotly.newPlot('content_criminal', this.traces, this.layout);  
-    } this.createCrimeGraph();
+      Plotly.newPlot('content_total', this.traces, this.layout);
+    } else this.createTotalGraph()
   }
 
-  private createCrimeGraph () {
-    const loader = new CrimeClusterLoader();
-    const dt = loader.getJson();
+  private createTotalGraph () {
+    const loader = new IBGECrimeClusterLoader();
+    const dt = loader.getJson ();
 
     const labels = [];
     for (let key in dt) {
@@ -100,11 +98,11 @@ export class CrimeGraphComponent implements OnInit {
       yaxis: {
         range: [ min_y, max_y ]
       },
-      title: "Distribuição dos Dados Criminais"
+      title: "Distribuição dos Dados do IBGE + Criminais"
     };
 
-    Plotly.newPlot('content_criminal', this.traces, this.layout);    
-  }
+    Plotly.newPlot('content_total', this.traces, this.layout);
 
+  }
 
 }

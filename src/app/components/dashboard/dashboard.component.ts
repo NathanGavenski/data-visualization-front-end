@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, Input, Output, EventEmitter } from '@angular/core';
 import { CrimeLoader } from '../common/crimeLoader.component';
 import { CityComponent } from './city/city.component';
-import { MapComponent } from '../map/map.component';
+import { DashboardUpdateService } from 'src/app/services/dashboard-update.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -31,8 +31,9 @@ export class DashboardComponent implements OnInit {
   @Input() city: String;
   @Output() createMap = new EventEmitter();
   @Output() showDistance = new EventEmitter();
+  @Output() unsetDistance = new EventEmitter();
 
-  constructor() {
+  constructor(private service: DashboardUpdateService) {
     this.crimeJson = new CrimeLoader().getJson()
   }
 
@@ -63,12 +64,8 @@ export class DashboardComponent implements OnInit {
     let info = this.crimeJson[city.toUpperCase()]['IBGE'];
     if (info) {
       this.cityInfo = JSON.stringify(info);
-      this.cityComponent.setCity(this.cityInfo);
+      this.service.city = this.cityInfo;
     } else this.cityComponent.setCity(null);
-  }
-
-  getLocal() {
-    return this.local;
   }
 
   clicked_rs() {
@@ -81,12 +78,24 @@ export class DashboardComponent implements OnInit {
     if (type === 'Nenhum') this.clusterLabel = 'Mostrar clusters';
     else this.clusterLabel = type;
 
+    this.service.label = type;
     this.currentCluster = type;
     this.createMap.emit({ kind: type })
   }
+
+  getLocal() {
+    return this.local;
+  }
   
-  distance() {
+  distance(event) {
     this.showDistance.emit({
+      kind: this.currentCluster,
+      city: this.local
+    });
+  }
+
+  removeDistance(event) {
+    this.unsetDistance.emit({
       kind: this.currentCluster,
       city: this.local
     });

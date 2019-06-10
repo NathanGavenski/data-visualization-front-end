@@ -13,7 +13,7 @@ export class AppComponent {
   public loading = false;
   public arrow = '>';
 
-  private dashboardController = true;
+  public dashboardController = true;
   private city;
   private type;
 
@@ -72,6 +72,31 @@ export class AppComponent {
         break;
       case 'IBGE + Crime': 
         this.map.createIbgeCrimeHeatMap(event.city);
+        break;
+      default: 
+        this.map.createNormalMap();
+        break;
+    }
+
+    setTimeout(() => {
+      this.map.map.updateSize();
+      this.loading = false;
+      }, 200
+    );
+  }
+
+  removeDistance(event) {
+    if (event) this.type = event.kind;
+
+    switch(this.type) {
+      case 'IBGE': 
+        this.map.createIBGEMap();
+        break;
+      case 'Crime': 
+        this.map.createCrimeMap();
+        break;
+      case 'IBGE + Crime': 
+        this.map.createIBGECrimeMap();
         break;
       default: 
         this.map.createNormalMap();

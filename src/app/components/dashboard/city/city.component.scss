@@ -66,3 +66,13 @@ h5 {
 
   .info-left {}
 }
+
+#distribuição-dados {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  h5 {
+    align-self: center;
+  }
+}

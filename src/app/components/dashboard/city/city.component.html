@@ -216,7 +216,15 @@
     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
       <div class="card-body">
         <div id="distribuição-dados" class="info container row">
-          <app-crime-graph [selectedType]="selectedType"></app-crime-graph>
+          <div class="btn-group" *ngIf="selectedType.label != 'Nenhum'">
+              <button type="button" class="btn btn-primary" (click)="activateDistance()">Ativar Heat Map</button>
+              <button type="button" class="btn btn-primary" (click)="deactivateDistance()">Desativar Heat Map</button>
+
+          </div>
+          <h5 *ngIf="selectedType.label === 'Nenhum'">Nenhum cluster selecionado</h5>
+          <app-crime-graph *ngIf="selectedType.label === 'Crime'"></app-crime-graph>
+          <app-ibge-graph *ngIf="selectedType.label === 'IBGE'"></app-ibge-graph>
+          <app-ibge-crime-graph *ngIf="selectedType.label === 'IBGE + Crime'"></app-ibge-crime-graph>
         </div> <!-- info-right -->
       </div> <!-- Populacao -->
     </div> <!-- Collapse two -->

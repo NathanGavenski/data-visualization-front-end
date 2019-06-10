@@ -1,36 +1,34 @@
-// The plotly example were obtained from https://plot.ly/javascript/line-and-scatter/
-
 import { Component, OnInit } from '@angular/core';
 
-import { CrimeClusterLoader } from '../../../common/crimeClusterLoader.component';
 import Plotly from 'plotly.js-dist';
+
+import { IBGEClusterLoader } from 'src/app/components/common/ibgeClusterLoader.component';
 import { DashboardUpdateService } from 'src/app/services/dashboard-update.service';
 
-
 @Component({
-  selector: 'app-crime-graph',
-  templateUrl: './crime-graph.component.html',
-  styleUrls: ['./crime-graph.component.scss']
+  selector: 'app-ibge-graph',
+  templateUrl: './ibge-graph.component.html',
+  styleUrls: ['./ibge-graph.component.scss']
 })
-export class CrimeGraphComponent implements OnInit {
-  
+export class IbgeGraphComponent implements OnInit {
+
   private colorArray = [];
   private traces = [];
   private layout;
 
-  constructor (service: DashboardUpdateService) {
+  constructor(service: DashboardUpdateService) {
     this.colorArray = service.colorArray;
   }
 
   ngOnInit() {
     if (this.traces.length > 0) {
-      Plotly.newPlot('content_criminal', this.traces, this.layout);  
-    } this.createCrimeGraph();
-  }
+      Plotly.newPlot('content_ibge', this.traces, this.layout);
+    } else this.createIBGEGraph()
+  }  
 
-  private createCrimeGraph () {
-    const loader = new CrimeClusterLoader();
-    const dt = loader.getJson();
+  private createIBGEGraph () {
+    const loader = new IBGEClusterLoader();
+    const dt = loader.getJson ();
 
     const labels = [];
     for (let key in dt) {
@@ -87,7 +85,7 @@ export class CrimeGraphComponent implements OnInit {
           family:  'Raleway, sans-serif'
         },
         marker: { 
-          size: 9,
+          size: 9,          
           color: this.colorArray[i]
         }
       } );
@@ -100,11 +98,11 @@ export class CrimeGraphComponent implements OnInit {
       yaxis: {
         range: [ min_y, max_y ]
       },
-      title: "Distribuição dos Dados Criminais"
+      title: "Distribuição dos Dados do IBGE"
     };
 
-    Plotly.newPlot('content_criminal', this.traces, this.layout);    
-  }
+    Plotly.newPlot('content_ibge', this.traces, this.layout);
 
+  }
 
 }

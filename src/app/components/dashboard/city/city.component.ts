@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
+import { DashboardUpdateService } from 'src/app/services/dashboard-update.service';
 
 @Component({
   selector: 'app-city',
@@ -6,8 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./city.component.scss']
 })
 export class CityComponent implements OnInit {
-  @Input('cityInfo') cityInfo;
-  @Input() selectedType;
+
+  @Output() callDistance = new EventEmitter();
+  @Output() removeDistance = new EventEmitter();
+  
+  public selectedType;
 
   public estimated_population: String
   public census_population: String;
@@ -42,11 +46,14 @@ export class CityComponent implements OnInit {
   public arborizacao: String;
   public urbanizacao: String;
 
-  constructor() {
+  private cityInfo;
+
+  constructor(private service: DashboardUpdateService) {
+    this.selectedType = this.service;
   }
 
   ngOnInit() {
-    this.setCity(this.cityInfo);
+    this.setCity(this.service.city);
   }
 
   setCity(city) {
@@ -85,7 +92,14 @@ export class CityComponent implements OnInit {
     this.occupied_population = this.cityInfo.occupied_population ? this.cityInfo.occupied_population : 'NaN';
     this.average_salary = this.cityInfo.average_salary ? this.cityInfo.average_salary : 'NaN';
     this.percentual_rendimento = this.cityInfo['Half income'] ? this.cityInfo['Half income'] : 'NaN';
+  }
 
+  activateDistance() {
+    this.callDistance.emit();
+  }
+
+  deactivateDistance() {
+    this.removeDistance.emit();
   }
 
 }

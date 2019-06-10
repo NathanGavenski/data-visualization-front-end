@@ -12,6 +12,8 @@ import { StateComponent } from './components/dashboard/state/state.component';
 import { CityComponent } from './components/dashboard/city/city.component';
 import { NameModalComponent } from './components/common/name-modal/name-modal.component';
 import { CrimeGraphComponent } from './components/dashboard/graphs/crime-graph/crime-graph.component';
+import { IbgeGraphComponent } from './components/dashboard/graphs/ibge-graph/ibge-graph.component';
+import { IbgeCrimeGraphComponent } from './components/dashboard/graphs/ibge-crime-graph/ibge-crime-graph.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { CrimeGraphComponent } from './components/dashboard/graphs/crime-graph/c
     StateComponent,
     CityComponent,
     NameModalComponent,
-    CrimeGraphComponent
+    CrimeGraphComponent,
+    IbgeGraphComponent,
+    IbgeCrimeGraphComponent
   ],
   imports: [
     BrowserModule,

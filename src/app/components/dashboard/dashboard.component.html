@@ -21,7 +21,6 @@
       </div>
     </div>
     <button type="button" class="btn btn-primary" (click)="clicked_rs()">Voltar RS</button>
-    <button type="button" class="btn btn-primary" (click)="distance()">Testar distância</button>
   </div>
 
   <div class="infos">
@@ -29,7 +28,7 @@
       <app-state></app-state>
     </div>
     <div *ngIf="!state">
-      <app-city [cityInfo]="cityInfo" [selectedType]="selectedType"></app-city>
+      <app-city (callDistance)="distance($event)" (removeDistance)="removeDistance($event)"></app-city>
     </div>
   </div>
 </div>

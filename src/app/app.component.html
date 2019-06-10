@@ -3,7 +3,8 @@
                 id="app-dashboard" 
                 [city]="city" 
                 (createMap)="activate_clusters($event)"
-                (showDistance)="showDistance($event)"></app-dashboard>
+                (showDistance)="showDistance($event)"
+                (unsetDistance)="removeDistance($event)"></app-dashboard>
 <div id="arrow" class="minimize">
     <button class="btn btn-primary" (click)="minimize()"> {{arrow}} </button>
 </div>
