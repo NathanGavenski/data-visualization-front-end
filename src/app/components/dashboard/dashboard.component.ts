@@ -15,6 +15,7 @@ export class DashboardComponent implements OnInit {
   public clusterLabel = 'Mostrar clusters'
   public clustersType = ['Nenhum', 'IBGE', 'Crime', 'IBGE + Crime']
 
+  public selectedType;
   public cityInfo;
   public cityNames;
   public cityLabel = 'Escolher cidades';

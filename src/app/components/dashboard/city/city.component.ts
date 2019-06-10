@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CityComponent implements OnInit {
   @Input('cityInfo') cityInfo;
+  @Input() selectedType;
 
   public estimated_population: String
   public census_population: String;
