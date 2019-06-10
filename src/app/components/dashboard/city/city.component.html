@@ -1,9 +1,10 @@
 <div id="accordion">
+
   <div class="card">
     <div class="card-header button_centered_title btn btn-link collapsed" id="headingOne" data-toggle="collapse"
       data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
       <h5 class="mb-0">
-        Informações populacionais e educacionais 
+        Informações populacionais, educacionais e de saúde
       </h5>
     </div>
     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
@@ -13,7 +14,7 @@
             <h4 class="centered_title">População:</h4>
             <div class="info-display">
               <h4 class="col-5">População estimada:</h4>
-              <input class="col-7" currencyMask [(ngModel)]="estimated_population"
+              <input class="col-7" currencyMask [(ngModel)]="estimated_population "
                 [options]="{ prefix:'', suffix: ' habitantes', thousands: '.', precision: '0' }" disabled>
             </div>
             <div class="info-display">
@@ -99,7 +100,7 @@
     <div class="card-header button_centered_title btn btn-link collapsed" id="headingTwo" data-toggle="collapse"
       data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
       <h5 class="mb-0">
-        Informações educacionais 
+        Informações geográficas
       </h5>
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
@@ -207,13 +208,103 @@
   </div>
 
   <div class="card">
-    <div class="card-header button_centered_title btn btn-link collapsed" id="headingFour" data-toggle="collapse"
-      data-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+      <div class="card-header button_centered_title btn btn-link collapsed" id="headingFour" data-toggle="collapse"
+        data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        <h5 class="mb-0">
+          Informações criminais 
+        </h5>
+      </div>
+      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+        <div class="card-body">
+          <div id="delitos-furtos" class="info container row">
+            <div class="info-left col-6">
+              <h4 class="centered_title">Delitos e Furtos:</h4>
+              <div class="info-display">
+                <h4 class="col-5">Delitos relacionados à armas:</h4>
+                <input class="col-7" currencyMask [(ngModel)]="weapons_delicts"
+                  [options]="{ prefix:'', suffix: ' delitos', thousands: '.', precision: '0' }" disabled>
+              </div>
+              <div class="info-display">
+                <h4 class="col-5">Delitos relacionados à corrupção:</h4>
+                <input class="col-7" currencyMask [(ngModel)]="corruption_delicts"
+                  [options]="{ prefix:'', suffix: ' delitos', thousands: '.', decimal: ',', precision: '0'  }"
+                  disabled>
+              </div>
+              <div class="info-display">
+                <h4 class="col-5">Furto de veículos:</h4>
+                <input class="col-7" currencyMask [(ngModel)]="vehicle_thefts"
+                  [options]="{ prefix:'', suffix: ' furtos', thousands: '.', decimal: ',', precision: '0'  }" disabled>
+              </div>
+              <div class="info-display">
+                <h4 class="col-7">Furtos:</h4>
+                <input class="col-5" currencyMask [(ngModel)]="thefts"
+                  [options]="{ prefix:'', suffix: ' furtos', thousands: '.', decimal: ',' }" disabled>
+              </div>
+              <div class="info-display">
+                <h4 class="col-7">Roubo de veículos:</h4>
+                <input class="col-5" currencyMask [(ngModel)]="vehicle_steals"
+                  [options]="{ prefix:'', suffix: ' veículos', thousands: '.', decimal: ',' }" disabled>
+              </div>
+              <div class="info-display">
+                <h4 class="col-7">Roubos:</h4>
+                <input class="col-5" currencyMask [(ngModel)]="steals"
+                  [options]="{ prefix:'', suffix: ' roubos', thousands: '.', decimal: ',', precision: '0' }" disabled>
+              </div>
+              <div class="info-display">
+                <h4 class="col-7">Latrocínios:</h4>
+                <input class="col-5" currencyMask [(ngModel)]="robberys"
+                  [options]="{ prefix:'', suffix: ' latrocínios', thousands: '.', decimal: ',', precision: '0' }" disabled>
+              </div>
+            </div> <!-- info-left -->
+  
+            <div class="info-right col-6">
+              <h4 class="centered_title">Entorpecentes e extorções</h4>
+              <div class="info-display">
+                <h4 class="col-6">Posse de entorpecentes:</h4>
+                <input class="col-7" currencyMask [(ngModel)]="narcotics_possession"
+                  [options]="{ prefix:'', suffix: ' unidades', thousands: '.', decimal: ',' }"
+                  disabled>
+              </div>
+              <div class="info-display">
+                <h4 class="col-6">Tráfico de entorpecentes:</h4>
+                <input class="col-7" currencyMask [(ngModel)]="narcotics_trafic"
+                  [options]="{ prefix:'', suffix: ' unidades', thousands: '.', decimal: ','  }"
+                  disabled>
+              </div>
+              <div class="info-display">
+                <h4 class="col-6">Estelionato:</h4>
+                <input class="col-7" currencyMask [(ngModel)]="stelionats"
+                  [options]="{ prefix:'', suffix: ' estelionatos', thousands: '.', decimal: ','  }" disabled>
+              </div>
+              <div class="info-display">
+                <h4 class="col-6">Extorsões:</h4>
+                <input class="col-7" currencyMask [(ngModel)]="extortions"
+                  [options]="{ prefix:'', suffix: ' extorsões', thousands: '.', decimal: ','  }" disabled>
+              </div>
+              <div class="info-display">
+                <h4 class="col-6">Extorsões mediante sequestro:</h4>
+                <input class="col-7" currencyMask [(ngModel)]="kidnapping"
+                  [options]="{ prefix:'', suffix: ' extorsões', thousands: '.', decimal: ','  }" disabled>
+              </div>
+              <div class="info-display">
+                <h4 class="col-6">Homicídio doloso:</h4>
+                <input class="col-7" currencyMask [(ngModel)]="willful_homicide"
+                  [options]="{ prefix:'', suffix: ' homicídios', thousands: '.', decimal: ','  }" disabled>
+              </div>
+            </div> <!-- info-right -->
+          </div> <!-- Populacao e Educacao -->
+        </div> <!-- Card-body -->
+      </div> <!-- CollapseOne-->
+    </div> <!-- card -->
+
+  <div class="card">
+    <div class="card-header button_centered_title btn btn-link collapsed" id="headingFive" data-toggle="collapse"
+      data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
       <h5 class="mb-0">
         Distribuição dos Dados 
       </h5>
     </div>
-    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
       <div class="card-body">
         <div id="distribuição-dados" class="info container row">
           <div class="btn-group" *ngIf="selectedType.label != 'Nenhum'">

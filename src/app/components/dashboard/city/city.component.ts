@@ -13,7 +13,7 @@ export class CityComponent implements OnInit {
   
   public selectedType;
 
-  public estimated_population: String
+  public estimated_population: String;
   public census_population: String;
   public demographic_density: String;
   public total_vehicles: String;
@@ -46,27 +46,44 @@ export class CityComponent implements OnInit {
   public arborizacao: String;
   public urbanizacao: String;
 
-  private cityInfo;
+  public weapons_delicts: String;
+  public corruption_delicts: String;
+  public vehicle_thefts: String;
+  public thefts: String;
+  public vehicle_steals: String;
+  public steals: String;
+  public robberys: String;
+
+  public narcotics_possession: String;
+  public narcotics_trafic: String;
+  public stelionats: String;
+  public extortions: String;
+  public kidnapping: String;
+  public willful_homicide: String;
+
+  public cityInfo;
+  public crimeInfo;
 
   constructor(private service: DashboardUpdateService) {
     this.selectedType = this.service;
+    this.service.teste = this;
   }
 
   ngOnInit() {
-    this.setCity(this.service.city);
+    this.setCity(this.service.city, this.service.crime);
   }
 
-  setCity(city) {
+  setCity(city, crime) {    
     if (city) {
-      this.cityInfo = JSON.parse(city);
-    } else this.cityInfo = {};
-    
+      this.cityInfo = city;
+    } else this.cityInfo = {}
+
     this.estimated_population = (this.cityInfo.estimated_population) ? this.cityInfo.estimated_population : 'NaN'; 
     this.census_population = (this.cityInfo.population_last_census) ? this.cityInfo.population_last_census : 'NaN';
     this.demographic_density = (this.cityInfo.demographic_density) ? this.cityInfo.demographic_density : 'NaN';
 
     this.school_minor = (this.cityInfo.school_minor) ? this.cityInfo.school_minor : 'NaN';
-    this.IDEB = (this.cityInfo.IDE) ? this.cityInfo.IDE : 'NaN';
+    this.IDEB = (this.cityInfo.IDEB) ? this.cityInfo.IDEB : 'NaN';
     this.elementary_enrollment = (this.cityInfo['Matrículas no ensino fundamental']) ? this.cityInfo['Matrículas no ensino fundamental'] : 'NaN';
     this.high_enrollment = (this.cityInfo['Matrículas no ensino médio']) ? this.cityInfo['Matrículas no ensino médio'] : 'NaN';
     this.elementary_teachers = (this.cityInfo.fundamental_teachers) ? this.cityInfo.fundamental_teachers : 'NaN';
@@ -92,6 +109,25 @@ export class CityComponent implements OnInit {
     this.occupied_population = this.cityInfo.occupied_population ? this.cityInfo.occupied_population : 'NaN';
     this.average_salary = this.cityInfo.average_salary ? this.cityInfo.average_salary : 'NaN';
     this.percentual_rendimento = this.cityInfo['Half income'] ? this.cityInfo['Half income'] : 'NaN';
+
+    if (crime) {
+      this.crimeInfo = crime;
+    } else this.crimeInfo = {}
+
+    this.weapons_delicts = this.crimeInfo[' Delitos Relacionados à Armas e Munições'] ? this.crimeInfo[' Delitos Relacionados à Armas e Munições'] : 'NaN';
+    this.corruption_delicts = this.crimeInfo[' Delitos Relacionados à Corrupção'] ? this.crimeInfo[' Delitos Relacionados à Corrupção'] : 'NaN';
+    this.vehicle_thefts = this.crimeInfo[' Roubo de Veículo'] ? this.crimeInfo[' Roubo de Veículo'] : 'NaN';
+    this.thefts = this.crimeInfo[' Roubos'] ? this.crimeInfo[' Roubos'] : 'NaN';
+    this.vehicle_steals = this.crimeInfo[' Furto de Veículo'] ? this.crimeInfo[' Furto de Veículo'] : 'NaN';
+    this.steals = this.crimeInfo[' Furtos'] ? this.crimeInfo[' Furtos'] : 'NaN';
+    this.robberys = this.crimeInfo[' Latrocínio'] ? this.crimeInfo[' Latrocínio'] : 'NaN';
+
+    this.narcotics_possession = this.crimeInfo[' Entorpecentes - Posse'] ? this.crimeInfo[' Entorpecentes - Posse'] : 'NaN';
+    this.narcotics_trafic = this.crimeInfo[' Entorpecentes - Tráfico'] ? this.crimeInfo[' Entorpecentes - Tráfico'] : 'NaN';
+    this.stelionats = this.crimeInfo[' Estelionato'] ? this.crimeInfo[' Estelionato'] : 'NaN';
+    this.extortions = this.crimeInfo[' Extorsão'] ? this.crimeInfo[' Extorsão'] : 'NaN';
+    this.kidnapping = this.crimeInfo[' Extorsão Mediante Sequestro'] ? this.crimeInfo[' Extorsão Mediante Sequestro'] : 'NaN';
+    this.willful_homicide = this.crimeInfo[' Homicídio  Doloso'] ? this.crimeInfo[' Homicídio  Doloso'] : 'NaN';
   }
 
   activateDistance() {

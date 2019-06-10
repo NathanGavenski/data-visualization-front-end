@@ -28,7 +28,7 @@ export class DashboardComponent implements OnInit {
   @ViewChild(CityComponent)
   private cityComponent: CityComponent;
 
-  @Input() city: String;
+  @Input()  city: String;
   @Output() createMap = new EventEmitter();
   @Output() showDistance = new EventEmitter();
   @Output() unsetDistance = new EventEmitter();
@@ -60,12 +60,16 @@ export class DashboardComponent implements OnInit {
     this.local = this.capitalizeFirstLetter(city)
     this.cityLabel = this.local;
 
+    city = this.makeSortString(city)
+    if (city === 'FAZENDA VILANOVA') city = 'FAZENDA VILA NOVA'
+    if (city === 'ENTRE-IJUIS') city = 'ENTRE IJUIS'
+
     const crimeInfo = this.crimeJson[city.toUpperCase()]['2018'];
     let info = this.crimeJson[city.toUpperCase()]['IBGE'];
-    if (info) {
-      this.cityInfo = JSON.stringify(info);
-      this.service.city = this.cityInfo;
-    } else this.cityComponent.setCity(null);
+    
+    if (info && crimeInfo) {
+      this.service.setCity(info, crimeInfo);
+    }
   }
 
   clicked_rs() {
@@ -100,5 +104,21 @@ export class DashboardComponent implements OnInit {
       city: this.local
     });
   }
+
+  private makeSortString = (function () {
+    var translate_re = /[ÄÃÁÂÁÇÖÓÕÔÔÊÉÍÚÜ]/g;
+    var translate = {
+      "Ä": "A", "Ö": "O", "Ü": "U",
+      "Ã": "A", "Õ": "O", "É": "E",
+      "Ó": "O", "Ç": "C", "Ê": "E",
+      "Â": "A", "Í": "I", "Á": "A",
+      "Ô": "O", "Ú": "U"  // probably more to come
+    };
+    return function (s) {
+      return (s.replace(translate_re, function (match) {
+        return translate[match];
+      }));
+    }
+  })();
 
 }

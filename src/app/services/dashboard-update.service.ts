@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { CityComponent } from '../components/dashboard/city/city.component';
 @Injectable({
   providedIn: 'root'
 })
@@ -6,6 +7,7 @@ export class DashboardUpdateService {
 
   public label = 'Nenhum';
   public city;
+  public crime;
 
   public colorArray = [
     '#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
@@ -20,5 +22,14 @@ export class DashboardUpdateService {
     '#E64D66', '#4DB380', '#FF4D4D', '#99E6E6', '#6666FF'
   ];
 
+  public teste: CityComponent
+
   constructor() { }
+
+  public setCity(city, crime) {
+    this.city = city;
+    this.crime = crime;
+
+    this.teste.setCity(city, crime);
+  }
 }
