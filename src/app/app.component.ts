@@ -54,7 +54,7 @@ export class AppComponent {
 
   activate_clusters(event) {
     if (event) this.type = event.kind;
-    if (this.type === 'Normal') this.map.createNormalMap();
+    if (this.type === 'Nenhum') this.map.createNormalMap();
     else if (this.type === 'IBGE') this.map.createIBGEMap();
     else if (this.type === 'Crime') this.map.createCrimeMap();
     else if (this.type === 'IBGE + Crime') this.map.createIBGECrimeMap();

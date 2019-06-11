@@ -127,9 +127,6 @@ export class CityComponent implements OnInit {
     this.vehicles = this.crimeInfo[' Veículo'] ? this.crimeInfo[' Veículo'] : 'NaN';
     this.slaughter = this.crimeInfo['Abigeato*'] ? this.crimeInfo['Abigeato*'] : 'NaN';
     this.victims_willful = this.crimeInfo['Total de vítimas de Homicidio Doloso'] ? this.crimeInfo['Total de vítimas de Homicidio Doloso'] : 'NaN';
-    
-
-    console.log(this.crimeInfo);
   }
 
   activateDistance() {
