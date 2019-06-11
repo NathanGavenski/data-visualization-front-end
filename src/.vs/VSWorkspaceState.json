@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\app",
+    "\\app\\components",
+    "\\app\\components\\dashboard",
+    "\\app\\components\\dashboard\\graphs\\crime-graph",
+    "\\assets"
   ],
+  "SelectedNode": "\\assets\\clustering_criminal_data.json",
   "PreviewInSolutionExplorer": false
 }

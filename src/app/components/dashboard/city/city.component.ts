@@ -47,19 +47,19 @@ export class CityComponent implements OnInit {
   public urbanizacao: String;
 
   public weapons_delicts: String;
-  public corruption_delicts: String;
-  public vehicle_thefts: String;
-  public thefts: String;
-  public vehicle_steals: String;
-  public steals: String;
-  public robberys: String;
-
   public narcotics_possession: String;
   public narcotics_trafic: String;
-  public stelionats: String;
-  public extortions: String;
-  public kidnapping: String;
+  public stelionate: String;
+  public thefts: String;
   public willful_homicide: String;
+  public robberys: String;
+    
+  public vehicle_thefts: String;
+  public steals: String;
+  public vehicles: String;
+  public slaughter: String;
+  public victims_willful: String;
+    
 
   public cityInfo;
   public crimeInfo;
@@ -115,19 +115,21 @@ export class CityComponent implements OnInit {
     } else this.crimeInfo = {}
 
     this.weapons_delicts = this.crimeInfo[' Delitos Relacionados à Armas e Munições'] ? this.crimeInfo[' Delitos Relacionados à Armas e Munições'] : 'NaN';
-    this.corruption_delicts = this.crimeInfo[' Delitos Relacionados à Corrupção'] ? this.crimeInfo[' Delitos Relacionados à Corrupção'] : 'NaN';
-    this.vehicle_thefts = this.crimeInfo[' Roubo de Veículo'] ? this.crimeInfo[' Roubo de Veículo'] : 'NaN';
-    this.thefts = this.crimeInfo[' Roubos'] ? this.crimeInfo[' Roubos'] : 'NaN';
-    this.vehicle_steals = this.crimeInfo[' Furto de Veículo'] ? this.crimeInfo[' Furto de Veículo'] : 'NaN';
-    this.steals = this.crimeInfo[' Furtos'] ? this.crimeInfo[' Furtos'] : 'NaN';
-    this.robberys = this.crimeInfo[' Latrocínio'] ? this.crimeInfo[' Latrocínio'] : 'NaN';
-
-    this.narcotics_possession = this.crimeInfo[' Entorpecentes - Posse'] ? this.crimeInfo[' Entorpecentes - Posse'] : 'NaN';
+    this.narcotics_possetion = this.crimeInfo[' Entorpecentes - Posse'] ? this.crimeInfo[' Entorpecentes - Posse'] : 'NaN';
     this.narcotics_trafic = this.crimeInfo[' Entorpecentes - Tráfico'] ? this.crimeInfo[' Entorpecentes - Tráfico'] : 'NaN';
-    this.stelionats = this.crimeInfo[' Estelionato'] ? this.crimeInfo[' Estelionato'] : 'NaN';
-    this.extortions = this.crimeInfo[' Extorsão'] ? this.crimeInfo[' Extorsão'] : 'NaN';
-    this.kidnapping = this.crimeInfo[' Extorsão Mediante Sequestro'] ? this.crimeInfo[' Extorsão Mediante Sequestro'] : 'NaN';
+    this.stelionate = this.crimeInfo[' Estelionato'] ? this.crimeInfo[' Estelionato'] : 'NaN';
+    this.thefts = this.crimeInfo[' Furtos'] ? this.crimeInfo[' Furtos'] : 'NaN';
     this.willful_homicide = this.crimeInfo[' Homicídio  Doloso'] ? this.crimeInfo[' Homicídio  Doloso'] : 'NaN';
+    this.robberys = this.crimeInfo[' Latrocínio'] ? this.crimeInfo[' Latrocínio'] : 'NaN';
+    
+    this.vehicle_thefts = this.crimeInfo[' Roubo de Veículo'] ? this.crimeInfo[' Roubo de Veículo'] : 'NaN';
+    this.steals = this.crimeInfo[' Roubos'] ? this.crimeInfo[' Roubos'] : 'NaN';
+    this.vehicles = this.crimeInfo[' Veículo'] ? this.crimeInfo[' Veículo'] : 'NaN';
+    this.slaughter = this.crimeInfo['Abigeato*'] ? this.crimeInfo['Abigeato*'] : 'NaN';
+    this.victims_willful = this.crimeInfo['Total de vítimas de Homicidio Doloso'] ? this.crimeInfo['Total de vítimas de Homicidio Doloso'] : 'NaN';
+    
+
+    console.log(this.crimeInfo);
   }
 
   activateDistance() {
