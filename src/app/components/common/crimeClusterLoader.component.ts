@@ -1,10 +1,11 @@
 import * as $ from 'jquery';
+import { DashboardUpdateService } from 'src/app/services/dashboard-update.service';
 
 export class CrimeClusterLoader {
 
     public json;
 
-    constructor () {
+    constructor (private service: DashboardUpdateService) {
         this.json = (function() {
             var json = null;
             $.ajax({
@@ -25,7 +26,10 @@ export class CrimeClusterLoader {
     }
 
     public getDistanceFrom = (city: string) => {
-        const point = this.json[city.toUpperCase()]
+        city = this.service.makeSortString(city.toUpperCase())
+        if (city === 'FAZENDA VILANOVA') city = 'FAZENDA VILA NOVA'
+        if (city === 'ENTRE-IJUIS') city = 'ENTRE IJUIS'
+        const point = this.json[city]
         const distances = [];
 
         for (let key in this.json) {
