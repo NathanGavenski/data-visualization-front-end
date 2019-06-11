@@ -32,20 +32,4 @@ export class DashboardUpdateService {
 
     this.teste.setCity(city, crime);
   }
-
-  public makeSortString = (function () {
-    var translate_re = /[ÄÃÁÂÁÇÖÓÕÔÔÊÉÍÚÜ]/g;
-    var translate = {
-      "Ä": "A", "Ö": "O", "Ü": "U",
-      "Ã": "A", "Õ": "O", "É": "E",
-      "Ó": "O", "Ç": "C", "Ê": "E",
-      "Â": "A", "Í": "I", "Á": "A",
-      "Ô": "O", "Ú": "U"  // probably more to come
-    };
-    return function (s) {
-      return (s.replace(translate_re, function (match) {
-        return translate[match];
-      }));
-    }
-  })();
 }

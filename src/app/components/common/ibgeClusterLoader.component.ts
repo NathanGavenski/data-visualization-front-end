@@ -5,7 +5,7 @@ export class IBGEClusterLoader {
 
     public json;
 
-    constructor (private service: DashboardUpdateService) {
+    constructor () {
         this.json = (function() {
             var json = null;
             $.ajax({
@@ -26,7 +26,7 @@ export class IBGEClusterLoader {
     }
 
     public getDistanceFrom = (city: string) => {
-        city = this.service.makeSortString(city.toUpperCase())
+        city = this.makeSortString(city.toUpperCase())
         if (city === 'FAZENDA VILANOVA') city = 'FAZENDA VILA NOVA'
         if (city === 'ENTRE-IJUIS') city = 'ENTRE IJUIS'
         const point = this.json[city]
@@ -55,4 +55,20 @@ export class IBGEClusterLoader {
         if (x === x2 && y === y2) return 0;
         else return Math.sqrt(Math.pow(x2 - x, 2) + Math.pow(y2 - y, 2))
     }
+
+  private makeSortString = (function () {
+    var translate_re = /[ÄÃÁÂÁÇÖÓÕÔÔÊÉÍÚÜ]/g;
+    var translate = {
+      "Ä": "A", "Ö": "O", "Ü": "U",
+      "Ã": "A", "Õ": "O", "É": "E",
+      "Ó": "O", "Ç": "C", "Ê": "E",
+      "Â": "A", "Í": "I", "Á": "A",
+      "Ô": "O", "Ú": "U"  // probably more to come
+    };
+    return function (s) {
+      return (s.replace(translate_re, function (match) {
+        return translate[match];
+      }));
+    }
+  })();
 }
