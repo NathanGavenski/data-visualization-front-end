@@ -47,7 +47,7 @@ export class CityComponent implements OnInit {
   public urbanizacao: String;
 
   public weapons_delicts: String;
-  public narcotics_possession: String;
+  public narcotics_possetion: String;
   public narcotics_trafic: String;
   public stelionate: String;
   public thefts: String;
