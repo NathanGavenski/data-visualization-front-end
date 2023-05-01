@@ -22,7 +22,7 @@
     "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
     "geojson-vt": "^3.2.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ngx-currency": "^2.0.0",
     "ol": "^5.3.3",
     "plotly.js-dist": "^1.48.1",
